@@ -147,8 +147,10 @@ repeating the title.
 
 **Software page.** One `.sw-row` per package: logo left, detail right. Drop the
 real hex sticker into `assets/img/logos/` keeping the filename (`ninetails.svg`,
-`nanotail2.svg`, `rDNAmine.svg`, `NanoQuRe.svg`), or point the `src` at a new
-one. Any aspect ratio works; the slot is sized for the usual 1.155:1 hex.
+`nanotail2.svg`, `NanoQuRe.svg`), or point the `src` at a new one. rDNAmine has
+no hex logo, so its slot is an empty `<div class="sw-logo"></div>`, kept rather
+than deleted so the text in that row stays aligned with the others. If it gets
+a logo, put an `<img>` back in that div. Any aspect ratio works; the slot is sized for the usual 1.155:1 hex.
 Raster logos are best at roughly 400px on the long edge. Keep the `width` and
 `height` attributes truthful to the file, they reserve the space and stop the
 row jumping while the page loads.

@@ -112,7 +112,8 @@ echo "Remember: assets/head.html references og-image.PNG, not the SVG."
 # regular hexagon. Replace each file with the real logo, keeping the filename.
 logos="${img}/logos"
 mkdir -p "$logos"
-for pkg in ninetails nanotail2 rDNAmine NanoQuRe; do
+# rDNAmine has no hex logo, so no placeholder is generated for it.
+for pkg in ninetails nanotail2 NanoQuRe; do
   size=22
   [ ${#pkg} -gt 9 ] && size=19
   cat > "${logos}/${pkg}.svg" <<SVG

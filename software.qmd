@@ -59,23 +59,6 @@ laboratory data usable. Most of it is open source under
 
   <article class="sw-row">
     <div class="sw-logo">
-      <img src="assets/img/logos/rDNAmine.svg" alt="rDNAmine logo"
-           width="174" height="200" loading="lazy">
-    </div>
-    <div class="sw-body">
-      <h3 class="sw-name">rDNAmine <span class="status-badge status-active">co-author</span></h3>
-      <p class="sw-desc">Analysis of long repetitive rDNA sequences in Oxford
-      Nanopore reads. Described in <em>Yeast</em> (2026).</p>
-      <p class="sw-meta">Shell, long reads, rDNA</p>
-      <p class="sw-links">
-        <a class="btn-ghost" href="https://github.com/LRB-IIMCB/rDNA_mine" target="_blank">Repository</a>
-        <a class="btn-ghost" href="https://doi.org/10.1002/yea.70023" target="_blank">Paper</a>
-      </p>
-    </div>
-  </article>
-
-  <article class="sw-row">
-    <div class="sw-logo">
       <img src="assets/img/logos/NanoQuRe.svg" alt="NanoQuRe package logo"
            width="174" height="200" loading="lazy">
     </div>
@@ -86,6 +69,22 @@ laboratory data usable. Most of it is open source under
       <p class="sw-meta">R, quality control, reporting</p>
       <p class="sw-links">
         <a class="btn-ghost" href="https://github.com/LRB-IIMCB/NanoQuRe" target="_blank">Repository</a>
+      </p>
+    </div>
+  </article>
+
+  <article class="sw-row">
+    <!-- rDNAmine has no hex logo. The slot is kept empty so the text in
+         this row stays aligned with the rows above and below. -->
+    <div class="sw-logo"></div>
+    <div class="sw-body">
+      <h3 class="sw-name">rDNAmine <span class="status-badge status-active">co-author</span></h3>
+      <p class="sw-desc">Analysis of long repetitive rDNA sequences in Oxford
+      Nanopore reads. Described in <em>Yeast</em> (2026).</p>
+      <p class="sw-meta">Shell, long reads, rDNA</p>
+      <p class="sw-links">
+        <a class="btn-ghost" href="https://github.com/LRB-IIMCB/rDNA_mine" target="_blank">Repository</a>
+        <a class="btn-ghost" href="https://doi.org/10.1002/yea.70023" target="_blank">Paper</a>
       </p>
     </div>
   </article>
