@@ -1,6 +1,6 @@
 # nemitheasura.github.io
 
-Personal and academic website for **Natalia Gumińska, PhD**: RNA biology,
+My personal and academic website, showcasing: RNA biology,
 nanopore direct RNA sequencing, and research software. Built with
 [Quarto](https://quarto.org), deployed to GitHub Pages by GitHub Actions.
 
