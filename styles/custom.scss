@@ -11,13 +11,18 @@
 // ---------------------------------------------------------------------------
 // 1. Typography
 //
-// No web fonts, by design: no CDN request blocks first paint and the site works
-// offline. Personality comes from the scale and from the monospace utility
-// face, which carries every label, year, tag and status on the site.
+// Open Sans, matching the ninetails documentation site (pkgdown on Bootswatch
+// Yeti, which loads Open Sans). Self-hosted rather than pulled from Google
+// Fonts; see styles/fonts.scss for the @font-face declarations and the reason.
+//
+// The system stack stays behind it as a real fallback, not a formality: if the
+// font files are missing the site degrades to system-ui and nothing breaks.
+// The monospace utility face is unchanged, and still carries every label, year,
+// tag and status badge.
 // ---------------------------------------------------------------------------
 :root {
-  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-               Arial, "Noto Sans", sans-serif;
+  --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", "Segoe UI Mono",
                "Roboto Mono", Menlo, Consolas, monospace;
 

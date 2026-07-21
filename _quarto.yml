@@ -20,6 +20,9 @@ project:
     - "!CONTRIBUTING.md"
   resources:
     - "robots.txt"
+    # Copied wholesale. Do not narrow this to assets/img/: the self-hosted
+    # Open Sans files in assets/fonts/ are referenced only from compiled CSS,
+    # so Quarto cannot discover them by scanning the .qmd sources.
     - "assets/"
     - "cv/*.pdf"
 
@@ -120,13 +123,17 @@ website:
 format:
   html:
     theme:
+      # Order matters. Bootswatch base, then palette tokens (scss:defaults),
+      # then @font-face declarations, then component rules (scss:rules).
       light:
         - cosmo
         - styles/theme-light.scss
+        - styles/fonts.scss
         - styles/custom.scss
       dark:
         - darkly
         - styles/theme-dark.scss
+        - styles/fonts.scss
         - styles/custom.scss
     toc: true
     toc-depth: 2

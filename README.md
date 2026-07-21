@@ -4,7 +4,7 @@ Personal and academic website for **Natalia Gumińska, PhD** — RNA biology,
 nanopore direct RNA sequencing, and research software. Built with
 [Quarto](https://quarto.org), deployed to GitHub Pages by GitHub Actions.
 
-No CDN, no analytics, no tracker, no web fonts. The site is static HTML and CSS
+No CDN, no analytics, no tracker. Fonts are self-hosted. The site is static HTML and CSS
 plus about 90 lines of vanilla JavaScript for a scroll reveal, an image lightbox
 and a year stamp.
 
@@ -13,18 +13,23 @@ and a year stamp.
 ## Quick start
 
 ```bash
-quarto preview          # live-reloading dev server on http://localhost:4200
-quarto render           # one-off build into _site/
+Rscript scripts/fetch-fonts.R    # once: downloads Open Sans into assets/fonts/
+quarto preview                   # live-reloading server on http://localhost:4200
+quarto render                    # one-off build into _site/
 ```
 
-Quarto 1.5 or newer is the only requirement. There are no executable code cells,
-so R and Python are **not** needed to build the site.
+Quarto 1.5 or newer is the only hard requirement. There are no executable code
+cells, so R and Python are **not** needed to build the site — R is used only by
+the two optional helper scripts.
 
 If Quarto is not on `PATH` but RStudio is installed, it ships a copy:
 
 ```powershell
 & "C:\Program Files\RStudio\resources\app\bin\quarto\bin\quarto.exe" preview
 ```
+
+Skipping the font step is not fatal: text falls back to the system stack and
+everything else works. See [Typography](#typography) before deploying, though.
 
 ## Project structure
 
@@ -49,6 +54,7 @@ If Quarto is not on `PATH` but RStudio is installed, it ships a copy:
 │   └── cv.qmd                     Print CV → Natalia-Guminska-CV.pdf (Typst)
 ├── styles/
 │   ├── theme-light.scss           light palette tokens
+│   ├── fonts.scss                 self-hosted Open Sans @font-face
 │   ├── theme-dark.scss            dark palette tokens
 │   └── custom.scss                all component rules, theme-agnostic
 ├── assets/
@@ -56,6 +62,7 @@ If Quarto is not on `PATH` but RStudio is installed, it ships a copy:
 │   ├── scripts.html               reveal observer, lightbox, year stamp
 │   └── img/                       favicon, logo, portrait, OG, gallery
 ├── scripts/
+│   ├── fetch-fonts.R              download Open Sans into assets/fonts/
 │   ├── make-placeholders.sh       regenerate placeholder artwork
 │   └── generate-publications.R    references.bib → publications.yml
 └── .github/workflows/publish.yml
@@ -64,6 +71,9 @@ If Quarto is not on `PATH` but RStudio is installed, it ships a copy:
 ## Before this goes live
 
 The site builds and looks finished, but the following are placeholders.
+
+- [ ] **Run `Rscript scripts/fetch-fonts.R` and commit `assets/fonts/`.**
+      Without this the live site falls back to the system font stack, silently.
 
 - [ ] **Replace `assets/img/profile.svg`** with a real portrait
       (`profile.jpg` is fine — update the `src` in `index.qmd`).
@@ -165,12 +175,33 @@ The hero carries the site's one piece of ornament — an SVG nanopore current
 trace with a flat poly(A) plateau and a single amber excursion. It draws itself
 once on load and then holds. Everything else is deliberately quiet.
 
-Typography uses the system font stack with a monospace utility face for labels,
-years, tags and status badges. No web font means no render-blocking request and
-no third-party origin. The trade-off is that display type looks slightly
-different across platforms; if that matters more than the request, self-host a
-variable font in `assets/fonts/` and add a `@font-face` block plus a
-`--font-body` override in `custom.scss`.
+### Typography
+
+The body face is **Open Sans**, matching the ninetails documentation site
+(pkgdown on Bootswatch Yeti, which loads Open Sans from Google Fonts). Here it
+is self-hosted from `assets/fonts/` rather than fetched from a CDN: embedding
+Google Fonts sends every visitor's IP to Google, which a German court found
+breaches the GDPR (LG Munich I, 3 O 17493/20), and a same-origin font avoids an
+extra DNS lookup, TLS handshake and chained request before text paints.
+
+`scripts/fetch-fonts.R` downloads four woff2 files — roman and italic, latin and
+latin-ext. **latin-ext is not optional**: it carries ń, ł, ą, ę, ś, ź and ż, so
+without it "Gumińska", "Koźminski" and "Poznań" change typeface mid-word.
+
+**Commit `assets/fonts/` once you have generated it.** The GitHub Actions
+workflow builds from a clean checkout with no R installed, so uncommitted fonts
+are simply absent from the deployed site — and because the fallback stack is
+silent, local preview will look right while the live site does not.
+
+Headings sit at weight 640, which the variable font covers. A monospace utility
+face still carries labels, years, tags and status badges; that is a deliberate
+counterpoint to Open Sans, not an oversight. If you would rather match ninetails
+exactly and skip the setup step, `styles/fonts.scss` documents the one-line
+Google Fonts swap.
+
+Font files are declared with root-absolute paths (`/assets/fonts/…`), which is
+correct for a **user site**. On a project site they need a `/<repo>` prefix or
+they 404 silently.
 
 ## Accessibility
 

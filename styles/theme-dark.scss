@@ -18,6 +18,14 @@ $accent:     #62b4e2;
 $accent-ink: #8ac9ef;
 $signal:     #e0a951;
 
+// See the matching comment in theme-light.scss: this drives Quarto's Bootstrap
+// chrome (navbar, footer, TOC, listing controls), which custom.scss does not
+// reach. The two theme files must declare the same stack or the navbar changes
+// typeface when the reader switches to dark mode.
+$font-family-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI",
+                         Roboto, "Helvetica Neue", Arial, "Noto Sans",
+                         sans-serif !default;
+
 $body-bg:              $paper;
 $body-color:           $ink;
 $primary:              $accent;

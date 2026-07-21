@@ -19,6 +19,16 @@ $accent:     #1f6f9c;
 $accent-ink: #17567a;
 $signal:     #b0741a;
 
+// Bootstrap's own font stack. Setting it here as well as in custom.scss is not
+// redundant: custom.scss sets --font-body on `body` and on elements this site
+// styles directly, but Quarto's chrome (navbar, footer, TOC, the publication
+// listing's filter and sort controls) is styled by Bootstrap using this Sass
+// variable. Without this line those parts stay on the system stack and the
+// mismatch is visible in the navbar.
+$font-family-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI",
+                         Roboto, "Helvetica Neue", Arial, "Noto Sans",
+                         sans-serif !default;
+
 // Bootstrap overrides. Keeping these in sync with the tokens above means
 // Quarto's own chrome (navbar, footer, TOC, search) inherits the palette.
 $body-bg:              $paper;
