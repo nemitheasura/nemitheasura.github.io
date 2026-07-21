@@ -124,38 +124,65 @@ code, kbd, samp, pre {
 }
 
 // ---------------------------------------------------------------------------
-// The Stack page. A specification sheet rather than a grid of boxes: a label
-// column, a value column, and a hairline between rows. Nothing is bordered or
-// tinted, so the page reads as a document rather than as a dashboard, and the
-// eye can run straight down the label column to find a category.
+// The Stack page. A specification sheet: label column, value column, hairline
+// between rows. Marked up as a <dl>, which is what a list of term-and-value
+// pairs actually is, so it reads correctly to a screen reader as well.
+//
+// The value column stacks one entry per line rather than running them together
+// as prose. Two reasons. Comma-separated prose puts commas at two levels
+// ("R (tidyverse, data.table), Python (pandas, SciPy)") and the reader has to
+// parse which level each one belongs to. And a ragged wrap through a long
+// comma list produces exactly the arbitrary-looking breaks this replaced.
 // ---------------------------------------------------------------------------
 .spec {
-  margin: 1.6rem 0 0;
+  margin: 1.5rem 0 0;
   border-top: 1px solid var(--rule);
 }
 
 .spec-row {
   display: grid;
-  grid-template-columns: minmax(11rem, 15rem) 1fr;
-  gap: 0.35rem 2.5rem;
-  padding: 1rem 0;
+  grid-template-columns: minmax(10rem, 14rem) minmax(0, 1fr);
+  gap: 0.3rem 2.5rem;
+  align-items: baseline;
+  padding: 1.05rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
 .spec-label {
   font-weight: 640;
   color: var(--ink);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
+// A measure, so a wide window does not stretch the values into an unreadable
+// line length. Around 70 characters at this size.
 .spec-value {
+  margin: 0;
   color: var(--ink-2);
-  line-height: 1.65;
+  max-width: 42rem;
+}
 
-  a {
-    border-bottom: 1px solid transparent;
-    &:hover { border-bottom-color: var(--accent); }
-  }
+.s-item {
+  display: block;
+  line-height: 1.55;
+  margin-bottom: 0.3rem;
+  text-wrap: pretty;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+// The qualifying detail after a term: the specific packages, the specific
+// cloud. Set in the muted ink so the term carries the line. The colon before
+// it lives in the markup, not in a ::before, because generated content is not
+// copied to the clipboard in most browsers.
+.s-sub {
+  color: var(--ink-3);
+}
+
+.s-links a {
+  border-bottom: 1px solid transparent;
+
+  &:hover { border-bottom-color: var(--accent); }
 }
 
 // ---------------------------------------------------------------------------

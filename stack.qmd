@@ -12,57 +12,105 @@ The tools I work with, and the methods I use them for.
 
 ## Computational biology
 
-::: {.spec .reveal}
-::: {.spec-row}
-[Omics analysis]{.spec-label}
-[Genomics, transcriptomics, RNA biology (isoforms, polyadenylation, APA sites,
-modifications, splicing), phylogenetic analyses, variant calling]{.spec-value}
-:::
-::: {.spec-row}
-[Sequencing technologies]{.spec-label}
-[Illumina, Oxford Nanopore, PacBio]{.spec-value}
-:::
-:::
+```{=html}
+<!-- Written as raw HTML on purpose. Pandoc merges consecutive bracketed spans
+     into a single paragraph, which left .spec-row with one child instead of
+     two and collapsed the grid. Explicit divs guarantee the label and value
+     are separate grid items. -->
+<dl class="spec reveal">
+
+  <div class="spec-row">
+    <dt class="spec-label">Omics analysis</dt>
+    <dd class="spec-value">
+      <span class="s-item">Genomics</span>
+      <span class="s-item">Transcriptomics</span>
+      <span class="s-item">RNA biology: <span class="s-sub">isoforms, polyadenylation, APA sites, modifications, splicing</span></span>
+      <span class="s-item">Phylogenetic analyses</span>
+      <span class="s-item">Variant calling</span>
+    </dd>
+  </div>
+
+  <div class="spec-row">
+    <dt class="spec-label">Sequencing technologies</dt>
+    <dd class="spec-value">
+      <span class="s-item">Illumina</span>
+      <span class="s-item">Oxford Nanopore</span>
+      <span class="s-item">PacBio</span>
+    </dd>
+  </div>
+
+</dl>
+```
 
 ## Software engineering & DevOps
 
-::: {.spec .reveal}
-::: {.spec-row}
-[Programming]{.spec-label}
-[R (tidyverse, data.table, Bioconductor), Python (pandas, SciPy, scikit-learn,
-Keras, TensorFlow/PyTorch), Bash]{.spec-value}
-:::
-::: {.spec-row}
-[Machine learning]{.spec-label}
-[Predictive modelling, deep learning, model development, validation and
-deployment for biology]{.spec-value}
-:::
-::: {.spec-row}
-[Data visualisation & reporting]{.spec-label}
-[Interactive dashboards and graphics: ggplot2, shiny, plotly, rmarkdown,
-streamlit]{.spec-value}
-:::
-::: {.spec-row}
-[Software development]{.spec-label}
-[Creator of and contributor to openly available bioinformatic tools:
-[ninetails](https://github.com/LRB-IIMCB/ninetails),
-[nanotail2](https://github.com/LRB-IIMCB),
-[NanoQuRe](https://github.com/LRB-IIMCB/NanoQuRe),
-[rDNAmine](https://github.com/LRB-IIMCB/rDNA_mine)]{.spec-value}
-:::
-::: {.spec-row}
-[Databases]{.spec-label}
-[SQL (MySQL, PostgreSQL)]{.spec-value}
-:::
-::: {.spec-row}
-[Infrastructure]{.spec-label}
-[Docker, Kubernetes, cloud platforms (Azure)]{.spec-value}
-:::
-::: {.spec-row}
-[Best practices]{.spec-label}
-[Version control (Git), reproducible research]{.spec-value}
-:::
-:::
+```{=html}
+<dl class="spec reveal">
+
+  <div class="spec-row">
+    <dt class="spec-label">Programming</dt>
+    <dd class="spec-value">
+      <span class="s-item">R: <span class="s-sub">tidyverse, data.table, Bioconductor</span></span>
+      <span class="s-item">Python: <span class="s-sub">pandas, SciPy, scikit-learn, Keras, TensorFlow/PyTorch</span></span>
+      <span class="s-item">Bash</span>
+    </dd>
+  </div>
+
+  <div class="spec-row">
+    <dt class="spec-label">Machine learning</dt>
+    <dd class="spec-value">
+      <span class="s-item">Predictive modelling</span>
+      <span class="s-item">Deep learning</span>
+      <span class="s-item">Model development, validation and deployment for biology</span>
+    </dd>
+  </div>
+
+  <div class="spec-row">
+    <dt class="spec-label">Data visualisation &amp; reporting</dt>
+    <dd class="spec-value">
+      <span class="s-item">Interactive dashboards and graphics: <span class="s-sub">ggplot2, shiny, plotly, rmarkdown, streamlit</span></span>
+    </dd>
+  </div>
+
+  <div class="spec-row">
+    <dt class="spec-label">Software development</dt>
+    <dd class="spec-value">
+      <span class="s-item">Creator of and contributor to openly available bioinformatic tools</span>
+      <span class="s-item s-links">
+        <a href="https://github.com/LRB-IIMCB/ninetails">ninetails</a>,
+        <a href="https://github.com/LRB-IIMCB">nanotail2</a>,
+        <a href="https://github.com/LRB-IIMCB/NanoQuRe">NanoQuRe</a>,
+        <a href="https://github.com/LRB-IIMCB/rDNA_mine">rDNAmine</a>
+      </span>
+    </dd>
+  </div>
+
+  <div class="spec-row">
+    <dt class="spec-label">Databases</dt>
+    <dd class="spec-value">
+      <span class="s-item">SQL: <span class="s-sub">MySQL, PostgreSQL</span></span>
+    </dd>
+  </div>
+
+  <div class="spec-row">
+    <dt class="spec-label">Infrastructure</dt>
+    <dd class="spec-value">
+      <span class="s-item">Docker</span>
+      <span class="s-item">Kubernetes</span>
+      <span class="s-item">Cloud platforms: <span class="s-sub">Azure</span></span>
+    </dd>
+  </div>
+
+  <div class="spec-row">
+    <dt class="spec-label">Best practices</dt>
+    <dd class="spec-value">
+      <span class="s-item">Version control: <span class="s-sub">Git</span></span>
+      <span class="s-item">Reproducible research</span>
+    </dd>
+  </div>
+
+</dl>
+```
 
 ::: {.btn-row}
 <a class="btn-cta" href="software.qmd"><i class="bi bi-code-square"></i> See it applied</a>
