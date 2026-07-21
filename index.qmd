@@ -43,7 +43,7 @@ University.
      the long edge is plenty; update the src and the alt text and nothing else
      needs to change. -->
 <img class="hero-portrait" src="assets/img/profile.svg"
-     alt="Portrait of Natalia Gumińska">
+     alt="Portrait of Natalia Gumińska" width="400" height="480">
 ```
 
 </div>

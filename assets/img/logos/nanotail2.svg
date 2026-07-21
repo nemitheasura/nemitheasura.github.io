@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 200"
+     width="174" height="200" role="img" aria-label="nanotail2 logo placeholder">
+  <title>nanotail2 logo placeholder</title>
+  <polygon points="87,4 165,50 165,150 87,196 9,150 9,50"
+           fill="#eef2f5" stroke="#1f6f9c" stroke-width="5"/>
+  <text x="87" y="96" text-anchor="middle" font-family="system-ui, sans-serif"
+        font-size="22" font-weight="600" fill="#1f6f9c">nanotail2</text>
+  <text x="87" y="122" text-anchor="middle" font-family="system-ui, sans-serif"
+        font-size="12" fill="#4c5a66">placeholder</text>
+</svg>

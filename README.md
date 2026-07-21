@@ -145,6 +145,14 @@ the thumbnail. Always set `width` and `height` so the layout does not shift
 while images load, and write `alt` text that describes the image rather than
 repeating the title.
 
+**Software page.** One `.sw-row` per package: logo left, detail right. Drop the
+real hex sticker into `assets/img/logos/` keeping the filename (`ninetails.svg`,
+`nanotail2.svg`, `rDNAmine.svg`, `NanoQuRe.svg`), or point the `src` at a new
+one. Any aspect ratio works; the slot is sized for the usual 1.155:1 hex.
+Raster logos are best at roughly 400px on the long edge. Keep the `width` and
+`height` attributes truthful to the file, they reserve the space and stop the
+row jumping while the page loads.
+
 **Stack page.** Each row carries `style="--level: N"` where N is 1–5. The bar
 and the `aria-label` are independent, so **change both together** or screen
 reader users get the old number.

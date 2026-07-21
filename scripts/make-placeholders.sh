@@ -12,6 +12,8 @@
 #                                               named og-image.png, which is
 #                                               what assets/head.html points at
 #   illustrations/*.svg  gallery items
+#   logos/*.svg          R package hex stickers -> replace with the real ones,
+#                                                  keeping the filenames
 #
 # Usage:  bash scripts/make-placeholders.sh
 # Safe to re-run; existing files are overwritten.
@@ -104,3 +106,26 @@ make_tile "art-03.svg"                "Digital art"            "$signal"
 
 echo "Placeholders written to ${img}"
 echo "Remember: assets/head.html references og-image.PNG, not the SVG."
+
+# --- package logos ---------------------------------------------------------
+# Hex stickers, the usual R package logo format: 1.155:1, the proportion of a
+# regular hexagon. Replace each file with the real logo, keeping the filename.
+logos="${img}/logos"
+mkdir -p "$logos"
+for pkg in ninetails nanotail2 rDNAmine NanoQuRe; do
+  size=22
+  [ ${#pkg} -gt 9 ] && size=19
+  cat > "${logos}/${pkg}.svg" <<SVG
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 200"
+     width="174" height="200" role="img" aria-label="${pkg} logo placeholder">
+  <title>${pkg} logo placeholder</title>
+  <polygon points="87,4 165,50 165,150 87,196 9,150 9,50"
+           fill="${paper}" stroke="${accent}" stroke-width="5"/>
+  <text x="87" y="96" text-anchor="middle" font-family="system-ui, sans-serif"
+        font-size="${size}" font-weight="600" fill="${accent}">${pkg}</text>
+  <text x="87" y="122" text-anchor="middle" font-family="system-ui, sans-serif"
+        font-size="12" fill="${ink}">placeholder</text>
+</svg>
+SVG
+  echo "  logos/${pkg}.svg"
+done

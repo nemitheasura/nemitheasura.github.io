@@ -13,79 +13,91 @@ laboratory data usable. Most of it is open source under
 [my GitHub](https://github.com/nemitheasura).
 :::
 
-## Packages and tools
+## Packages
 
-::: {.card-grid}
-::: {.u-card .reveal .d1}
-### ninetails <span class="status-badge status-active">author</span>
-Detects non-adenosine residues in poly(A) tails from Oxford Nanopore direct RNA
-reads, using a convolutional network on signal-derived images.
+```{=html}
+<!-- One row per package. To swap in a real logo, replace the file in
+     assets/img/logos/ keeping the filename, or point src at a new one. Hex
+     stickers are 1.155:1; the slot is sized for that ratio but will accept
+     any aspect. Raster logos are best at roughly 400px on the long edge. -->
+<div class="sw-list reveal">
 
-::: {.tag-row}
-[R]{.pill} [Nanopore]{.pill} [Deep learning]{.pill} [Signal analysis]{.pill}
-:::
+  <article class="sw-row">
+    <div class="sw-logo">
+      <img src="assets/img/logos/ninetails.svg" alt="ninetails package logo"
+           width="174" height="200" loading="lazy">
+    </div>
+    <div class="sw-body">
+      <h3 class="sw-name">ninetails <span class="status-badge status-active">author</span></h3>
+      <p class="sw-desc">Detects non-adenosine residues in poly(A) tails from
+      Oxford Nanopore direct RNA reads, using a convolutional network on
+      signal-derived images. Published in <em>Nature Communications</em> (2025).</p>
+      <p class="sw-meta">R, Nanopore, deep learning, signal analysis</p>
+      <p class="sw-links">
+        <a class="btn-ghost" href="https://github.com/LRB-IIMCB/ninetails" target="_blank">Repository</a>
+        <a class="btn-ghost" href="https://lrb-iimcb.github.io/ninetails/" target="_blank">Documentation</a>
+        <a class="btn-ghost" href="https://doi.org/10.1038/s41467-025-57787-6" target="_blank">Paper</a>
+      </p>
+    </div>
+  </article>
 
-[Repository](https://github.com/LRB-IIMCB/ninetails){.btn-ghost target="_blank"}
-[Docs](https://lrb-iimcb.github.io/ninetails/){.btn-ghost target="_blank"}
-[Paper](https://doi.org/10.1038/s41467-025-57787-6){.btn-ghost target="_blank"}
-:::
+  <article class="sw-row">
+    <div class="sw-logo">
+      <img src="assets/img/logos/nanotail2.svg" alt="nanotail2 package logo"
+           width="174" height="200" loading="lazy">
+    </div>
+    <div class="sw-body">
+      <h3 class="sw-name">nanotail2 <span class="status-badge status-active">author</span></h3>
+      <p class="sw-desc">Poly(A) tail length analysis: distributions,
+      comparisons between conditions, and publication figures.</p>
+      <p class="sw-meta">R, poly(A), statistics, visualisation</p>
+      <p class="sw-links">
+        <a class="btn-ghost" href="https://github.com/LRB-IIMCB" target="_blank">Organisation</a>
+      </p>
+    </div>
+  </article>
 
-::: {.u-card .reveal .d2}
-### nanotail2 <span class="status-badge status-active">author</span>
-Poly(A) tail length analysis: distributions, comparisons between conditions, and
-publication figures.
+  <article class="sw-row">
+    <div class="sw-logo">
+      <img src="assets/img/logos/rDNAmine.svg" alt="rDNAmine logo"
+           width="174" height="200" loading="lazy">
+    </div>
+    <div class="sw-body">
+      <h3 class="sw-name">rDNAmine <span class="status-badge status-active">co-author</span></h3>
+      <p class="sw-desc">Analysis of long repetitive rDNA sequences in Oxford
+      Nanopore reads. Described in <em>Yeast</em> (2026).</p>
+      <p class="sw-meta">Shell, long reads, rDNA</p>
+      <p class="sw-links">
+        <a class="btn-ghost" href="https://github.com/LRB-IIMCB/rDNA_mine" target="_blank">Repository</a>
+        <a class="btn-ghost" href="https://doi.org/10.1002/yea.70023" target="_blank">Paper</a>
+      </p>
+    </div>
+  </article>
 
-::: {.tag-row}
-[R]{.pill} [poly(A)]{.pill} [Statistics]{.pill} [Visualisation]{.pill}
-:::
+  <article class="sw-row">
+    <div class="sw-logo">
+      <img src="assets/img/logos/NanoQuRe.svg" alt="NanoQuRe package logo"
+           width="174" height="200" loading="lazy">
+    </div>
+    <div class="sw-body">
+      <h3 class="sw-name">NanoQuRe <span class="status-badge status-maintained">contributor</span></h3>
+      <p class="sw-desc">Quality control reports for nanopore sequencing
+      runs.</p>
+      <p class="sw-meta">R, quality control, reporting</p>
+      <p class="sw-links">
+        <a class="btn-ghost" href="https://github.com/LRB-IIMCB/NanoQuRe" target="_blank">Repository</a>
+      </p>
+    </div>
+  </article>
 
-[Organisation](https://github.com/LRB-IIMCB){.btn-ghost target="_blank"}
-:::
+</div>
+```
 
-::: {.u-card .reveal .d3}
-### rDNAmine <span class="status-badge status-active">co-author</span>
-Analysis of long repetitive rDNA sequences in Oxford Nanopore reads.
+## Laboratory data infrastructure
 
-::: {.tag-row}
-[Shell]{.pill} [Long reads]{.pill} [rDNA]{.pill}
-:::
-
-[Repository](https://github.com/LRB-IIMCB/rDNA_mine){.btn-ghost target="_blank"}
-[Paper](https://doi.org/10.1002/yea.70023){.btn-ghost target="_blank"}
-:::
-
-::: {.u-card .reveal .d1}
-### NanoQuRe <span class="status-badge status-maintained">contributor</span>
-Quality control reports for nanopore sequencing runs.
-
-::: {.tag-row}
-[R]{.pill} [Quality control]{.pill} [Reporting]{.pill}
-:::
-
-[Repository](https://github.com/LRB-IIMCB/NanoQuRe){.btn-ghost target="_blank"}
-:::
-
-::: {.u-card .reveal .d2}
-### lachesis <span class="status-badge status-maintained">contributor</span>
-Part of the laboratory's toolset for nanopore RNA analysis workflows.
-
-::: {.tag-row}
-[R]{.pill} [Workflow]{.pill}
-:::
-
-[Organisation](https://github.com/LRB-IIMCB){.btn-ghost target="_blank"}
-:::
-
-::: {.u-card .reveal .d3}
-### Laboratory databases <span class="status-badge status-maintained">maintained</span>
 Relational schemas for samples, libraries, sequencing runs and their metadata,
-with role-based access and an audit trail.
-
-::: {.tag-row}
-[MySQL]{.pill} [PHP]{.pill} [Schema design]{.pill} [Audit logging]{.pill}
-:::
-:::
-:::
+with role-based access and an audit trail. Built and maintained for the
+laboratory rather than released publicly.
 
 ::: {.btn-row}
 <a class="btn-cta" href="publications/index.qmd"><i class="bi bi-journal-text"></i> Publications</a>
