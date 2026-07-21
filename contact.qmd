@@ -1,0 +1,70 @@
+---
+title: "Contact"
+description: >-
+  Get in touch with Natalia Gumińska: email, GitHub, ORCID, Google Scholar,
+  LinkedIn, and institutional address.
+toc: false
+---
+
+::: {.lead .reveal}
+Happy to talk about RNA tailing, nanopore sequencing, research software, figure
+work, or possible collaborations. Email is the most reliable way to reach me.
+:::
+
+```{=html}
+<div class="contact-grid reveal">
+
+  <a class="contact-card" href="mailto:nguminska@iimcb.gov.pl">
+    <i class="ci bi bi-envelope-fill"></i>
+    <span><span class="c-label">Email</span><br>
+    <span class="c-value">nguminska@iimcb.gov.pl</span></span>
+  </a>
+
+  <a class="contact-card" href="https://orcid.org/0000-0002-4599-2897" rel="me">
+    <i class="ci bi bi-person-badge"></i>
+    <span><span class="c-label">ORCID</span><br>
+    <span class="c-value">0000-0002-4599-2897</span></span>
+  </a>
+
+  <a class="contact-card" href="https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en">
+    <i class="ci bi bi-mortarboard-fill"></i>
+    <span><span class="c-label">Google Scholar</span><br>
+    <span class="c-value">Publications and citations</span></span>
+  </a>
+
+  <a class="contact-card" href="https://github.com/nemitheasura" rel="me">
+    <i class="ci bi bi-github"></i>
+    <span><span class="c-label">GitHub</span><br>
+    <span class="c-value">nemitheasura</span></span>
+  </a>
+
+  <a class="contact-card" href="https://github.com/LRB-IIMCB">
+    <i class="ci bi bi-people-fill"></i>
+    <span><span class="c-label">GitHub, laboratory</span><br>
+    <span class="c-value">LRB-IIMCB</span></span>
+  </a>
+
+  <a class="contact-card" href="https://www.linkedin.com/in/natalia-gumi%C5%84ska-49b162115/" rel="me">
+    <i class="ci bi bi-linkedin"></i>
+    <span><span class="c-label">LinkedIn</span><br>
+    <span class="c-value">Natalia Gumińska</span></span>
+  </a>
+
+</div>
+```
+
+::: {.highlight-box .reveal}
+**Where I am.** Laboratory of RNA Biology (ERA Chairs Group), International
+Institute of Molecular and Cell Biology, ul. Ks. Trojdena 4, 02-109 Warsaw,
+Poland.
+:::
+
+::: {.reveal}
+### What to expect
+
+Email gets a reply within a few working days. For software questions, an issue
+on the relevant repository is better than email: it is searchable, and the next
+person with the same problem finds the answer without asking. For anything
+involving data, say up front which kit and basecaller version produced it —
+it is the first thing I will ask.
+:::

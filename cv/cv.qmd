@@ -1,0 +1,86 @@
+---
+# Print/PDF version of the CV, rendered by Quarto's bundled Typst engine (no LaTeX)
+# to cv/Natalia-Guminska-CV.pdf, which the web CV links to.
+title: "Natalia Gumińska, PhD"
+subtitle: "Postdoctoral Researcher, Laboratory of RNA Biology (ERA Chairs Group), IIMCB Warsaw"
+format:
+  typst:
+    output-file: "Natalia-Guminska-CV"
+    margin:
+      x: 1.7cm
+      y: 1.8cm
+    fontsize: 10pt
+    section-numbering: ""
+author: ""
+date: last-modified
+---
+
+nguminska@iimcb.gov.pl · ORCID 0000-0002-4599-2897 · github.com/nemitheasura
+
+## Profile
+
+Molecular biologist and bioinformatician working on RNA tailing. Develops methods and
+open-source software for Oxford Nanopore direct RNA sequencing, focusing on poly(A)
+tail length and composition, with a parallel background in euglenid genomics. Author
+of the ninetails package (*Nature Communications*, 2025).
+
+## Employment
+
+**2020 – present.** Postdoctoral Researcher, Laboratory of RNA Biology, ERA Chairs
+Group, International Institute of Molecular and Cell Biology in Warsaw.
+
+## Education
+
+- **2025 – present.** Postgraduate studies, Python Data Science Engineer, Koźminski University, Warsaw.
+- **2021 – 2022.** Postgraduate studies, Data Science with R (with honors), Faculty of Economic Sciences, University of Warsaw.
+- **2015 – 2020.** PhD, Biology / molecular biology (with honors), Faculty of Biology, University of Warsaw.
+- **2012 – 2015.** M.Sc., Biotechnology, Faculty of Biology, University of Warsaw.
+- **2012 – 2014.** M.Sc., Polish philology, literary studies and linguistics (with honors), Faculty of Polish Studies, University of Warsaw.
+- **2010 – 2013.** B.Sc., Biotechnology, Faculty of Biology, University of Warsaw.
+- **2009 – 2012.** B.Sc., Polish philology, Faculty of Polish Studies, University of Warsaw.
+
+## Selected publications
+
+Full list: nemitheasura.github.io/publications/.
+
+- Gumińska N. et al. Direct profiling of non-adenosines in poly(A) tails of endogenous and therapeutic mRNAs with Ninetails. *Nature Communications* (2025).
+- Krawczyk P.S. et al. (incl. Gumińska N.) Re-adenylation by TENT5A enhances efficacy of SARS-CoV-2 mRNA vaccines. *Nature* (2025).
+- Gumińska N. et al. Polyadenylation landscape after in vivo long-term potentiation in the rat brain. *RNA* (2025).
+- Czarnocka-Cieciura A. & Gumińska N. rDNAmine: A New Tool for the Analysis of Long Repetitive Sequences. *Yeast* (2026).
+- Gumińska N., Zakryś B., Milanowski R. A New Type of Circular RNA derived from Nonconventional Introns in Nuclear Genes of Euglenids. *J. Mol. Biol.* (2021).
+- Gumińska N., Płecha M., Zakryś B., Milanowski R. Order of removal of conventional and nonconventional introns from nuclear transcripts of Euglena gracilis. *PLOS Genetics* (2018).
+
+## Research grants
+
+- **2018 – 2021.** Characteristics of circular extrachromosomal DNA in euglenids. Polish National Science Centre, Preludium 14 (2017/27/N/NZ2/01321).
+- **2017 – 2019.** Diversity, species composition and population dynamics of phototrophic euglenids based on the V2 18S rDNA region. University of Warsaw, Faculty of Biology grant for young scientists.
+
+## Awards and scholarships
+
+- **2026.** Prof. W. Krzyżosiak Award for scientific publication (team member), Committee on Molecular Cell Biology, Polish Academy of Sciences.
+- **2024, 2023, 2022, 2019.** Best poster presentation awards: 29th RNA Society Meeting (Edinburgh), 1st Polish RNA Meeting (Warsaw), 27th RNA Society Meeting (Boulder), 8th European Congress of Protistology (Rome).
+- **2019, 2016.** Rector's award for scientific achievement (team member).
+- **2017.** Holz-Conner Travel Award, ISOP annual meeting, Prague.
+- **2015 – 2020.** Rector's scholarship for PhD students. **2009 – 2014.** Rector's scholarship and Indeks Start2Star Scholarship.
+
+## Software
+
+ninetails (author), nanotail2 (author), NanoQuRe and lachesis (contributor), rDNAmine
+(co-author), relational SQL databases for the laboratory.
+
+## Skills
+
+- **Languages:** R, Python, SQL, Bash.
+- **Research:** nanopore direct RNA sequencing, poly(A) tail analysis, molecular biology, euglenid genomics.
+- **Data:** tidyverse, ggplot2, Bioconductor, machine learning, relational database design.
+- **Tooling:** Git, GitHub Actions, Quarto, Linux.
+
+## Teaching and service
+
+- **2026.** Lecturer, Girls Code Fun Foundation, Warsaw.
+- **2024.** Lecturer, Nanopore Direct RNA Sequencing Workshop, Adam Mickiewicz University, Poznań.
+- **2020 – 2023.** Postdoc Representative, IIMCB. **2016 – 2018.** Secretary of the Electoral Committee, Faculty of Biology, University of Warsaw.
+
+## Languages
+
+Polish (native), English.

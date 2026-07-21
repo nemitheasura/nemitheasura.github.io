@@ -1,0 +1,165 @@
+---
+title: "Illustrations"
+description: >-
+  Scientific figures, graphical abstracts, schematics and digital artwork by
+  Natalia Gumińska.
+pagetitle: "Illustrations"
+toc: true
+---
+
+::: {.lead .reveal}
+Figures for papers and talks, and the drawing habit they came out of. A good
+scientific figure does one thing: it makes the reader see the result before they
+read the caption. Click any image for a larger view.
+:::
+
+## Graphical abstracts
+
+```{=html}
+<!-- Gallery markup, once, for reference:
+       <a class="gallery-item" data-lightbox href="FULL.png" data-caption="Caption">
+         <img src="THUMB.png" alt="Meaningful alt text" loading="lazy" width="800" height="600">
+         <figcaption>
+           <span class="g-title">Title</span>
+           <span class="g-meta">Context · year</span>
+         </figcaption>
+       </a>
+     `href` is the full-size image, `src` the thumbnail; they may be the same
+     file. `alt` describes the content for screen readers and must not repeat
+     the title. Always set width/height so the layout does not shift while
+     images load. -->
+
+<div class="gallery reveal">
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/abstract-ninetails.svg"
+     data-caption="Ninetails: signal segmentation to classified tail composition.">
+    <img src="../assets/img/illustrations/abstract-ninetails.svg"
+         alt="Schematic of a nanopore read whose poly(A) tail signal is segmented, converted to an image, and classified."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Ninetails, graphical abstract</span>
+      <span class="g-meta">Nature Communications · 2025</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/abstract-tailing.svg"
+     data-caption="Cytoplasmic re-adenylation and its effect on transcript lifetime.">
+    <img src="../assets/img/illustrations/abstract-tailing.svg"
+         alt="Diagram of an mRNA tail being extended in the cytoplasm and the resulting change in transcript stability."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Re-adenylation</span>
+      <span class="g-meta">Graphical abstract · 2025</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/abstract-euglena.svg"
+     data-caption="Conventional and nonconventional intron removal order in Euglena gracilis.">
+    <img src="../assets/img/illustrations/abstract-euglena.svg"
+         alt="Diagram comparing removal order of two structurally different intron types from one transcript."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Intron removal order</span>
+      <span class="g-meta">PLOS Genetics · 2018</span>
+    </figcaption>
+  </a>
+
+</div>
+```
+
+## Figures and schematics
+
+```{=html}
+<div class="gallery reveal">
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/figure-squiggle.svg"
+     data-caption="Annotated nanopore current trace across an adapter, tail and transcript body.">
+    <img src="../assets/img/illustrations/figure-squiggle.svg"
+         alt="Annotated ionic current trace with adapter, poly(A) tail and transcript regions labelled."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Anatomy of a squiggle</span>
+      <span class="g-meta">Teaching figure</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/figure-pipeline.svg"
+     data-caption="Analysis pipeline from POD5 through basecalling to tail composition.">
+    <img src="../assets/img/illustrations/figure-pipeline.svg"
+         alt="Flow diagram of a nanopore analysis pipeline from raw signal files to tail composition output."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Pipeline schematic</span>
+      <span class="g-meta">Workshop material · 2024</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/figure-distributions.svg"
+     data-caption="Poly(A) length distributions compared across conditions.">
+    <img src="../assets/img/illustrations/figure-distributions.svg"
+         alt="Overlaid density plots comparing poly(A) tail length distributions between two conditions."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Tail length distributions</span>
+      <span class="g-meta">ggplot2</span>
+    </figcaption>
+  </a>
+
+</div>
+```
+
+## Digital art
+
+Work made for no reason other than wanting to make it. Fantasy, character work,
+and the occasional creature that is anatomically indefensible.
+
+```{=html}
+<div class="gallery reveal">
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-01.svg"
+     data-caption="Personal work.">
+    <img src="../assets/img/illustrations/art-01.svg" alt="Placeholder for a digital painting."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Untitled</span>
+      <span class="g-meta">Digital · personal work</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-02.svg"
+     data-caption="Personal work.">
+    <img src="../assets/img/illustrations/art-02.svg" alt="Placeholder for a digital painting."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Untitled</span>
+      <span class="g-meta">Digital · personal work</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-03.svg"
+     data-caption="Personal work.">
+    <img src="../assets/img/illustrations/art-03.svg" alt="Placeholder for a digital painting."
+         loading="lazy" width="800" height="600">
+    <figcaption>
+      <span class="g-title">Untitled</span>
+      <span class="g-meta">Digital · personal work</span>
+    </figcaption>
+  </a>
+
+</div>
+```
+
+::: {.highlight-box .reveal}
+**Every image on this page is a generated placeholder.** Drop your own files into
+`assets/img/illustrations/` and update the `src`, `href`, `alt` and caption in
+this file. Raster work is best exported at roughly 1600 px on the long edge as
+WebP or optimised PNG; keep vector work as SVG.
+:::
+
+## Commissions and collaboration
+
+::: {.highlight-box .reveal}
+I make figures for the laboratory's papers and occasionally for collaborators.
+If you need a schematic or graphical abstract and want someone who will read the
+manuscript first, [get in touch](../contact.qmd).
+:::

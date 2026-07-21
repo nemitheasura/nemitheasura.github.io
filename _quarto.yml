@@ -1,0 +1,164 @@
+# ---------------------------------------------------------------------------
+# Quarto project configuration.
+#
+# Content lives in modular .qmd files at the repository root and in the
+# publications/, illustrations/ and cv/ subdirectories. Nothing here needs R or
+# Python: the site has no executable code cells, so `quarto render` is enough.
+# ---------------------------------------------------------------------------
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 4200
+    browser: true
+  render:
+    - "*.qmd"
+    - "publications/"
+    - "illustrations/"
+    - "cv/"
+    - "!README.md"
+    - "!CONTRIBUTING.md"
+  resources:
+    - "robots.txt"
+    - "assets/"
+    - "cv/*.pdf"
+
+# ---------------------------------------------------------------------------
+# Site metadata and navigation.
+#
+# `site-url` is used for canonical links, Open Graph tags and the sitemap. If
+# you deploy to a project page rather than a user page, change it to
+# https://<user>.github.io/<repo> and everything downstream follows.
+# ---------------------------------------------------------------------------
+website:
+  title: "Natalia Gumińska"
+  description: >-
+    Molecular biologist and research software engineer. Nanopore direct RNA
+    sequencing, poly(A) tail biology, and open-source scientific tooling.
+  site-url: https://nemitheasura.github.io
+  repo-url: https://github.com/nemitheasura/nemitheasura.github.io
+  favicon: assets/img/favicon.svg
+  open-graph: true
+  twitter-card:
+    card-style: summary_large_image
+  page-navigation: false
+  back-to-top-navigation: true
+  bread-crumbs: false
+  reader-mode: false
+  search:
+    location: navbar
+    type: overlay
+    copy-button: false
+
+  navbar:
+    logo: assets/img/logo.svg
+    logo-alt: "NG monogram"
+    title: "Natalia Gumińska"
+    collapse-below: lg
+    pinned: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Software"
+        href: software.qmd
+      - text: "Stack"
+        href: stack.qmd
+      - text: "Publications"
+        href: publications/index.qmd
+      - text: "Illustrations"
+        href: illustrations/index.qmd
+      - text: "Side quests"
+        href: side-quests.qmd
+      - text: "CV"
+        href: cv/index.qmd
+    right:
+      - text: "Contact"
+        href: contact.qmd
+      - icon: github
+        href: https://github.com/nemitheasura
+        aria-label: "GitHub"
+        target: _blank
+      - icon: linkedin
+        href: https://www.linkedin.com/in/natalia-gumi%C5%84ska-49b162115/
+        aria-label: "LinkedIn"
+        target: _blank
+      - icon: envelope
+        href: mailto:nguminska@iimcb.gov.pl
+        aria-label: "Email"
+
+  page-footer:
+    left: |
+      &copy; 2026 Natalia Gumińska &middot; built with
+      [Quarto](https://quarto.org)
+    center:
+      - text: "About"
+        href: about.qmd
+      - text: "Publications"
+        href: publications/index.qmd
+      - text: "CV"
+        href: cv/index.qmd
+      - text: "Contact"
+        href: contact.qmd
+    right:
+      - icon: github
+        href: https://github.com/nemitheasura
+        aria-label: "GitHub"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/natalia-gumi%C5%84ska-49b162115/
+        aria-label: "LinkedIn"
+
+# ---------------------------------------------------------------------------
+# Look and feel.
+#
+# Two theme bundles. Each is a Bootswatch base, plus a token file that defines
+# the palette as CSS custom properties, plus the shared component rules. The
+# token files are the only place colours are declared; custom.scss never
+# hard-codes a hex value.
+# ---------------------------------------------------------------------------
+format:
+  html:
+    theme:
+      light:
+        - cosmo
+        - styles/theme-light.scss
+        - styles/custom.scss
+      dark:
+        - darkly
+        - styles/theme-dark.scss
+        - styles/custom.scss
+    toc: true
+    toc-depth: 2
+    toc-location: right
+    toc-title: "On this page"
+    anchor-sections: true
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: github
+    html-math-method: mathjax
+    link-external-newwindow: true
+    link-external-icon: false
+    email-obfuscation: references
+    fig-responsive: true
+    grid:
+      sidebar-width: 240px
+      body-width: 920px
+      margin-width: 240px
+    include-in-header: assets/head.html
+    include-after-body: assets/scripts.html
+    lang: en
+
+execute:
+  freeze: auto
+  echo: true
+  warning: false
+
+# NOTE: author metadata is deliberately not set globally. Setting it makes
+# Quarto render a redundant author/affiliation block at the top of every page.
+# SEO authorship and JSON-LD structured data are handled in assets/head.html.
+#
+# NOTE: there is no `bibliography:` key on purpose. With one present, Pandoc
+# tries to resolve "@handle" strings (e.g. @nemitheasura) as citation keys and
+# emits warnings for every social handle on the site.

@@ -1,0 +1,170 @@
+---
+pagetitle: "Natalia Gumińska, PhD"
+description: >-
+  Postdoctoral researcher in RNA biology and bioinformatics. Nanopore direct RNA
+  sequencing, poly(A) tail biology, and open-source research software.
+toc: false
+anchor-sections: false
+---
+
+::: {.hero}
+<div>
+<span class="eyebrow">RNA biology · Research software · Data visualisation</span>
+
+<h1 class="hero-title">Natalia Gumińska, PhD</h1>
+
+<p class="hero-role">Postdoctoral researcher · Laboratory of RNA Biology (ERA Chairs Group) · IIMCB Warsaw</p>
+
+<p class="hero-summary">
+I study RNA tails: how long they are, what they are actually made of, and how to
+measure both reliably. The work runs from the bench to the basecaller, and it
+ends in software other people can install and results other people can
+reproduce. I wrote <a href="https://github.com/LRB-IIMCB/ninetails">ninetails</a>,
+which finds the residues in a poly(A) tail that are not adenosine.
+</p>
+
+<div class="btn-row">
+  <a class="btn-cta" href="software.qmd"><i class="bi bi-code-square"></i> Software</a>
+  <a class="btn-ghost" href="publications/index.qmd"><i class="bi bi-journal-text"></i> Publications</a>
+  <a class="btn-ghost" href="cv/index.qmd"><i class="bi bi-file-earmark-person"></i> CV</a>
+</div>
+
+<ul class="hero-facts">
+  <li><i class="bi bi-geo-alt"></i> Warsaw, Poland</li>
+  <li><i class="bi bi-building"></i> IIMCB</li>
+  <li><i class="bi bi-braces"></i> R · Python · SQL</li>
+</ul>
+</div>
+
+<div>
+
+```{=html}
+<!-- The signature element: a nanopore ionic-current trace. The long flat run is
+     a poly(A) tail; the amber excursion is a single non-adenosine residue. This
+     is the thing ninetails exists to find, so it is the thing the page opens
+     with. The line draws itself once, then holds. -->
+<svg class="trace" viewBox="0 0 340 150" role="img" fill="none"
+     xmlns="http://www.w3.org/2000/svg"
+     aria-label="Stylised nanopore current trace: a flat poly(A) plateau interrupted by one non-adenosine residue.">
+  <line class="trace-grid" x1="0" y1="118" x2="340" y2="118"/>
+  <line class="trace-grid" x1="0" y1="40"  x2="340" y2="40"/>
+
+  <path class="trace-line" d="M0 96 L8 78 L14 100 L20 70 L27 92 L33 66 L40 88
+    L46 72 L53 95 L60 62 L66 84 L72 60
+    L80 58 L104 60 L128 57 L152 59 L176 58
+    L184 58 L196 57 L214 59 L236 58 L258 60
+    L266 84 L272 62 L279 90 L286 68 L292 96 L299 74 L306 98 L312 70 L319 94
+    L326 76 L333 100 L340 82"/>
+
+  <path class="trace-blip" d="M176 58 L181 30 L186 33 L191 57"/>
+  <circle class="trace-blip" cx="183" cy="31" r="3.2"/>
+
+  <text class="trace-label" x="80" y="132">poly(A) plateau</text>
+  <text class="trace-label trace-label--signal" x="176" y="22" text-anchor="middle">non-A</text>
+</svg>
+```
+
+</div>
+:::
+
+## What I do
+
+::: {.card-grid}
+::: {.u-card .reveal .d1}
+<span class="card-icon"><i class="bi bi-dna"></i></span>
+
+### Research
+Poly(A) tail dynamics and RNA metabolism, read directly off nanopore signal.
+Earlier work on intron removal order, circular RNA and extrachromosomal DNA in
+euglenids.
+:::
+
+::: {.u-card .reveal .d2}
+<span class="card-icon"><i class="bi bi-code-square"></i></span>
+
+### Research software
+R packages for long-read analysis, a deep-learning classifier for tail
+composition, and the relational databases that keep a sequencing lab's metadata
+from turning back into spreadsheets.
+:::
+
+::: {.u-card .reveal .d3}
+<span class="card-icon"><i class="bi bi-easel"></i></span>
+
+### Scientific illustration
+Figures, schematics and graphical abstracts for papers and talks. The same
+drawing habit, off the clock, is where the digital art comes from.
+:::
+:::
+
+## Currently
+
+::: {.highlight-box .reveal}
+Postdoctoral researcher in the **Laboratory of RNA Biology (ERA Chairs Group)** at
+the **International Institute of Molecular and Cell Biology in Warsaw**, since
+2020. Alongside research I am finishing postgraduate studies in **Python Data
+Science Engineering** at Koźminski University, after **Data Science with R** at
+the University of Warsaw.
+:::
+
+### Research interests
+
+::: {.tag-row}
+[poly(A) tail dynamics]{.tag} [Non-adenosine residues]{.tag}
+[Nanopore direct RNA-seq]{.tag} [RNA modifications]{.tag}
+[Signal-level analysis]{.tag} [Euglenids]{.tag} [Circular DNA]{.tag}
+[Method development]{.tag} [Reproducible research]{.tag}
+:::
+
+## Selected work
+
+::: {.card-grid}
+::: {.u-card .reveal .d1}
+### ninetails <span class="status-badge status-active">author</span>
+Finds non-adenosine residues inside poly(A) tails in nanopore direct RNA reads,
+by turning raw signal into an image and handing it to a convolutional network.
+Published in *Nature Communications* (2025).
+
+::: {.tag-row}
+[R]{.pill} [Nanopore]{.pill} [Deep learning]{.pill}
+:::
+
+[Repository](https://github.com/LRB-IIMCB/ninetails){.btn-ghost}
+[Docs](https://lrb-iimcb.github.io/ninetails/){.btn-ghost}
+:::
+
+::: {.u-card .reveal .d2}
+### nanotail2 <span class="status-badge status-active">author</span>
+R tooling for poly(A) tail *length*: summarising distributions, comparing
+conditions, and producing figures that survive review. The length half of the
+pair; ninetails is the composition half.
+
+::: {.tag-row}
+[R]{.pill} [Statistics]{.pill} [ggplot2]{.pill}
+:::
+
+[Organisation](https://github.com/LRB-IIMCB){.btn-ghost}
+:::
+
+::: {.u-card .reveal .d3}
+### Laboratory databases <span class="status-badge status-maintained">maintained</span>
+Relational schemas tracking samples, libraries, sequencing runs and their
+metadata, with an audit trail. Structured records instead of a shared drive full
+of `final_v3_REAL.xlsx`.
+
+::: {.tag-row}
+[SQL]{.pill} [Schema design]{.pill}
+:::
+
+[More on Software](software.qmd){.btn-ghost}
+:::
+:::
+
+## Elsewhere
+
+::: {.btn-row}
+<a class="btn-ghost" href="https://github.com/nemitheasura"><i class="bi bi-github"></i> GitHub</a>
+<a class="btn-ghost" href="https://orcid.org/0000-0002-4599-2897"><i class="bi bi-person-badge"></i> ORCID</a>
+<a class="btn-ghost" href="https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en"><i class="bi bi-mortarboard"></i> Google Scholar</a>
+<a class="btn-ghost" href="contact.qmd"><i class="bi bi-envelope"></i> Contact</a>
+:::

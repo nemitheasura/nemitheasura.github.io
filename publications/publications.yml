@@ -1,0 +1,105 @@
+# ---------------------------------------------------------------------------
+# Publication data. This is the single source of truth for the Publications
+# page; index.qmd reads it through Quarto's listing engine.
+#
+# To add a paper, append an entry. Field reference:
+#
+#   title       required. Sentence case, as published.
+#   author      required. Display string, not a list, so that "et al." and
+#               "(incl. Gumińska N.)" render exactly as written.
+#   date        required. YYYY-MM-DD. Only the year is displayed, but the full
+#               date controls sort order within a year.
+#   journal     shown under the author line.
+#   doi         shown as a linked DOI. Omit if there is none.
+#   path        where the card links to. Use the DOI URL.
+#   categories  drive the filter chips. Keep the vocabulary small and reuse it:
+#               First author | Co-author | Journal article | Preprint |
+#               Method | Nanopore | poly(A) | Euglenids | mRNA therapeutics
+#   description optional one-line plain-language summary.
+#
+# VERIFY BEFORE PUBLISHING: entries below the marked line were reconstructed
+# from the CV text and are missing DOIs. Fill them in, or regenerate the whole
+# file from references.bib with scripts/generate-publications.R.
+# ---------------------------------------------------------------------------
+
+- title: >-
+    Direct profiling of non-adenosines in poly(A) tails of endogenous and
+    therapeutic mRNAs with Ninetails
+  author: "Gumińska N., Krawczyk P.S., et al."
+  date: "2025-03-14"
+  journal: "Nature Communications"
+  doi: "10.1038/s41467-025-57787-6"
+  path: "https://doi.org/10.1038/s41467-025-57787-6"
+  categories: [First author, Journal article, Method, Nanopore, "poly(A)"]
+  description: >-
+    A neural-network method that reads non-adenosine residues directly from
+    nanopore signal, in both cellular and therapeutic mRNA.
+
+- title: >-
+    Re-adenylation by TENT5A enhances efficacy of SARS-CoV-2 mRNA vaccines
+  author: "Krawczyk P.S., et al. (incl. Gumińska N.)"
+  date: "2025-01-01"
+  journal: "Nature"
+  categories: [Co-author, Journal article, "poly(A)", mRNA therapeutics]
+  description: >-
+    Cellular re-adenylation of vaccine mRNA extends its lifetime and improves
+    the immune response.
+
+- title: >-
+    Polyadenylation landscape after in vivo long-term potentiation in the rat
+    brain
+  author: "Gumińska N., et al."
+  date: "2025-01-01"
+  journal: "RNA"
+  categories: [First author, Journal article, "poly(A)", Nanopore]
+  description: >-
+    Tail-length remodelling in the hippocampus following long-term
+    potentiation.
+
+- title: >-
+    rDNAmine: a new tool for the analysis of long repetitive sequences
+  author: "Czarnocka-Cieciura A., Gumińska N."
+  date: "2026-01-01"
+  journal: "Yeast"
+  doi: "10.1002/yea.70023"
+  path: "https://doi.org/10.1002/yea.70023"
+  categories: [Co-author, Journal article, Method]
+  description: >-
+    Resolving rDNA repeat arrays from long reads, where short-read assemblies
+    collapse.
+
+- title: >-
+    A new type of circular RNA derived from nonconventional introns in nuclear
+    genes of euglenids
+  author: "Gumińska N., Zakryś B., Milanowski R."
+  date: "2021-01-01"
+  journal: "Journal of Molecular Biology"
+  categories: [First author, Journal article, Euglenids]
+  description: >-
+    Nonconventional introns are excised as circles, a class of circular RNA not
+    previously described.
+
+- title: >-
+    Order of removal of conventional and nonconventional introns from nuclear
+    transcripts of Euglena gracilis
+  author: "Gumińska N., Płecha M., Zakryś B., Milanowski R."
+  date: "2018-01-01"
+  journal: "PLOS Genetics"
+  categories: [First author, Journal article, Euglenids]
+  description: >-
+    Splicing order in a genome that carries two structurally distinct intron
+    types.
+
+# --------------------------------------------------------------------------
+# PLACEHOLDERS — replace with the remaining entries from your ORCID record.
+# The CV states 17 publications, 9 as first author; 6 are listed above.
+# Delete any placeholder you do not fill in: an empty listing card is worse
+# than a shorter list.
+# --------------------------------------------------------------------------
+
+- title: "Placeholder: remaining publication title"
+  author: "Gumińska N., et al."
+  date: "2020-01-01"
+  journal: "Journal name"
+  categories: [First author, Journal article]
+  description: "Replace this entry, or delete it."

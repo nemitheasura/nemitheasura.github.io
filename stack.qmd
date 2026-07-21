@@ -1,0 +1,367 @@
+---
+title: "Stack"
+description: >-
+  Technology stack: languages, frameworks, databases, cloud and DevOps tooling,
+  scientific computing, AI/LLM tools, and development workflow.
+toc: true
+---
+
+::: {.lead .reveal}
+What I actually reach for, and how far I would go with each before asking for
+help. The bars are self-assessed on a five-point scale: **1** means I can read
+it, **3** means I use it in production work without supervision, **5** means
+people ask me questions about it. There is no 5 in a category just to fill the
+row.
+:::
+
+::: {.highlight-box .reveal}
+**Editing this page.** Each row is a `.stack-row` with a `--level` custom
+property between 1 and 5. Change the number, the bar changes. Nothing else needs
+touching.
+:::
+
+## Languages
+
+```{=html}
+<div class="stack-group reveal">
+
+  <div class="stack-row">
+    <div class="stack-name">R
+      <small>Primary language. Package development, S3/S4, tidyverse and
+      Bioconductor idioms, C++ interop via Rcpp when profiling demands it.</small>
+    </div>
+    <div class="stack-meter" style="--level: 5" role="img" aria-label="Proficiency 5 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Python
+      <small>Scientific stack and deep learning. Currently formalising it
+      through postgraduate study rather than picking it up ad hoc.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">SQL
+      <small>Schema design, normalisation, window functions, query tuning for
+      laboratory metadata of moderate size.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Bash
+      <small>Pipeline glue, cluster job submission, text wrangling with the
+      standard Unix toolchain.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">JavaScript
+      <small>Enough for browser-side interactivity, small tools, and reading
+      other people's front ends. Not a specialism.</small>
+    </div>
+    <div class="stack-meter" style="--level: 2" role="img" aria-label="Proficiency 2 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">PHP
+      <small>Used specifically for the laboratory database front end: PDO,
+      prepared statements, session-based access control.</small>
+    </div>
+    <div class="stack-meter" style="--level: 3" role="img" aria-label="Proficiency 3 of 5"></div>
+  </div>
+
+</div>
+```
+
+## Frameworks and libraries
+
+```{=html}
+<div class="stack-group reveal">
+
+  <div class="stack-row">
+    <div class="stack-name">tidyverse
+      <small>dplyr, purrr, stringr, tidyr. The default idiom for anything
+      data-shaped.</small>
+    </div>
+    <div class="stack-meter" style="--level: 5" role="img" aria-label="Proficiency 5 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">ggplot2
+      <small>Publication figures, custom scales and themes, and the occasional
+      grid-level extension when the grammar runs out.</small>
+    </div>
+    <div class="stack-meter" style="--level: 5" role="img" aria-label="Proficiency 5 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Bioconductor
+      <small>Rsamtools, GenomicRanges, Biostrings, and the S4 conventions that
+      come with them.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Shiny
+      <small>Internal tools and result viewers, deployed to a lab Shiny
+      Server. Reactive logic, module structure, download handlers.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">NumPy, pandas, scikit-learn
+      <small>Array work, tabular analysis, classical models and evaluation.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Keras, TensorFlow
+      <small>Convolutional classifiers for signal-derived images: training,
+      evaluation, and shipping a model inside an R package.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">roxygen2, testthat, pkgdown
+      <small>The R package toolchain, used on every project rather than
+      retrofitted at the end.</small>
+    </div>
+    <div class="stack-meter" style="--level: 5" role="img" aria-label="Proficiency 5 of 5"></div>
+  </div>
+
+</div>
+```
+
+## Databases
+
+```{=html}
+<div class="stack-group reveal">
+
+  <div class="stack-row">
+    <div class="stack-name">MySQL / MariaDB
+      <small>Production database for laboratory metadata. Schema design,
+      constraints, triggers for audit logging, phpMyAdmin administration.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">SQLite
+      <small>Embedded storage for pipeline state and package test
+      fixtures.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">PostgreSQL
+      <small>Comfortable, though most lab infrastructure landed on MySQL for
+      hosting reasons rather than technical ones.</small>
+    </div>
+    <div class="stack-meter" style="--level: 3" role="img" aria-label="Proficiency 3 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">DBI, dbplyr, pool
+      <small>The R side of every database above: parameterised queries,
+      lazy tables, connection pooling under Shiny.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">HDF5 and POD5
+      <small>Not databases in the usual sense, but the same problem: indexed
+      random access to raw nanopore signal at scale.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+</div>
+```
+
+## Scientific computing and sequencing
+
+```{=html}
+<div class="stack-group reveal">
+
+  <div class="stack-row">
+    <div class="stack-name">Nanopore direct RNA sequencing
+      <small>Library preparation through analysis: RNA002 and RNA004
+      chemistries, run design, troubleshooting.</small>
+    </div>
+    <div class="stack-meter" style="--level: 5" role="img" aria-label="Proficiency 5 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Dorado, Guppy (legacy)
+      <small>Basecalling, model selection, poly(A) estimation flags, and the
+      BAM tags that carry the results downstream.</small>
+    </div>
+    <div class="stack-meter" style="--level: 5" role="img" aria-label="Proficiency 5 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">minimap2, samtools
+      <small>Long-read alignment and BAM manipulation, including the tag
+      handling that most tutorials skip.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Signal-level analysis
+      <small>Segmentation, normalisation, samples-per-base estimation, and
+      converting between signal space and nucleotide space without lying about
+      the uncertainty.</small>
+    </div>
+    <div class="stack-meter" style="--level: 5" role="img" aria-label="Proficiency 5 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">HPC and SLURM
+      <small>Batch submission, resource requests, and parallelising R across
+      nodes without deadlocking on shared storage.</small>
+    </div>
+    <div class="stack-meter" style="--level: 3" role="img" aria-label="Proficiency 3 of 5"></div>
+  </div>
+
+</div>
+```
+
+## Cloud, DevOps and operating systems
+
+```{=html}
+<div class="stack-group reveal">
+
+  <div class="stack-row">
+    <div class="stack-name">Git and GitHub
+      <small>Branching, review, releases, issue-driven development across
+      organisation and personal repositories.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">GitHub Actions
+      <small>R CMD check matrices, pkgdown deployment, and static site
+      publishing.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Docker
+      <small>Reproducible analysis environments and pinned toolchains for
+      published pipelines.</small>
+    </div>
+    <div class="stack-meter" style="--level: 3" role="img" aria-label="Proficiency 3 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Linux
+      <small>Daily driver for analysis. Server administration at the level a
+      lab needs: users, services, storage, cron.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Windows and WSL
+      <small>Where the RStudio work happens, with WSL for the Unix half of the
+      toolchain.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Shiny Server, Apache
+      <small>Deploying internal applications and the database front end,
+      including the font and graphics-device quirks that only appear in
+      production.</small>
+    </div>
+    <div class="stack-meter" style="--level: 3" role="img" aria-label="Proficiency 3 of 5"></div>
+  </div>
+
+</div>
+```
+
+## AI and LLM tooling
+
+```{=html}
+<div class="stack-group reveal">
+
+  <div class="stack-row">
+    <div class="stack-name">Deep learning for signal data
+      <small>Convolutional architectures on signal-derived images, class
+      imbalance handling, and honest evaluation on held-out chemistries rather
+      than a random split.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Computer vision
+      <small>The framing behind ninetails: treat a hard 1D discrimination
+      problem as an easy 2D one.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">LLM-assisted development
+      <small>Code review, refactoring and documentation drafting, with the
+      output treated as a proposal to be checked, never as a commit.</small>
+    </div>
+    <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-name">Retrieval and embeddings
+      <small>Working knowledge: literature search over local corpora, vector
+      stores, chunking strategies.</small>
+    </div>
+    <div class="stack-meter" style="--level: 2" role="img" aria-label="Proficiency 2 of 5"></div>
+  </div>
+
+</div>
+```
+
+## Authoring and workflow
+
+::: {.card-grid}
+::: {.u-card .reveal .d1}
+#### Reproducible reporting
+::: {.tag-row}
+[Quarto]{.tag} [R Markdown]{.tag} [knitr]{.tag} [renv]{.tag} [Typst]{.tag}
+:::
+:::
+
+::: {.u-card .reveal .d2}
+#### Figures and illustration
+::: {.tag-row}
+[ggplot2]{.tag} [Inkscape]{.tag} [Affinity]{.tag} [Procreate]{.tag}
+[SVG by hand]{.tag}
+:::
+:::
+
+::: {.u-card .reveal .d3}
+#### Practice
+::: {.tag-row}
+[Code review]{.tag} [Semantic versioning]{.tag} [Deprecation cycles]{.tag}
+[Issue-driven work]{.tag} [Data management plans]{.tag}
+:::
+:::
+:::
+
+::: {.btn-row}
+<a class="btn-cta" href="software.qmd"><i class="bi bi-code-square"></i> See it applied</a>
+<a class="btn-ghost" href="cv/index.qmd"><i class="bi bi-file-earmark-person"></i> CV</a>
+:::

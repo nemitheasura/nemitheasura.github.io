@@ -1,0 +1,30 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+*.rmarkdown
+*.quarto_ipynb
+
+# Rendered artifacts (regenerated from source)
+cv/*.pdf.md
+publications/*.bak
+publications/publications.yml.*.bak
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# OS and editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Node, only if JS tooling is added later
+node_modules/

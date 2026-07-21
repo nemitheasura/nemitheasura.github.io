@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+// ---------------------------------------------------------------------------
+// Light palette.
+//
+// Derived from the ninetails documentation site (#2C7BB6) but pushed cooler and
+// deeper so body text can sit at a comfortable contrast against a tinted paper
+// rather than pure white. Amber is the "signal" colour: it marks the one thing
+// on a page that is different from everything around it, which is exactly what
+// a non-adenosine residue is in a poly(A) tail.
+// ---------------------------------------------------------------------------
+$paper:      #f4f6f8;
+$surface:    #ffffff;
+$surface-2:  #eef2f5;
+$ink:        #0f1720;
+$ink-2:      #4c5a66;
+$ink-3:      #74838f;
+$rule:       #dce3e9;
+$accent:     #1f6f9c;
+$accent-ink: #17567a;
+$signal:     #b0741a;
+
+// Bootstrap overrides. Keeping these in sync with the tokens above means
+// Quarto's own chrome (navbar, footer, TOC, search) inherits the palette.
+$body-bg:              $paper;
+$body-color:           $ink;
+$primary:              $accent;
+$link-color:           $accent-ink;
+$border-color:         $rule;
+$navbar-bg:            $surface;
+$navbar-light-color:   $ink-2;
+$navbar-light-hover-color:  $accent;
+$navbar-light-active-color: $ink;
+$footer-bg:            $surface;
+$code-color:           $accent-ink;
+$border-radius:        4px;
+
+/*-- scss:rules --*/
+:root {
+  --paper:      #{$paper};
+  --surface:    #{$surface};
+  --surface-2:  #{$surface-2};
+  --ink:        #{$ink};
+  --ink-2:      #{$ink-2};
+  --ink-3:      #{$ink-3};
+  --rule:       #{$rule};
+  --accent:     #{$accent};
+  --accent-ink: #{$accent-ink};
+  --signal:     #{$signal};
+
+  --accent-wash: rgba(31, 111, 156, 0.08);
+  --signal-wash: rgba(176, 116, 26, 0.10);
+  --shadow:      0 1px 2px rgba(15, 23, 32, 0.04),
+                 0 8px 24px rgba(15, 23, 32, 0.06);
+  --trace-grid:  rgba(31, 111, 156, 0.10);
+}

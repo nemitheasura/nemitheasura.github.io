@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img"
+     aria-label="Natalia Gumińska, PhD">
+  <rect width="1200" height="630" fill="#0e151c"/>
+  <path d="M0 470 L120 470 L360 466 L600 468 L840 467 L1080 469 L1200 468"
+        fill="none" stroke="#1f6f9c" stroke-width="4"/>
+  <path d="M600 468 L618 400 L636 468" fill="none" stroke="#b0741a" stroke-width="5"/>
+  <text x="90" y="250" font-family="system-ui, sans-serif" font-size="76"
+        font-weight="700" fill="#e4ecf2">Natalia Gumińska, PhD</text>
+  <text x="90" y="316" font-family="ui-monospace, monospace" font-size="30"
+        fill="#9fb0bd">RNA biology · Research software · IIMCB Warsaw</text>
+</svg>

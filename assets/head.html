@@ -1,0 +1,92 @@
+<!-- ------------------------------------------------------------------------
+     Injected into <head> on every page (include-in-header in _quarto.yml).
+
+     Quarto already emits <title>, description, canonical and Open Graph tags
+     from page front matter and the `website:` block. What is added here is the
+     part Quarto cannot know: authorship, the JSON-LD Person record that
+     Google, ORCID scrapers and Scholar use, and the theme colour.
+
+     Keep the JSON-LD in sync with _variables.yml when details change.
+     ------------------------------------------------------------------------ -->
+
+<meta name="author" content="Natalia Gumińska">
+<meta name="keywords" content="Natalia Gumińska, RNA biology, poly(A) tail,
+      nanopore, direct RNA sequencing, bioinformatics, research software, R,
+      Python, ninetails, IIMCB">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1f6f9c" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e151c" media="(prefers-color-scheme: dark)">
+
+<!-- Open Graph image. Quarto sets og:title/og:description per page; only the
+     image needs an absolute URL, and it must be absolute to render in previews.
+
+     TODO: this points at og-image.PNG and only assets/img/og-image.svg exists.
+     Facebook, LinkedIn, Slack and X will not render an SVG preview. Export the
+     SVG to a 1200x630 PNG at assets/img/og-image.png, e.g.
+
+       inkscape assets/img/og-image.svg -w 1200 -h 630 \
+                -o assets/img/og-image.png
+
+     Until then the preview card falls back to plain text. -->
+<meta property="og:image" content="https://nemitheasura.github.io/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Natalia Gumińska, PhD — RNA biology and research software">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:image" content="https://nemitheasura.github.io/assets/img/og-image.png">
+
+<link rel="me" href="https://github.com/nemitheasura">
+<link rel="me" href="https://orcid.org/0000-0002-4599-2897">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Natalia Gumińska",
+  "givenName": "Natalia",
+  "familyName": "Gumińska",
+  "honorificSuffix": "PhD",
+  "url": "https://nemitheasura.github.io",
+  "image": "https://nemitheasura.github.io/assets/img/profile.svg",
+  "jobTitle": "Postdoctoral Researcher",
+  "email": "mailto:nguminska@iimcb.gov.pl",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "https://orcid.org/0000-0002-4599-2897"
+  },
+  "worksFor": {
+    "@type": "ResearchOrganization",
+    "name": "International Institute of Molecular and Cell Biology in Warsaw",
+    "alternateName": "IIMCB",
+    "url": "https://www.iimcb.gov.pl",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Ks. Trojdena 4",
+      "postalCode": "02-109",
+      "addressLocality": "Warsaw",
+      "addressCountry": "PL"
+    }
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Warsaw" },
+    { "@type": "CollegeOrUniversity", "name": "Koźminski University" }
+  ],
+  "knowsAbout": [
+    "RNA biology",
+    "Poly(A) tail metabolism",
+    "Oxford Nanopore direct RNA sequencing",
+    "Bioinformatics",
+    "Research software engineering",
+    "Scientific illustration"
+  ],
+  "knowsLanguage": ["pl", "en"],
+  "sameAs": [
+    "https://github.com/nemitheasura",
+    "https://orcid.org/0000-0002-4599-2897",
+    "https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en",
+    "https://www.linkedin.com/in/natalia-gumi%C5%84ska-49b162115/"
+  ]
+}
+</script>

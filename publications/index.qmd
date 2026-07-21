@@ -1,0 +1,81 @@
+---
+title: "Publications"
+description: >-
+  Peer-reviewed publications, preprints and conference presentations by
+  Natalia Gumińska, PhD. Searchable and filterable.
+pagetitle: "Publications"
+toc: true
+listing:
+  # The listing reads publications.yml directly. Adding a paper there is the
+  # only step needed for it to appear here, in the RSS feed, and in the filter
+  # vocabulary.
+  id: papers
+  contents: publications.yml
+  type: default
+  sort: "date desc"
+  sort-ui: [date, title, journal]
+  filter-ui: [title, author, journal, categories]
+  categories: cloud
+  fields: [date, title, author, journal, description, categories]
+  field-display-names:
+    journal: "Published in"
+  date-format: "YYYY"
+  page-size: 25
+  feed:
+    title: "Natalia Gumińska — publications"
+    type: partial
+---
+
+::: {.lead}
+Peer-reviewed articles and preprints. Use the search box to filter by any field,
+or click a category to narrow the list. The complete and canonical record is on
+[ORCID](https://orcid.org/0000-0002-4599-2897) and
+[Google Scholar](https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en).
+:::
+
+::: {#papers}
+:::
+
+## Conference presentations
+
+Selected talks and posters. Awarded presentations are marked.
+
+::: {.timeline .reveal}
+::: {.timeline-item}
+<div class="timeline-date">2024 · Edinburgh</div>
+<div class="timeline-title">Detecting non-adenosine residues in poly(A) tails <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-org">29th Annual Meeting of the RNA Society</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2023 · Warsaw</div>
+<div class="timeline-title">Poly(A) tail composition from nanopore signal <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-org">1st Polish RNA Meeting</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2022 · Boulder</div>
+<div class="timeline-title">Signal-level analysis of RNA tailing <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-org">27th Annual Meeting of the RNA Society</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2019 · Rome</div>
+<div class="timeline-title">Circular extrachromosomal DNA in euglenids <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-org">8th European Congress of Protistology</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2017 · Prague</div>
+<div class="timeline-title">Intron removal order in <em>Euglena gracilis</em></div>
+<div class="timeline-org">ISOP Annual Meeting — Holz-Conner Travel Award</div>
+:::
+:::
+
+::: {.highlight-box}
+**Presentation titles above are placeholders reconstructed from the award list in
+the CV.** Replace them with the titles as submitted, or remove the ones you do
+not want listed.
+:::
+
+::: {.btn-row}
+<a class="btn-ghost" href="https://orcid.org/0000-0002-4599-2897"><i class="bi bi-person-badge"></i> ORCID</a>
+<a class="btn-ghost" href="https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en"><i class="bi bi-mortarboard"></i> Google Scholar</a>
+<a class="btn-ghost" href="../cv/index.qmd"><i class="bi bi-file-earmark-person"></i> CV</a>
+:::

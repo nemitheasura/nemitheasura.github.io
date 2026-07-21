@@ -1,0 +1,52 @@
+/*-- scss:defaults --*/
+// ---------------------------------------------------------------------------
+// Dark palette.
+//
+// Not an inversion of the light one. The paper goes to a desaturated blue-black
+// rather than neutral gray, the accent lifts to stay legible on it, and the
+// amber signal warms slightly so it still reads as the odd one out. Same token
+// names as theme-light.scss, so custom.scss needs no dark-mode branches.
+// ---------------------------------------------------------------------------
+$paper:      #0e151c;
+$surface:    #151f28;
+$surface-2:  #1c2833;
+$ink:        #e4ecf2;
+$ink-2:      #9fb0bd;
+$ink-3:      #74858f;
+$rule:       #253340;
+$accent:     #62b4e2;
+$accent-ink: #8ac9ef;
+$signal:     #e0a951;
+
+$body-bg:              $paper;
+$body-color:           $ink;
+$primary:              $accent;
+$link-color:           $accent-ink;
+$border-color:         $rule;
+$navbar-bg:            $surface;
+$navbar-dark-color:    $ink-2;
+$navbar-dark-hover-color:  $accent;
+$navbar-dark-active-color: $ink;
+$footer-bg:            $surface;
+$code-color:           $accent-ink;
+$border-radius:        4px;
+
+/*-- scss:rules --*/
+:root {
+  --paper:      #{$paper};
+  --surface:    #{$surface};
+  --surface-2:  #{$surface-2};
+  --ink:        #{$ink};
+  --ink-2:      #{$ink-2};
+  --ink-3:      #{$ink-3};
+  --rule:       #{$rule};
+  --accent:     #{$accent};
+  --accent-ink: #{$accent-ink};
+  --signal:     #{$signal};
+
+  --accent-wash: rgba(98, 180, 226, 0.12);
+  --signal-wash: rgba(224, 169, 81, 0.14);
+  --shadow:      0 1px 2px rgba(0, 0, 0, 0.30),
+                 0 8px 24px rgba(0, 0, 0, 0.34);
+  --trace-grid:  rgba(98, 180, 226, 0.14);
+}

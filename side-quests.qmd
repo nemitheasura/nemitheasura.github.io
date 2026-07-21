@@ -1,0 +1,125 @@
+---
+title: "Side quests"
+description: >-
+  Hobby projects, experiments and interests that do not fit a CV heading:
+  gw2timer, digital art, tabletop games, and things learned in public.
+pagetitle: "Side quests"
+toc: true
+---
+
+::: {.lead .reveal}
+Things that are not the main quest. Some of them turned out to be useful anyway,
+which is generally how it goes: the timer taught me more about state management
+than any tutorial, and the drawing habit is why the figures in my papers look
+the way they do.
+:::
+
+## Shipped
+
+::: {.card-grid}
+::: {.u-card .reveal .d1}
+### gw2timer <span class="status-badge status-maintained">maintained</span>
+A lightweight timer for tracking dynamic world events in *Guild Wars 2*. Started
+because I kept missing meta-events; kept going because other people started
+using it. The one hobby that turned into working software.
+
+::: {.tag-row}
+[JavaScript]{.pill} [Web]{.pill} [Personal]{.pill}
+:::
+
+[Repository](https://github.com/nemitheasura/gw2timer){.btn-ghost}
+:::
+
+::: {.u-card .reveal .d2}
+### This website <span class="status-badge status-active">active</span>
+Built with Quarto, deployed from GitHub Actions, no CDN and no tracker. The
+source is public, so if something here is useful, take it.
+
+::: {.tag-row}
+[Quarto]{.pill} [SCSS]{.pill} [GitHub Actions]{.pill}
+:::
+
+[Repository](https://github.com/nemitheasura/nemitheasura.github.io){.btn-ghost}
+:::
+:::
+
+## Experiments
+
+::: {.card-grid}
+::: {.u-card .reveal .d1}
+#### Generative pattern studies
+Small sketches in code: what happens when a plotting grammar is used for
+something that is not data. Occasionally they turn into a conference poster
+background.
+
+::: {.tag-row}
+[R]{.tag} [Generative]{.tag}
+:::
+:::
+
+::: {.u-card .reveal .d2}
+#### Reading nanopore signal by eye
+An ongoing attempt to build the intuition a model has, by staring at enough raw
+traces to predict what the classifier will say before running it. Mixed results,
+which is itself informative.
+
+::: {.tag-row}
+[Signal]{.tag} [Intuition]{.tag}
+:::
+:::
+
+::: {.u-card .reveal .d3}
+#### Python, in public
+Postgraduate coursework, done in the open. Rewriting things I already know in R
+is the fastest way to find out what I understood and what I had memorised.
+
+::: {.tag-row}
+[Python]{.tag} [Learning]{.tag}
+:::
+:::
+:::
+
+## Interests
+
+::: {.card-grid}
+::: {.u-card .reveal .d1}
+<span class="card-icon"><i class="bi bi-brush"></i></span>
+
+#### Digital art
+Character and creature work, mostly fantasy. The gallery lives on the
+[Illustrations](illustrations/index.qmd) page alongside the scientific figures,
+because they are the same skill pointed in different directions.
+:::
+
+::: {.u-card .reveal .d2}
+<span class="card-icon"><i class="bi bi-dice-5"></i></span>
+
+#### Games and fantasy
+Tabletop RPGs, computer RPGs, and the kind of secondary-world fiction that comes
+with an appendix on linguistics. The philology degree was not an accident.
+:::
+
+::: {.u-card .reveal .d3}
+<span class="card-icon"><i class="bi bi-music-note-beamed"></i></span>
+
+#### Music
+Rock, metal and classical, frequently in the same afternoon. Reliable
+accompaniment to long basecalling runs.
+:::
+:::
+
+## Things I would work on given a spare month
+
+::: {.highlight-box .reveal}
+An interactive squiggle explorer that lets a reader scrub through a raw read and
+see the tail call update live; a proper open dataset of hand-annotated tails for
+benchmarking; and a Polish-language introduction to long-read sequencing,
+because the good material is all in English and that is a barrier for no good
+reason.
+:::
+
+::: {.btn-row}
+<a class="btn-ghost" href="illustrations/index.qmd"><i class="bi bi-images"></i> Illustrations</a>
+<a class="btn-ghost" href="software.qmd"><i class="bi bi-code-square"></i> Software</a>
+<a class="btn-ghost" href="contact.qmd"><i class="bi bi-envelope"></i> Contact</a>
+:::

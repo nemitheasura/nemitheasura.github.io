@@ -1,0 +1,14 @@
+# Citation metadata for this website, read by GitHub and by citation tools.
+# Delete this file if you would rather people cited the papers, not the site.
+cff-version: 1.2.0
+message: "If you refer to this site, please cite it as below."
+title: "Natalia Gumińska — personal and academic website"
+type: software
+authors:
+  - family-names: "Gumińska"
+    given-names: "Natalia"
+    orcid: "https://orcid.org/0000-0002-4599-2897"
+    affiliation: "International Institute of Molecular and Cell Biology in Warsaw"
+url: "https://nemitheasura.github.io"
+repository-code: "https://github.com/nemitheasura/nemitheasura.github.io"
+license: MIT

@@ -1,0 +1,17 @@
+# ---------------------------------------------------------------------------
+# Reusable variables. Reference anywhere in content with {{< var key.subkey >}}
+# e.g. {{< var email >}} or {{< var social.github >}}
+# ---------------------------------------------------------------------------
+name: "Natalia Gumińska"
+degree: "PhD"
+role: "Postdoctoral Researcher"
+affiliation: "Laboratory of RNA Biology, ERA Chairs Group, IIMCB"
+location: "Warsaw, Poland"
+email: "nguminska@iimcb.gov.pl"
+
+social:
+  github: "https://github.com/nemitheasura"
+  github_org: "https://github.com/LRB-IIMCB"
+  orcid: "https://orcid.org/0000-0002-4599-2897"
+  scholar: "https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en"
+  linkedin: "https://www.linkedin.com/in/natalia-gumi%C5%84ska-49b162115/"

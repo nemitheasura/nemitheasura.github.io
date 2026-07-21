@@ -1,0 +1,178 @@
+---
+title: "About"
+description: >-
+  Biography, education, employment, grants, awards, teaching and technical
+  background of Natalia Gumińska, PhD.
+toc: true
+---
+
+::: {.lead .reveal}
+I am a postdoctoral researcher in the **Laboratory of RNA Biology (ERA Chairs
+Group)** at the International Institute of Molecular and Cell Biology in Warsaw.
+I work on poly(A) tails: how long they are, what they are actually made of, and
+how to measure both reliably with Oxford Nanopore direct RNA sequencing.
+:::
+
+## Biography
+
+My background is genuinely two-sided. I hold a PhD in molecular biology from the
+Faculty of Biology at the University of Warsaw and, in parallel, degrees in
+Polish philology — literary studies and linguistics — from the Faculty of Polish
+Studies. Reading texts closely and reading sequencing data closely turn out to
+require the same kind of attention: notice the thing that does not fit, then
+work out whether it is a signal or an artefact.
+
+My early research was on euglenids: the order in which conventional and
+nonconventional introns are removed, circular RNAs derived from those introns,
+circular extrachromosomal DNA, and DNA barcoding for environmental samples.
+Since 2020 I have worked on RNA tailing, developing methods and software for
+nanopore direct RNA sequencing. To do that properly I went back to school for
+data science — first R, now Python.
+
+## Employment
+
+::: {.timeline .reveal}
+::: {.timeline-item}
+<div class="timeline-date">2020 — present</div>
+<div class="timeline-title">Postdoctoral Researcher</div>
+<div class="timeline-org">Laboratory of RNA Biology (ERA Chairs Group), International Institute of Molecular and Cell Biology in Warsaw</div>
+<p>Poly(A) tail biology and nanopore direct RNA sequencing. Method development
+and research software, including ninetails and nanotail2, plus the laboratory's
+sequencing metadata infrastructure.</p>
+:::
+:::
+
+## Education
+
+::: {.timeline .reveal}
+::: {.timeline-item}
+<div class="timeline-date">2025 — present</div>
+<div class="timeline-title">Postgraduate studies, Python Data Science Engineer</div>
+<div class="timeline-org">Koźminski University, Warsaw</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2021 — 2022</div>
+<div class="timeline-title">Postgraduate studies, Data Science with R (with honours)</div>
+<div class="timeline-org">Faculty of Economic Sciences, University of Warsaw</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2015 — 2020</div>
+<div class="timeline-title">PhD in Biology, molecular biology (with honours)</div>
+<div class="timeline-org">Faculty of Biology, University of Warsaw</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2012 — 2015</div>
+<div class="timeline-title">M.Sc. in Biotechnology</div>
+<div class="timeline-org">Faculty of Biology, University of Warsaw</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2012 — 2014</div>
+<div class="timeline-title">M.Sc. in Polish Philology, literary studies and linguistics (with honours)</div>
+<div class="timeline-org">Faculty of Polish Studies, University of Warsaw</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2010 — 2013</div>
+<div class="timeline-title">B.Sc. in Biotechnology</div>
+<div class="timeline-org">Faculty of Biology, University of Warsaw</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2009 — 2012</div>
+<div class="timeline-title">B.Sc. in Polish Philology</div>
+<div class="timeline-org">Faculty of Polish Studies, University of Warsaw</div>
+:::
+:::
+
+## Technical expertise
+
+A short version; the [Stack](stack.qmd) page has the full breakdown with
+proficiency levels.
+
+::: {.card-grid}
+::: {.u-card .reveal .d1}
+#### Method development
+Signal-level analysis of nanopore reads, poly(A) tail length estimation, tail
+composition classification, benchmarking against orthogonal methods.
+:::
+
+::: {.u-card .reveal .d2}
+#### Research software
+R package development end to end: API design, roxygen2 documentation, testthat
+suites, pkgdown sites, CI on GitHub Actions.
+:::
+
+::: {.u-card .reveal .d3}
+#### Data infrastructure
+Relational schema design for laboratory metadata, access control, audit
+logging, and reproducible export to analysis-ready formats.
+:::
+:::
+
+## Research grants
+
+- **2018 — 2021** Characteristics of circular extrachromosomal DNA in euglenids
+  (Euglenida). Polish National Science Centre, Preludium 14
+  (2017/27/N/NZ2/01321). *Principal investigator.*
+- **2017 — 2019** Evaluation of diversity, species composition and population
+  dynamics of phototrophic euglenids in environmental samples from a selected
+  hypereutrophic habitat, based on the V2 18S rDNA region. University of Warsaw,
+  Faculty of Biology research grant for young scientists.
+
+## Awards and scholarships
+
+- **2026** Prof. W. Krzyżosiak Award for the publication *Re-adenylation by
+  TENT5A enhances efficacy of SARS-CoV-2 mRNA vaccines* (*Nature*, 2025), as a
+  team member. Committee on Molecular Cell Biology, Polish Academy of Sciences.
+- **2024** Best poster presentation, 29th Annual Meeting of the RNA Society,
+  Edinburgh.
+- **2023** Best poster presentation, 1st Polish RNA Meeting, Warsaw.
+- **2022** Best poster presentation, 27th Annual Meeting of the RNA Society,
+  Boulder.
+- **2019** Rector's award for scientific achievement (team member).
+- **2019** Best poster presentation, 8th European Congress of Protistology, Rome.
+- **2017** Holz-Conner Travel Award, ISOP annual meeting, Prague.
+- **2016** Rector's award for scientific achievement (team member).
+- **2015 — 2020** Rector's scholarship for PhD students.
+- **2009 — 2014** Rector's scholarship for academic performance, and Indeks
+  Start2Star Scholarship.
+
+## Teaching
+
+- **2026** *A tail of tails: computer vision in nanopore analysis.* Lecturer,
+  Advanced Path mentoring and use-case presentation, Girls Code Fun Foundation,
+  Warsaw.
+- **2024** *Nanopore Direct RNA Sequencing Workshop.* Lecturer, Adam Mickiewicz
+  University, Excellence Initiative Research University (IDUB), Poznań.
+
+## Community service
+
+- **2020 — 2023** Postdoc Representative, International Institute of Molecular
+  and Cell Biology.
+- **2016 — 2018** Secretary of the Electoral Committee, Faculty of Biology,
+  University of Warsaw.
+
+## Courses and certificates
+
+- **2023** Nature Masterclasses trainer-led workshop, *Getting Published:
+  Effectively Communicating Your Research* (online).
+- **2021** An introduction to nanopore direct RNA sequencing, Physalia, Berlin.
+- **2020** Introduction to statistics in R, Physalia, Berlin.
+- **2019** EMBL course, *Shift your DNA and RNA Sequencing Library Preparation
+  into Hyper-Drive*, EMBL Heidelberg.
+- **2018** Basic Python programming and data analysis for biologists, Nencki
+  Institute, Warsaw.
+- **2016** Genome Sequencing (Bioinformatics II) and Finding Hidden Messages in
+  DNA (Bioinformatics I), UC San Diego; Introduction to Genomic Technologies,
+  Johns Hopkins University (Coursera).
+
+## Outside work
+
+Digital art, tabletop and computer RPGs, fantasy, and music — rock, metal and
+classical. One of those hobbies produced actual software. That, and everything
+else that does not fit a CV heading, lives on the
+[Side quests](side-quests.qmd) page.
+
+::: {.btn-row .mt-3}
+<a class="btn-cta" href="cv/index.qmd"><i class="bi bi-file-earmark-person"></i> Full CV</a>
+<a class="btn-ghost" href="publications/index.qmd"><i class="bi bi-journal-text"></i> Publications</a>
+<a class="btn-ghost" href="contact.qmd"><i class="bi bi-envelope"></i> Contact</a>
+:::
