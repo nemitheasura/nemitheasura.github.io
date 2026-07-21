@@ -18,7 +18,9 @@ anchor-sections: false
 <p class="hero-summary">
 I study RNA tails: how long they are, what they are made of, and how to measure
 both reliably. I wrote <a href="https://github.com/LRB-IIMCB/ninetails">ninetails</a>,
-which finds the residues in a poly(A) tail that are not adenosine.
+which finds the residues in a poly(A) tail that are not adenosine. Currently
+finishing postgraduate studies in Python Data Science Engineering at Koźminski
+University.
 </p>
 
 <div class="btn-row">
@@ -72,55 +74,5 @@ composition, and the laboratory's sequencing metadata databases.
 ### Scientific illustration
 Figures, schematics and graphical abstracts, and the logo for the
 [DEGRONOPEDIA](https://degronopedia.com/) web server.
-:::
-:::
-
-## Currently
-
-::: {.highlight-box .reveal}
-Postdoctoral researcher in the **Laboratory of RNA Biology (ERA Chairs Group)**
-at the **International Institute of Molecular and Cell Biology in Warsaw**, since
-2020. Currently finishing postgraduate studies in Python Data Science
-Engineering at Koźminski University.
-:::
-
-## Selected work
-
-::: {.card-grid}
-::: {.u-card .reveal .d1}
-### ninetails <span class="status-badge status-active">author</span>
-Finds non-adenosine residues in poly(A) tails from nanopore direct RNA reads.
-Published in *Nature Communications* (2025).
-
-::: {.tag-row}
-[R]{.pill} [Nanopore]{.pill} [Deep learning]{.pill}
-:::
-
-[Repository](https://github.com/LRB-IIMCB/ninetails){.btn-ghost}
-[Docs](https://lrb-iimcb.github.io/ninetails/){.btn-ghost}
-:::
-
-::: {.u-card .reveal .d2}
-### nanotail2 <span class="status-badge status-active">author</span>
-Poly(A) tail length analysis: distributions, comparisons and figures. The
-length counterpart to ninetails.
-
-::: {.tag-row}
-[R]{.pill} [Statistics]{.pill} [ggplot2]{.pill}
-:::
-
-[Organisation](https://github.com/LRB-IIMCB){.btn-ghost}
-:::
-
-::: {.u-card .reveal .d3}
-### Laboratory databases <span class="status-badge status-maintained">maintained</span>
-Relational schemas for samples, libraries and sequencing runs, with an audit
-trail.
-
-::: {.tag-row}
-[SQL]{.pill} [Schema design]{.pill}
-:::
-
-[More on Software](software.qmd){.btn-ghost}
 :::
 :::

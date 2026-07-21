@@ -179,11 +179,10 @@ workflow builds from a clean checkout with no R installed, so uncommitted fonts
 are simply absent from the deployed site. Because the fallback stack is silent,
 local preview will look right while the live site does not.
 
-Headings sit at weight 640, which the variable font covers. A monospace utility
-face still carries labels, years, tags and status badges; that is a deliberate
-counterpoint to Open Sans, not an oversight. If you would rather match ninetails
-exactly and skip self-hosting, `assets/head.html` documents the one-line Google
-Fonts swap.
+Headings sit at weight 640, which the variable font covers. Open Sans is used
+throughout, including labels, tags, buttons and status badges; monospace is
+reserved for code. If you would rather skip self-hosting, `assets/head.html`
+documents the one-line Google Fonts swap.
 
 Font files are declared with root-absolute paths (`/assets/fonts/…`), which is
 correct for a **user site**. On a project site they need a `/<repo>` prefix or

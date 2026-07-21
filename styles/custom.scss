@@ -89,6 +89,15 @@ a {
   margin-bottom: 2rem;
 }
 
+// Monospace is reserved for code. It is not used as a display face for labels,
+// dates, tags or buttons: mixing a mono UI face with a humanist body face reads
+// as decoration rather than typography, and the site already has enough voice
+// from Open Sans alone.
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
 // ---------------------------------------------------------------------------
 // 2. Layout primitives
 // ---------------------------------------------------------------------------
@@ -132,9 +141,9 @@ a {
 
 .eyebrow {
   display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-3);
   margin-bottom: 0.9rem;
@@ -148,8 +157,8 @@ a {
 }
 
 .hero-role {
-  font-family: var(--font-mono);
-  font-size: 0.86rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--accent-ink);
   margin-bottom: 1.1rem;
 }
@@ -167,8 +176,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem 1.4rem;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--ink-3);
 
   i { color: var(--accent); margin-right: 0.35rem; }
@@ -238,8 +246,8 @@ a {
 // ---------------------------------------------------------------------------
 .tag, .pill, .status-badge {
   display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.78rem;
+  font-weight: 500;
   line-height: 1.5;
   padding: 0.15rem 0.55rem;
   border-radius: 3px;
@@ -259,9 +267,7 @@ a {
 }
 
 .status-badge {
-  font-size: 0.66rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 0.72rem;
   vertical-align: middle;
   margin-left: 0.4rem;
 }
@@ -278,8 +284,8 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.88rem;
+  font-weight: 500;
   padding: 0.45rem 0.9rem;
   border-radius: 4px;
   border: 1px solid transparent;
@@ -342,9 +348,8 @@ a {
 }
 
 .timeline-date {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
+  font-size: 0.82rem;
+  font-weight: 600;
   color: var(--ink-3);
 }
 
@@ -378,10 +383,8 @@ a {
   .ci { font-size: 1.3rem; color: var(--accent); }
 
   .c-label {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
     color: var(--ink-3);
   }
 
@@ -431,7 +434,6 @@ a {
   .g-title { font-weight: 580; font-size: 0.95rem; display: block; }
 
   .g-meta {
-    font-family: var(--font-mono);
     font-size: 0.72rem;
     color: var(--ink-3);
     display: block;
@@ -461,7 +463,6 @@ a {
 
   .lightbox-caption {
     color: #e8eef3;
-    font-family: var(--font-mono);
     font-size: 0.8rem;
     text-align: center;
     margin-top: 0.9rem;
@@ -509,7 +510,6 @@ a {
   }
 
   .listing-date, .listing-categories .listing-category {
-    font-family: var(--font-mono);
     font-size: 0.72rem;
   }
 
@@ -569,11 +569,9 @@ a {
 
 #quarto-margin-sidebar .quarto-secondary-nav-title,
 #TOC > h2, .sidebar-title {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-3);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-2);
 }
 
 .navbar { border-bottom: 1px solid var(--rule); }
@@ -584,12 +582,9 @@ a {
 
 table {
   th {
-    font-family: var(--font-mono);
-    font-size: 0.74rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    font-weight: 600;
   }
 
   td, th { border-color: var(--rule) !important; }
