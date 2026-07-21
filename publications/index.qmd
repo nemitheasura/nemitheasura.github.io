@@ -15,7 +15,10 @@ listing:
   sort: "date desc"
   sort-ui: [date, title, journal]
   filter-ui: [title, author, journal, categories]
-  categories: cloud
+  # No category cloud. Quarto renders it as variable-size text, which is a
+  # word cloud in all but name and carries no information that the per-item
+  # category labels and the search box do not already give.
+  categories: false
   fields: [date, title, author, journal, description, categories]
   field-display-names:
     journal: "Published in"
@@ -27,8 +30,8 @@ listing:
 ---
 
 ::: {.lead}
-Peer-reviewed articles and preprints. Use the search box to filter by any field,
-or click a category to narrow the list. The complete and canonical record is on
+Peer-reviewed articles and preprints. Use the search box to filter by any field.
+The complete and canonical record is on
 [ORCID](https://orcid.org/0000-0002-4599-2897) and
 [Google Scholar](https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en).
 :::

@@ -110,6 +110,17 @@ If you prefer to maintain BibTeX, keep `references.bib` current and run
 It needs `RefManageR` and `yaml`, and **it overwrites hand-written
 `description` fields**, because BibTeX has nowhere to store them.
 
+**Page descriptions.** Every page has a `description` in its front matter. It
+feeds the meta description, the Open Graph tags and the sitemap, and it is
+hidden on the page itself by a rule in `custom.scss` section 12, because Quarto
+otherwise prints it under the title where it restates the heading. Edit it for
+search results, not for readers. If you would rather not have the metadata at
+all, delete the front matter key and the CSS rule together.
+
+**Publication categories.** The listing has `categories: false`, so there is no
+category cloud. Categories still appear as labels on each entry and are still
+searchable through the filter box.
+
 **Colours.** Every colour is a token in `styles/theme-light.scss` and
 `styles/theme-dark.scss`. `custom.scss` contains no hex values at all, only
 `var()` references, so changing `--accent` in both token files re-skins the

@@ -599,6 +599,19 @@ code, kbd, samp, pre {
 // ---------------------------------------------------------------------------
 // 12. Accessibility and chrome
 // ---------------------------------------------------------------------------
+
+// The `description` in each page's front matter feeds the meta description,
+// the Open Graph tags and the sitemap. Quarto ALSO prints it under the page
+// title, where it just restates the heading and the lead paragraph in flatter
+// words. Hidden here rather than deleted from the front matter, so the pages
+// keep their search and social metadata while the reader never sees it twice.
+#title-block-header .description,
+.quarto-title .description,
+.quarto-title-block .description,
+header#title-block-header > .description {
+  display: none;
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
