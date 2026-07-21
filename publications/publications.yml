@@ -55,6 +55,7 @@
     sequencing, illustrated by the example of Euglena gracilis
   author: "Gumińska N., Czarnocka-Cieciura A., Zakryś B., Milanowski R."
   date: "2026-01-03"
+  year: "2026"
   journal: "Methods in Molecular Biology, volume 3013"
   doi: "10.1007/978-1-0716-5142-1_6"
   path: "https://doi.org/10.1007/978-1-0716-5142-1_6"
@@ -66,6 +67,7 @@
 - title: "Protocol for efficient ribodepletion of Euglena gracilis RNA"
   author: "Gumińska N., Hałakuc P., Zakryś B., Milanowski R."
   date: "2026-01-02"
+  year: "2026"
   journal: "Methods in Molecular Biology, volume 3014"
   doi: "10.1007/978-1-0716-5146-9_2"
   path: "https://doi.org/10.1007/978-1-0716-5146-9_2"
@@ -76,6 +78,7 @@
 - title: "rDNAmine: a new tool for the analysis of long repetitive sequences"
   author: "Czarnocka-Cieciura A., Gumińska N."
   date: "2026-01-01"
+  year: "2026"
   journal: "Yeast"
   doi: "10.1002/yea.70023"
   path: "https://doi.org/10.1002/yea.70023"
@@ -92,6 +95,7 @@
     Krawczyk P.S., Mroczek S., Jeleń S., Pagenhart P.U., Bramham C.R.,
     Dziembowski A., Dziembowska M.
   date: "2025-01-05"
+  year: "2025"
   journal: "RNA"
   doi: "10.1261/rna.080485.125"
   path: "https://doi.org/10.1261/rna.080485.125"
@@ -105,6 +109,7 @@
     Kasztelan K., Brouze A., Matylla-Kulińska K., Gumińska N., et al.,
     Dziembowski A., Mroczek S.
   date: "2025-01-04"
+  year: "2025"
   journal: "Nature"
   doi: "10.1038/s41586-025-08842-1"
   path: "https://doi.org/10.1038/s41586-025-08842-1"
@@ -120,6 +125,7 @@
     Gumińska N., Matylla-Kulińska K., Krawczyk P.S., Maj M., Orzeł W.,
     Mackiewicz Z., Brouze A., Mroczek S., Dziembowski A.
   date: "2025-01-03"
+  year: "2025"
   journal: "Nature Communications"
   doi: "10.1038/s41467-025-57787-6"
   path: "https://doi.org/10.1038/s41467-025-57787-6"
@@ -136,6 +142,7 @@
     Puchalska M., Miłek J., Stawikowska A., Krawczyk P.S., Pauzin F.P.,
     Wojtowicz T., Radwańska K., Bramham C.R., Dziembowski A., Dziembowska M.
   date: "2025-01-02"
+  year: "2025"
   journal: "RNA"
   doi: "10.1261/rna.080240.124"
   path: "https://doi.org/10.1261/rna.080240.124"
@@ -151,6 +158,7 @@
     Czarnocka-Cieciura A., Brouze M., Gumińska N., Mroczek S.,
     Gewartowska O., Krawczyk P.S., Dziembowski A.
   date: "2025-01-01"
+  year: "2025"
   journal: "Scientific Data"
   doi: "10.1038/s41597-024-04226-8"
   path: "https://doi.org/10.1038/s41597-024-04226-8"
@@ -163,6 +171,7 @@
     conditions
   author: "Gumińska N., Hałakuc P., Zakryś B., Milanowski R."
   date: "2024-01-02"
+  year: "2024"
   journal: "Protist"
   doi: "10.1016/j.protis.2024.126033"
   path: "https://doi.org/10.1016/j.protis.2024.126033"
@@ -178,6 +187,7 @@
     Mazur M., Gumińska N., Brouze A., Cysewski D., Mleczko-Sanecka K.,
     Niklewicz M., Kusio-Kobiałka M., Dziembowski A.
   date: "2024-01-01"
+  year: "2024"
   journal: "bioRxiv (preprint, in review)"
   doi: "10.1101/2024.11.14.623596"
   path: "https://doi.org/10.1101/2024.11.14.623596"
@@ -194,6 +204,7 @@
     Cysewski D., Mackiewicz Z., Ewbank J.J., Drabikowski K., Mroczek S.,
     Dziembowski A.
   date: "2022-01-02"
+  year: "2022"
   journal: "Science Advances"
   doi: "10.1126/sciadv.add9468"
   path: "https://doi.org/10.1126/sciadv.add9468"
@@ -210,6 +221,7 @@
     Gumińska N., Mroczek S., Dziembowski A., Cohen-Chalamish S.,
     Doniger T., et al.
   date: "2022-01-01"
+  year: "2022"
   journal: "Science Advances"
   doi: "10.1126/sciadv.abn2706"
   path: "https://doi.org/10.1126/sciadv.abn2706"
@@ -223,6 +235,7 @@
     euglenids
   author: "Gumińska N., Łukomska-Kowalczyk M., Chaber K., Zakryś B., Milanowski R."
   date: "2021-01-02"
+  year: "2021"
   journal: "Environmental Microbiology"
   doi: "10.1111/1462-2920.15495"
   path: "https://doi.org/10.1111/1462-2920.15495"
@@ -236,6 +249,7 @@
     genes of euglenids
   author: "Gumińska N., Zakryś B., Milanowski R."
   date: "2021-01-01"
+  year: "2021"
   journal: "Journal of Molecular Biology"
   doi: "10.1016/j.jmb.2020.166758"
   path: "https://doi.org/10.1016/j.jmb.2020.166758"
@@ -249,6 +263,7 @@
     transcripts of Euglena gracilis
   author: "Gumińska N., Płecha M., Zakryś B., Milanowski R."
   date: "2018-01-02"
+  year: "2018"
   journal: "PLOS Genetics"
   doi: "10.1371/journal.pgen.1007761"
   path: "https://doi.org/10.1371/journal.pgen.1007761"
@@ -262,6 +277,7 @@
     next-generation sequencing of euglenids
   author: "Gumińska N., Płecha M., Walkiewicz H., Hałakuc P., Zakryś B., Milanowski R."
   date: "2018-01-01"
+  year: "2018"
   journal: "Journal of Applied Phycology"
   doi: "10.1007/s10811-018-1496-0"
   path: "https://doi.org/10.1007/s10811-018-1496-0"
@@ -273,6 +289,7 @@
 - title: "Intermediate introns in nuclear genes of euglenids – are they a distinct type?"
   author: "Milanowski R., Gumińska N., Karnkowska A., Ishikawa T., Zakryś B."
   date: "2016-01-01"
+  year: "2016"
   journal: "BMC Evolutionary Biology"
   doi: "10.1186/s12862-016-0620-5"
   path: "https://doi.org/10.1186/s12862-016-0620-5"

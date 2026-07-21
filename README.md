@@ -94,7 +94,8 @@ included HTML partials.
 ```yaml
 - title: "Paper title"
   author: "Gumińska N., et al."
-  date: "2025-01-01"           # only the year is shown; sorts within a year
+  date: "2025-01-01"           # sorts within a year
+  year: "2025"                 # selects which year section it appears under
   journal: "Nature"
   doi: "10.1038/..."
   path: "https://doi.org/10.1038/..."
@@ -117,9 +118,18 @@ otherwise prints it under the title where it restates the heading. Edit it for
 search results, not for readers. If you would rather not have the metadata at
 all, delete the front matter key and the CSS rule together.
 
-**Publication categories.** The listing has `categories: false`, so there is no
-category cloud. Categories still appear as labels on each entry and are still
-searchable through the filter box.
+**Publications are grouped by year.** There is one listing per year in the front
+matter of `publications/index.qmd`, each selecting on the `year` field, plus a
+matching `### <year>` heading and an empty `::: {#papers-<year>} :::` div in the
+body. That is what puts the years in the table of contents.
+
+Adding a paper to an existing year needs nothing but a new entry in
+`publications.yml` (with both `date` and `year`). Adding a paper in a NEW year
+needs three things: the entry, a listing block, and a heading plus div. Miss any
+one and the paper silently will not appear.
+
+The search, sort and filter controls are gone, because seven copies of them
+would be worse than none. So is the RSS feed, which needs a single listing.
 
 **Colours.** Every colour is a token in `styles/theme-light.scss` and
 `styles/theme-dark.scss`. `custom.scss` contains no hex values at all, only

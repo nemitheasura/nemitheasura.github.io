@@ -1,17 +1,15 @@
 ---
 title: "Side quests"
 description: >-
-  Hobby projects and interests outside research: gw2timer, this website,
-  digital art, tabletop games and music.
+  Hobby projects outside research: gw2timer, a Guild Wars 2 event timer, and
+  this website.
 pagetitle: "Side quests"
-toc: true
+toc: false
 ---
 
 ::: {.lead .reveal}
 Projects that are not the main work.
 :::
-
-## Shipped
 
 ::: {.card-grid}
 ::: {.u-card .reveal .d1}
@@ -34,31 +32,5 @@ Built with Quarto, deployed from GitHub Actions. The source is public.
 :::
 
 [Repository](https://github.com/nemitheasura/nemitheasura.github.io){.btn-ghost}
-:::
-:::
-
-## Interests
-
-::: {.card-grid}
-::: {.u-card .reveal .d1}
-<span class="card-icon"><i class="bi bi-brush"></i></span>
-
-#### Digital art
-Character and creature work, mostly fantasy. Gallery on the
-[Illustrations](illustrations/index.qmd) page.
-:::
-
-::: {.u-card .reveal .d2}
-<span class="card-icon"><i class="bi bi-dice-5"></i></span>
-
-#### Games and fantasy
-Tabletop RPGs, computer RPGs, and secondary-world fiction.
-:::
-
-::: {.u-card .reveal .d3}
-<span class="card-icon"><i class="bi bi-music-note-beamed"></i></span>
-
-#### Music
-Rock, metal and classical.
 :::
 :::

@@ -124,57 +124,37 @@ code, kbd, samp, pre {
 }
 
 // ---------------------------------------------------------------------------
-// The Stack page: a denser grid than .card-grid, because each card is a short
-// list rather than a paragraph. Cards stretch to equal height so the icons in
-// each row line up, which is most of what makes the page look composed.
+// The Stack page. A specification sheet rather than a grid of boxes: a label
+// column, a value column, and a hairline between rows. Nothing is bordered or
+// tinted, so the page reads as a document rather than as a dashboard, and the
+// eye can run straight down the label column to find a category.
 // ---------------------------------------------------------------------------
-.stack-grid {
+.spec {
+  margin: 1.6rem 0 0;
+  border-top: 1px solid var(--rule);
+}
+
+.spec-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--gap);
-  margin: 1.5rem 0 0;
-  align-items: stretch;
+  grid-template-columns: minmax(11rem, 15rem) 1fr;
+  gap: 0.35rem 2.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--rule);
+}
 
-  .u-card {
-    display: flex;
-    flex-direction: column;
-    padding: 1.15rem 1.2rem 1.25rem;
-  }
+.spec-label {
+  font-weight: 640;
+  color: var(--ink);
+  line-height: 1.5;
+}
 
-  h4 {
-    margin: 0 0 0.6rem;
-    font-size: 1rem;
-  }
+.spec-value {
+  color: var(--ink-2);
+  line-height: 1.65;
 
-  // Plain bullets rather than chips. Boxed items read as buttons and invite a
-  // click that does nothing; a list reads as a list.
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex: 1 1 auto;
-    font-size: 0.92rem;
-    color: var(--ink-2);
-  }
-
-  li {
-    position: relative;
-    padding-left: 0.95rem;
-    margin-bottom: 0.28rem;
-    line-height: 1.45;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.62em;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    &:last-child { margin-bottom: 0; }
+  a {
+    border-bottom: 1px solid transparent;
+    &:hover { border-bottom-color: var(--accent); }
   }
 }
 
@@ -205,15 +185,19 @@ code, kbd, samp, pre {
 }
 
 .hero-title {
-  font-size: var(--step-4);
+  // Sized so "Natalia Gumińska, PhD" sets on one line in the hero column.
+  // text-wrap: balance is a fallback for narrow viewports where it must break.
+  font-size: clamp(1.9rem, 1.1rem + 2.6vw, 2.75rem);
+  text-wrap: balance;
   font-weight: 680;
   letter-spacing: -0.03em;
   margin: 0 0 0.5rem;
 }
 
 .hero-role {
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 600;
+  line-height: 1.5;
   color: var(--accent-ink);
   margin-bottom: 1.1rem;
 }
@@ -666,6 +650,14 @@ table {
 
   .hero-portrait { justify-self: start; max-width: 200px; }
   :root { --section: 3.2rem; }
+
+  // Label above value rather than beside it: at this width a fixed label
+  // column leaves the value column too narrow to set comfortably.
+  .spec-row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    padding: 0.85rem 0;
+  }
 }
 
 @media (max-width: 560px) {

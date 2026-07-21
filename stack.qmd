@@ -12,96 +12,56 @@ The tools I work with, and the methods I use them for.
 
 ## Computational biology
 
-::: {.stack-grid}
-
-::: {.u-card .reveal .d1}
-<span class="card-icon"><i class="bi bi-dna"></i></span>
-
-#### Omics analysis
-- Genomics
-- Transcriptomics
-- RNA biology (isoforms, polyadenylation, APA sites, modifications, splicing)
-- Phylogenetic analyses
-- Variant calling
+::: {.spec .reveal}
+::: {.spec-row}
+[Omics analysis]{.spec-label}
+[Genomics, transcriptomics, RNA biology (isoforms, polyadenylation, APA sites,
+modifications, splicing), phylogenetic analyses, variant calling]{.spec-value}
 :::
-
-::: {.u-card .reveal .d2}
-<span class="card-icon"><i class="bi bi-activity"></i></span>
-
-#### Sequencing technologies
-- Illumina
-- Oxford Nanopore
-- PacBio
+::: {.spec-row}
+[Sequencing technologies]{.spec-label}
+[Illumina, Oxford Nanopore, PacBio]{.spec-value}
 :::
-
 :::
 
 ## Software engineering & DevOps
 
-::: {.stack-grid}
-
-::: {.u-card .reveal .d1}
-<span class="card-icon"><i class="bi bi-braces"></i></span>
-
-#### Programming
-- R (tidyverse, data.table, Bioconductor)
-- Python (pandas, SciPy, scikit-learn, Keras, TensorFlow/PyTorch)
-- Bash
+::: {.spec .reveal}
+::: {.spec-row}
+[Programming]{.spec-label}
+[R (tidyverse, data.table, Bioconductor), Python (pandas, SciPy, scikit-learn,
+Keras, TensorFlow/PyTorch), Bash]{.spec-value}
 :::
-
-::: {.u-card .reveal .d2}
-<span class="card-icon"><i class="bi bi-cpu"></i></span>
-
-#### Machine learning
-- Predictive modelling
-- Deep learning
-- Model development, validation & deployment for biology
+::: {.spec-row}
+[Machine learning]{.spec-label}
+[Predictive modelling, deep learning, model development, validation and
+deployment for biology]{.spec-value}
 :::
-
-::: {.u-card .reveal .d3}
-<span class="card-icon"><i class="bi bi-bar-chart"></i></span>
-
-#### Data visualisation & reporting
-- Interactive dashboards & graphics
-- ggplot2, shiny, plotly, rmarkdown, streamlit
+::: {.spec-row}
+[Data visualisation & reporting]{.spec-label}
+[Interactive dashboards and graphics: ggplot2, shiny, plotly, rmarkdown,
+streamlit]{.spec-value}
 :::
-
-::: {.u-card .reveal .d1}
-<span class="card-icon"><i class="bi bi-box-seam"></i></span>
-
-#### Software development
-Creator of and contributor to openly available bioinformatic tools:
-
-- [ninetails](https://github.com/LRB-IIMCB/ninetails)
-- [nanotail2](https://github.com/LRB-IIMCB)
-- [NanoQuRe](https://github.com/LRB-IIMCB/NanoQuRe)
-- [rDNAmine](https://github.com/LRB-IIMCB/rDNA_mine)
+::: {.spec-row}
+[Software development]{.spec-label}
+[Creator of and contributor to openly available bioinformatic tools:
+[ninetails](https://github.com/LRB-IIMCB/ninetails),
+[nanotail2](https://github.com/LRB-IIMCB),
+[NanoQuRe](https://github.com/LRB-IIMCB/NanoQuRe),
+[rDNAmine](https://github.com/LRB-IIMCB/rDNA_mine)]{.spec-value}
 :::
-
-::: {.u-card .reveal .d2}
-<span class="card-icon"><i class="bi bi-database"></i></span>
-
-#### Databases
-- SQL (MySQL, PostgreSQL)
+::: {.spec-row}
+[Databases]{.spec-label}
+[SQL (MySQL, PostgreSQL)]{.spec-value}
 :::
-
-::: {.u-card .reveal .d3}
-<span class="card-icon"><i class="bi bi-cloud"></i></span>
-
-#### Infrastructure
-- Docker
-- Kubernetes
-- Cloud platforms (Azure)
+::: {.spec-row}
+[Infrastructure]{.spec-label}
+[Docker, Kubernetes, cloud platforms (Azure)]{.spec-value}
 :::
-
-::: {.u-card .reveal .d1}
-<span class="card-icon"><i class="bi bi-check2-square"></i></span>
-
-#### Best practices
-- Version control (Git)
-- Reproducible research
+::: {.spec-row}
+[Best practices]{.spec-label}
+[Version control (Git), reproducible research]{.spec-value}
 :::
-
 :::
 
 ::: {.btn-row}
