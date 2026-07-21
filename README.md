@@ -80,6 +80,12 @@ The site builds and looks finished, but the following are placeholders.
 - [ ] **Replace the gallery images** in `assets/img/illustrations/`. The
       DEGRONOPEDIA section on that page describes the identity work but shows
       nothing; add screenshots or the mark once the lab agrees.
+- [ ] **Replace the package logos** in `assets/img/logos/` with the real hex
+      stickers: `ninetails.svg`, `nanotail2.svg`, `NanoQuRe.svg`. Keep the
+      `width` and `height` attributes in `software.qmd` truthful to the files.
+
+None of these block a deploy. The site renders and publishes with every
+placeholder in place; they simply look like placeholders.
 
 ## Editing
 
@@ -169,14 +175,34 @@ resource and link it from About rather than rebuilding the page.
 
 ## Deploying
 
-1. Push to a GitHub repository. For a **user site**, name the repo
-   `nemitheasura.github.io`. For a **project site**, set `site-url` in
-   `_quarto.yml` to `https://nemitheasura.github.io/<repo>`, update the sitemap
-   URL in `robots.txt`, and prefix the root-absolute links in `404.qmd` with
+1. Create the repository on GitHub. For a **user site** it must be named
+   exactly `nemitheasura.github.io` and be public. Do not let GitHub add a
+   README, licence or .gitignore; this repository already has them and the
+   extra commit only causes a conflict on the first push.
+
+   For a **project site** instead, set `site-url` in `_quarto.yml` to
+   `https://nemitheasura.github.io/<repo>`, update the sitemap URL in
+   `robots.txt`, and prefix the root-absolute links in `404.qmd` with
    `/<repo>`.
-2. Repository → Settings → Pages → Build and deployment → Source =
-   **GitHub Actions**.
-3. Push to `main`. `.github/workflows/publish.yml` renders and deploys.
+
+2. Point this local repository at it and push:
+
+   ```bash
+   git remote add origin https://github.com/nemitheasura/nemitheasura.github.io.git
+   git push -u origin main
+   ```
+
+3. Repository → Settings → Pages → Build and deployment → Source =
+   **GitHub Actions**. Do this once; it cannot be set from the workflow file.
+
+4. The push in step 2 already triggered a build. Watch it in the **Actions**
+   tab. A render takes well under a minute. The site appears at
+   <https://nemitheasura.github.io>, which can take a few minutes more the
+   very first time.
+
+If the Actions tab shows nothing, the source in step 3 is still set to
+"Deploy from a branch". Change it, then re-run from Actions →
+"Publish site" → "Run workflow".
 
 The Quarto version in the workflow is pinned. Bump it deliberately rather than
 using `release`, so a Quarto update cannot change the site without a commit.
