@@ -76,3 +76,16 @@ Figures, schematics and graphical abstracts, and the logo for the
 [DEGRONOPEDIA](https://degronopedia.com/) web server.
 :::
 :::
+
+## Working together
+
+::: {.highlight-box .reveal}
+If you are interested in collaborating on a scientific project, or need
+scientific illustration work, [get in touch](contact.qmd).
+:::
+
+::: {.btn-row}
+<a class="btn-cta" href="contact.qmd"><i class="bi bi-envelope"></i> Contact</a>
+<a class="btn-ghost" href="software.qmd"><i class="bi bi-code-square"></i> Software</a>
+<a class="btn-ghost" href="illustrations/index.qmd"><i class="bi bi-easel"></i> Illustrations</a>
+:::
