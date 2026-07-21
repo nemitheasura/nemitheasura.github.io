@@ -6,6 +6,34 @@
 # DOIs come from that document rather than from memory. 17 items, 9 of them
 # first-author.
 #
+# VERIFICATION, July 2026. Ten of the seventeen DOIs were checked against an
+# independent source (the author's University of Warsaw IBE publication page,
+# the RNA journal site, Crossref and PubMed) and all ten matched the CV. The
+# remaining seven are transcribed from the CV only and have not been resolved:
+#
+#   10.1002/yea.70023            Yeast
+#   10.1261/rna.080240.124       RNA (Tent2)
+#   10.1038/s41597-024-04226-8   Scientific Data
+#   10.1101/2024.11.14.623596    bioRxiv preprint
+#   10.1126/sciadv.add9468       Science Advances (TENT5)
+#   10.1126/sciadv.abn2706       Science Advances (trypanosomes)
+#   10.1038/s41467-025-57787-6   Nature Communications (ninetails)
+#
+# ONE CORRECTION was made against the CV: the RNA 2025 paper is published as
+# "Polyadenylation landscape OF in vivo long-term potentiation", not "after".
+# RNA 31(12), 1712-1734. The wording here follows the journal.
+#
+# TWO PAPERS ARE MISSING, both absent from the CV and both Polish-language
+# reviews in Postępy Biochemii. They are deliberately NOT added here, because
+# leaving them off an English-language CV may well be intentional. Add them if
+# you want them:
+#
+#   Gumińska N., Milanowski R. "Charakterystyka kolistych DNA u Eukarya",
+#     Postępy Biochemii 68(2):129-141 (2022), doi 10.18388/pb.2021_423
+#   Ignatenko A., Gumińska N., Milanowski R. "Mechanizmy utraty i nabywania
+#     intronów spliceosomalnych", Postępy Biochemii 65(4):289-298 (2019),
+#     doi 10.18388/pb.2019_292
+#
 # Fields:
 #   title       required
 #   author      required, a display string rather than a list
@@ -57,7 +85,7 @@
     tractable again.
 
 - title: >-
-    Polyadenylation landscape after in vivo long-term potentiation in the rat
+    Polyadenylation landscape of in vivo long-term potentiation in the rat
     brain
   author: >-
     Gumińska N., Pauzin F.P., Kuźniewska B., Miłek J., Wardaszka P.,
