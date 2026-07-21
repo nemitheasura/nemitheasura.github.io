@@ -177,6 +177,11 @@ this file. Raster work is best exported at roughly 1600 px on the long edge as
 WebP or optimised PNG; keep vector work as SVG.
 :::
 
+## Tools
+
+Inkscape, Krita, PaintTool SAI, Adobe Illustrator, and ggplot2 for anything
+data-driven.
+
 ## Commissions and collaboration
 
 ::: {.highlight-box .reveal}

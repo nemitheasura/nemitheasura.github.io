@@ -1,8 +1,8 @@
 ---
 title: "Stack"
 description: >-
-  Tools and methods: languages, R and Python libraries, sequencing software,
-  databases, infrastructure, authoring and illustration.
+  Computational biology and software engineering: omics analysis, sequencing
+  technologies, programming, machine learning, databases and infrastructure.
 toc: true
 ---
 
@@ -10,137 +10,96 @@ toc: true
 The tools I work with, and the methods I use them for.
 :::
 
-## Tools
+## Computational biology
+
+::: {.stack-grid}
+
+::: {.u-card .reveal .d1}
+<span class="card-icon"><i class="bi bi-dna"></i></span>
+
+#### Omics analysis
+- Genomics
+- Transcriptomics
+- RNA biology (isoforms, polyadenylation, APA sites, modifications, splicing)
+- Phylogenetic analyses
+- Variant calling
+:::
+
+::: {.u-card .reveal .d2}
+<span class="card-icon"><i class="bi bi-activity"></i></span>
+
+#### Sequencing technologies
+- Illumina
+- Oxford Nanopore
+- PacBio
+:::
+
+:::
+
+## Software engineering & DevOps
 
 ::: {.stack-grid}
 
 ::: {.u-card .reveal .d1}
 <span class="card-icon"><i class="bi bi-braces"></i></span>
 
-#### Languages
-- R
-- Python
-- SQL
+#### Programming
+- R (tidyverse, data.table, Bioconductor)
+- Python (pandas, SciPy, scikit-learn, Keras, TensorFlow/PyTorch)
 - Bash
-- JavaScript
-- PHP
 :::
 
 ::: {.u-card .reveal .d2}
-<span class="card-icon"><i class="bi bi-box-seam"></i></span>
+<span class="card-icon"><i class="bi bi-cpu"></i></span>
 
-#### R packages
-- tidyverse
-- ggplot2
-- Bioconductor
-- Shiny
-- DBI, dbplyr, pool
-- roxygen2, testthat, pkgdown
-- Rcpp
+#### Machine learning
+- Predictive modelling
+- Deep learning
+- Model development, validation & deployment for biology
 :::
 
 ::: {.u-card .reveal .d3}
-<span class="card-icon"><i class="bi bi-cpu"></i></span>
+<span class="card-icon"><i class="bi bi-bar-chart"></i></span>
 
-#### Python libraries
-- NumPy
-- pandas
-- scikit-learn
-- Keras
-- TensorFlow
+#### Data visualisation & reporting
+- Interactive dashboards & graphics
+- ggplot2, shiny, plotly, rmarkdown, streamlit
 :::
 
 ::: {.u-card .reveal .d1}
-<span class="card-icon"><i class="bi bi-activity"></i></span>
+<span class="card-icon"><i class="bi bi-box-seam"></i></span>
 
-#### Sequencing software
-- Dorado
-- Guppy (legacy)
-- minimap2
-- samtools
-- POD5 and fast5 formats
+#### Software development
+Creator of and contributor to openly available bioinformatic tools:
+
+- [ninetails](https://github.com/LRB-IIMCB/ninetails)
+- [nanotail2](https://github.com/LRB-IIMCB)
+- [NanoQuRe](https://github.com/LRB-IIMCB/NanoQuRe)
+- [rDNAmine](https://github.com/LRB-IIMCB/rDNA_mine)
 :::
 
 ::: {.u-card .reveal .d2}
 <span class="card-icon"><i class="bi bi-database"></i></span>
 
 #### Databases
-- MySQL and MariaDB
-- SQLite
-- PostgreSQL
-- phpMyAdmin
-- HDF5
+- SQL (MySQL, PostgreSQL)
 :::
 
 ::: {.u-card .reveal .d3}
-<span class="card-icon"><i class="bi bi-terminal"></i></span>
+<span class="card-icon"><i class="bi bi-cloud"></i></span>
 
 #### Infrastructure
-- Git and GitHub
-- GitHub Actions
 - Docker
-- Linux, WSL
-- SLURM
-- Shiny Server, Apache
+- Kubernetes
+- Cloud platforms (Azure)
 :::
 
 ::: {.u-card .reveal .d1}
-<span class="card-icon"><i class="bi bi-file-earmark-text"></i></span>
-
-#### Authoring
-- Quarto
-- R Markdown
-- knitr
-- renv
-:::
-
-::: {.u-card .reveal .d2}
-<span class="card-icon"><i class="bi bi-brush"></i></span>
-
-#### Illustration
-- Inkscape
-- Krita
-- PaintTool SAI
-- Adobe Illustrator
-:::
-
-:::
-
-## Methods
-
-::: {.stack-grid}
-
-::: {.u-card .reveal .d1}
-<span class="card-icon"><i class="bi bi-soundwave"></i></span>
-
-#### Sequencing and signal
-- Nanopore direct RNA sequencing
-- cDNA sequencing
-- Signal-level analysis
-- Poly(A) tail length estimation
-- Tail composition classification
-- Long-read alignment and BAM tag handling
-:::
-
-::: {.u-card .reveal .d2}
-<span class="card-icon"><i class="bi bi-diagram-3"></i></span>
-
-#### Machine learning
-- Deep learning on signal-derived images
-- Computer vision
-- Model training and evaluation
-- Benchmarking against orthogonal methods
-:::
-
-::: {.u-card .reveal .d3}
 <span class="card-icon"><i class="bi bi-check2-square"></i></span>
 
-#### Data and practice
-- Relational schema design
-- Access control and audit logging
-- R package development and testing
-- Code review and semantic versioning
-- Data management plans
+#### Best practices
+- Version control (Git)
+- Reproducible research
 :::
 
 :::
