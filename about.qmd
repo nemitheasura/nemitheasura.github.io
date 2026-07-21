@@ -25,8 +25,7 @@ My early research was on euglenids: the order in which conventional and
 nonconventional introns are removed, circular RNAs derived from those introns,
 circular extrachromosomal DNA, and DNA barcoding for environmental samples.
 Since 2020 I have worked on RNA tailing, developing methods and software for
-nanopore direct RNA sequencing. To do that properly I went back to school for
-data science, first in R and now in Python.
+nanopore direct RNA sequencing.
 
 ## Employment
 
@@ -167,10 +166,10 @@ logging, and reproducible export to analysis-ready formats.
 
 Digital art, tabletop and computer RPGs, fantasy, and music: rock, metal and
 classical. The drawing is not entirely separate from work, since it turns into
-figures, graphical abstracts and, in the case of the
-[DEGRONOPEDIA](https://degronopedia.com/) web server, a whole graphical
-identity. One of the other hobbies produced actual software. All of it lives on
-the [Side quests](side-quests.qmd) and [Illustrations](illustrations/index.qmd)
+figures, graphical abstracts and, in one case, the logo for the
+[DEGRONOPEDIA](https://degronopedia.com/) web server. One of the other hobbies
+produced actual software. All of it lives on the
+[Side quests](side-quests.qmd) and [Illustrations](illustrations/index.qmd)
 pages.
 
 ::: {.btn-row .mt-3}

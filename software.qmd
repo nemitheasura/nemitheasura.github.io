@@ -104,7 +104,7 @@ it used.
 
 ## Technical case studies
 
-Three problems from the projects above, in more detail.
+Two problems from the projects above, in more detail.
 
 ::: {.u-card .reveal}
 ### Turning a one-dimensional signal into a classification problem
@@ -147,27 +147,6 @@ names.
 
 ::: {.tag-row}
 [MySQL]{.pill} [PHP]{.pill} [Audit logging]{.pill}
-:::
-:::
-
-::: {.u-card .reveal}
-### Supporting two chemistries without forking the pipeline
-
-Direct RNA reads arrive 3′→5′ with the tail anchored to a known adapter. cDNA
-reads arrive in either orientation and need the tail found relative to a primer.
-The biological question is the same, but the signal handling differs.
-
-**Approach.** A shared core with chemistry-specific front ends: orientation
-detection and anchoring differ, tail extraction and classification do not.
-Regression tests pin both paths to fixed expected output, so a change to the
-shared core cannot silently improve one and break the other.
-
-**Trade-off.** Two entry points are more to document than a single
-auto-detecting function, but the two chemistries do behave differently and I
-would rather that stayed visible to the user.
-
-::: {.tag-row}
-[R]{.pill} [Dorado]{.pill} [testthat]{.pill}
 :::
 :::
 

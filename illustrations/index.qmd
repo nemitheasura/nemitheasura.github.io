@@ -67,23 +67,19 @@ any image for a larger view.
 </div>
 ```
 
-## Visual identity
+## Logo design
 
 ::: {.card-grid}
 ::: {.u-card .reveal .d1}
 ### DEGRONOPEDIA <span class="status-badge status-active">live</span>
-Graphical identity for **[DEGRONOPEDIA](https://degronopedia.com/){target="_blank"}**,
-a web server for degrons, the short sequence motifs that mark a protein for
-destruction by the ubiquitin–proteasome system. Built by the Pokrzywa Lab
-(Laboratory of Protein Metabolism) at IIMCB, it searches degrons across eleven
-model proteomes and predicts terminal stability.
-
-The work had to stay readable for people arriving without any background in
-degrons, and hold together across the database, the documentation and the
-tutorial.
+I designed the logo for
+**[DEGRONOPEDIA](https://degronopedia.com/){target="_blank"}**, a web server for
+degrons, the short sequence motifs that mark a protein for destruction by the
+ubiquitin–proteasome system. It is built by the Pokrzywa Lab (Laboratory of
+Protein Metabolism) at IIMCB and searches degrons across eleven model proteomes.
 
 ::: {.tag-row}
-[Visual identity]{.pill} [Web server]{.pill} [Proteostasis]{.pill}
+[Logo design]{.pill} [Web server]{.pill} [Proteostasis]{.pill}
 :::
 
 [Visit DEGRONOPEDIA](https://degronopedia.com/){.btn-ghost target="_blank"}
@@ -91,9 +87,9 @@ tutorial.
 :::
 
 ::: {.highlight-box .reveal}
-**To show the work rather than describe it,** add screenshots or the mark itself
-to `assets/img/illustrations/` and give this section a gallery block like the
-ones above. Check first whether the lab is happy for the assets to appear here.
+**To show the logo rather than describe it,** add the file to
+`assets/img/illustrations/` and give this section a gallery block like the ones
+above. Check first that the lab is happy for it to appear here.
 :::
 
 ## Figures and schematics

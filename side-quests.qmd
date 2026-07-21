@@ -85,8 +85,8 @@ know how to do in R is a good way to find the gaps.
 
 #### Digital art
 Character and creature work, mostly fantasy. It is the same skill that produces
-the figures and the [DEGRONOPEDIA](https://degronopedia.com/) identity, pointed
-in a different direction, so the gallery lives on the
+the figures and the [DEGRONOPEDIA](https://degronopedia.com/) logo, pointed in a
+different direction, so the gallery lives on the
 [Illustrations](illustrations/index.qmd) page alongside the scientific work.
 :::
 

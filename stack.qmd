@@ -13,12 +13,6 @@ use it in production work without supervision, and **5** means people ask me
 questions about it.
 :::
 
-::: {.highlight-box .reveal}
-**Editing this page.** Each row is a `.stack-row` with a `--level` custom
-property between 1 and 5. Change the number, the bar changes. Nothing else needs
-touching.
-:::
-
 ## Languages
 
 ```{=html}

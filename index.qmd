@@ -73,9 +73,9 @@ metadata.
 <span class="card-icon"><i class="bi bi-easel"></i></span>
 
 ### Scientific illustration
-Figures, schematics and graphical abstracts for papers and talks, and the
-graphical identity for the [DEGRONOPEDIA](https://degronopedia.com/) web server.
-I draw outside work too, which is where the digital art comes from.
+Figures, schematics and graphical abstracts for papers and talks, and the logo
+for the [DEGRONOPEDIA](https://degronopedia.com/) web server. I draw outside
+work too, which is where the digital art comes from.
 :::
 :::
 
@@ -87,15 +87,6 @@ the **International Institute of Molecular and Cell Biology in Warsaw**, since
 2020. Alongside research I am finishing postgraduate studies in **Python Data
 Science Engineering** at Koźminski University, after **Data Science with R** at
 the University of Warsaw.
-:::
-
-### Research interests
-
-::: {.tag-row}
-[poly(A) tail dynamics]{.tag} [Non-adenosine residues]{.tag}
-[Nanopore direct RNA-seq]{.tag} [RNA modifications]{.tag}
-[Signal-level analysis]{.tag} [Euglenids]{.tag} [Circular DNA]{.tag}
-[Method development]{.tag} [Reproducible research]{.tag}
 :::
 
 ## Selected work
