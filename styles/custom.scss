@@ -352,71 +352,7 @@ a {
 .timeline-org   { color: var(--ink-2); font-size: 0.94rem; }
 
 // ---------------------------------------------------------------------------
-// 8. Stack matrix (the Full Stack page)
-//
-// A proficiency bar rather than a star rating: five discrete segments, filled
-// via a --level custom property set inline. Reading "3 of 5" is honest in a way
-// that "expert" is not.
-// ---------------------------------------------------------------------------
-.stack-group { margin-bottom: 2rem; }
-
-.stack-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1rem;
-  align-items: baseline;
-  padding: 0.55rem 0;
-  border-bottom: 1px solid var(--rule);
-
-  &:last-child { border-bottom: none; }
-}
-
-.stack-name {
-  font-weight: 560;
-
-  small {
-    display: block;
-    font-weight: 400;
-    font-size: 0.82rem;
-    color: var(--ink-3);
-    line-height: 1.45;
-  }
-}
-
-// Five 14px segments separated by 3px gaps: 5 x 14 + 4 x 3 = 82px total.
-// The track is drawn once as a repeating gradient and the fill is an absolutely
-// positioned overlay of the same gradient in the accent colour, clipped to
-// level x 17px - 3px. Expressing it this way means no width expression can go
-// negative (the earlier flexbox version produced -3px at level 5, which browsers
-// discard, silently rendering a full bar as an empty one).
-.stack-meter {
-  position: relative;
-  display: block;
-  width: 82px;
-  height: 6px;
-  border-radius: 2px;
-  overflow: hidden;
-  background: repeating-linear-gradient(
-    to right,
-    var(--surface-2) 0 14px,
-    transparent 14px 17px
-  );
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0 auto 0 0;
-    width: calc(var(--level) * 17px - 3px);
-    background: repeating-linear-gradient(
-      to right,
-      var(--accent) 0 14px,
-      transparent 14px 17px
-    );
-  }
-}
-
-// ---------------------------------------------------------------------------
-// 9. Contact grid
+// 8. Contact grid
 // ---------------------------------------------------------------------------
 .contact-grid {
   display: grid;
@@ -453,7 +389,7 @@ a {
 }
 
 // ---------------------------------------------------------------------------
-// 10. Gallery and lightbox
+// 9. Gallery and lightbox
 //
 // Custom, not an extension: no `quarto add` step, no network dependency at
 // build time, and the markup stays inspectable.
@@ -549,7 +485,7 @@ a {
 }
 
 // ---------------------------------------------------------------------------
-// 11. Publication listing
+// 10. Publication listing
 //
 // Quarto's listing machinery renders the cards; these rules restyle them to
 // match the rest of the site rather than replacing the mechanism.
@@ -591,7 +527,7 @@ a {
 }
 
 // ---------------------------------------------------------------------------
-// 12. Scroll reveal
+// 11. Scroll reveal
 //
 // Elements marked .reveal start faded and translated, and get .is-visible from
 // an IntersectionObserver in assets/scripts.html. If JavaScript is off, the
@@ -610,7 +546,7 @@ a {
 .d3 { transition-delay: 0.16s; }
 
 // ---------------------------------------------------------------------------
-// 13. Accessibility and chrome
+// 12. Accessibility and chrome
 // ---------------------------------------------------------------------------
 :focus-visible {
   outline: 2px solid var(--accent);
@@ -660,7 +596,7 @@ table {
 }
 
 // ---------------------------------------------------------------------------
-// 14. Responsive
+// 13. Responsive
 // ---------------------------------------------------------------------------
 @media (max-width: 900px) {
   .hero {
@@ -674,14 +610,13 @@ table {
 }
 
 @media (max-width: 560px) {
-  .stack-row { grid-template-columns: 1fr; gap: 0.35rem; }
   .btn-row { gap: 0.45rem; }
   .btn-cta, .btn-ghost { font-size: 0.76rem; padding: 0.4rem 0.75rem; }
   main h2::after { display: none; }
 }
 
 // ---------------------------------------------------------------------------
-// 15. Reduced motion and print
+// 14. Reduced motion and print
 // ---------------------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

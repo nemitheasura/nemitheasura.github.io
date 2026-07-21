@@ -17,8 +17,7 @@ anchor-sections: false
 
 <p class="hero-summary">
 I study RNA tails: how long they are, what they are made of, and how to measure
-both reliably. The work covers the bench and the analysis, and I release the
-software so the results can be reproduced. I wrote <a href="https://github.com/LRB-IIMCB/ninetails">ninetails</a>,
+both reliably. I wrote <a href="https://github.com/LRB-IIMCB/ninetails">ninetails</a>,
 which finds the residues in a poly(A) tail that are not adenosine.
 </p>
 
@@ -55,9 +54,8 @@ which finds the residues in a poly(A) tail that are not adenosine.
 <span class="card-icon"><i class="bi bi-dna"></i></span>
 
 ### Research
-Poly(A) tail dynamics and RNA metabolism, read directly off nanopore signal.
-Earlier work on intron removal order, circular RNA and extrachromosomal DNA in
-euglenids.
+Poly(A) tail dynamics and RNA metabolism, read off nanopore signal. Earlier work
+on introns and circular DNA in euglenids.
 :::
 
 ::: {.u-card .reveal .d2}
@@ -65,28 +63,25 @@ euglenids.
 
 ### Research software
 R packages for long-read analysis, a deep-learning classifier for tail
-composition, and the relational databases that hold the laboratory's sequencing
-metadata.
+composition, and the laboratory's sequencing metadata databases.
 :::
 
 ::: {.u-card .reveal .d3}
 <span class="card-icon"><i class="bi bi-easel"></i></span>
 
 ### Scientific illustration
-Figures, schematics and graphical abstracts for papers and talks, and the logo
-for the [DEGRONOPEDIA](https://degronopedia.com/) web server. I draw outside
-work too, which is where the digital art comes from.
+Figures, schematics and graphical abstracts, and the logo for the
+[DEGRONOPEDIA](https://degronopedia.com/) web server.
 :::
 :::
 
 ## Currently
 
 ::: {.highlight-box .reveal}
-Postdoctoral researcher in the **Laboratory of RNA Biology (ERA Chairs Group)** at
-the **International Institute of Molecular and Cell Biology in Warsaw**, since
-2020. Alongside research I am finishing postgraduate studies in **Python Data
-Science Engineering** at Koźminski University, after **Data Science with R** at
-the University of Warsaw.
+Postdoctoral researcher in the **Laboratory of RNA Biology (ERA Chairs Group)**
+at the **International Institute of Molecular and Cell Biology in Warsaw**, since
+2020. Currently finishing postgraduate studies in Python Data Science
+Engineering at Koźminski University.
 :::
 
 ## Selected work
@@ -94,8 +89,7 @@ the University of Warsaw.
 ::: {.card-grid}
 ::: {.u-card .reveal .d1}
 ### ninetails <span class="status-badge status-active">author</span>
-Finds non-adenosine residues inside poly(A) tails in nanopore direct RNA reads,
-by turning raw signal into an image and handing it to a convolutional network.
+Finds non-adenosine residues in poly(A) tails from nanopore direct RNA reads.
 Published in *Nature Communications* (2025).
 
 ::: {.tag-row}
@@ -108,9 +102,8 @@ Published in *Nature Communications* (2025).
 
 ::: {.u-card .reveal .d2}
 ### nanotail2 <span class="status-badge status-active">author</span>
-R tooling for poly(A) tail *length*: summarising distributions, comparing
-conditions, and producing figures for publication. It covers tail length,
-ninetails covers composition.
+Poly(A) tail length analysis: distributions, comparisons and figures. The
+length counterpart to ninetails.
 
 ::: {.tag-row}
 [R]{.pill} [Statistics]{.pill} [ggplot2]{.pill}
@@ -121,8 +114,8 @@ ninetails covers composition.
 
 ::: {.u-card .reveal .d3}
 ### Laboratory databases <span class="status-badge status-maintained">maintained</span>
-Relational schemas tracking samples, libraries, sequencing runs and their
-metadata, with role-based access and an audit trail.
+Relational schemas for samples, libraries and sequencing runs, with an audit
+trail.
 
 ::: {.tag-row}
 [SQL]{.pill} [Schema design]{.pill}

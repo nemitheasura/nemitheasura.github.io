@@ -8,9 +8,8 @@ toc: true
 ---
 
 ::: {.lead .reveal}
-Figures for papers and talks, and the drawing they came out of. I try to make
-figures that show the result clearly before the caption has to explain it. Click
-any image for a larger view.
+Figures for papers and talks, and the drawing they came out of. Click any image
+for a larger view.
 :::
 
 ## Graphical abstracts
@@ -74,9 +73,7 @@ any image for a larger view.
 ### DEGRONOPEDIA <span class="status-badge status-active">live</span>
 I designed the logo for
 **[DEGRONOPEDIA](https://degronopedia.com/){target="_blank"}**, a web server for
-degrons, the short sequence motifs that mark a protein for destruction by the
-ubiquitin–proteasome system. It is built by the Pokrzywa Lab (Laboratory of
-Protein Metabolism) at IIMCB and searches degrons across eleven model proteomes.
+degrons built by the Pokrzywa Lab (Laboratory of Protein Metabolism) at IIMCB.
 
 ::: {.tag-row}
 [Logo design]{.pill} [Web server]{.pill} [Proteostasis]{.pill}
@@ -135,8 +132,7 @@ above. Check first that the lab is happy for it to appear here.
 
 ## Digital art
 
-Personal work: fantasy, character studies, and the occasional creature with
-questionable anatomy.
+Personal work: fantasy and character studies.
 
 ```{=html}
 <div class="gallery reveal">
@@ -184,6 +180,6 @@ WebP or optimised PNG; keep vector work as SVG.
 ## Commissions and collaboration
 
 ::: {.highlight-box .reveal}
-I make figures for the laboratory's papers and sometimes for collaborators. If
-you need a schematic or a graphical abstract, [get in touch](../contact.qmd).
+I make figures for the laboratory's papers and sometimes for collaborators.
+[Get in touch](../contact.qmd).
 :::

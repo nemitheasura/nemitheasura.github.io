@@ -2,16 +2,14 @@
 title: "Software"
 description: >-
   Open-source research software by Natalia Gumińska: R packages for nanopore
-  direct RNA sequencing, laboratory data infrastructure, and technical case
-  studies.
+  direct RNA sequencing and laboratory data infrastructure.
 toc: true
 ---
 
 ::: {.lead .reveal}
-I write research software: R packages for nanopore direct RNA sequencing
-analysis, and the relational databases that keep laboratory data usable. Most of
-it is open source under the [LRB-IIMCB](https://github.com/LRB-IIMCB)
-organisation, with personal projects on
+R packages for nanopore direct RNA sequencing, and the databases that keep
+laboratory data usable. Most of it is open source under
+[LRB-IIMCB](https://github.com/LRB-IIMCB), with personal projects on
 [my GitHub](https://github.com/nemitheasura).
 :::
 
@@ -20,146 +18,77 @@ organisation, with personal projects on
 ::: {.card-grid}
 ::: {.u-card .reveal .d1}
 ### ninetails <span class="status-badge status-active">author</span>
-Detection of **non-adenosine residues in poly(A) tails** from Oxford Nanopore
-direct RNA reads. Raw current is segmented, converted to a two-dimensional
-representation, and classified by a convolutional network. Author and
-maintainer. Published in *Nature Communications* (2025), with a full pkgdown
-site and worked vignettes.
+Detects non-adenosine residues in poly(A) tails from Oxford Nanopore direct RNA
+reads, using a convolutional network on signal-derived images.
 
 ::: {.tag-row}
-[R]{.pill} [Keras]{.pill} [Nanopore]{.pill} [Signal analysis]{.pill}
-[Computer vision]{.pill}
+[R]{.pill} [Nanopore]{.pill} [Deep learning]{.pill} [Signal analysis]{.pill}
 :::
 
-[Repository](https://github.com/LRB-IIMCB/ninetails){.btn-ghost}
-[Documentation](https://lrb-iimcb.github.io/ninetails/){.btn-ghost}
-[Paper](https://doi.org/10.1038/s41467-025-57787-6){.btn-ghost}
+[Repository](https://github.com/LRB-IIMCB/ninetails){.btn-ghost target="_blank"}
+[Docs](https://lrb-iimcb.github.io/ninetails/){.btn-ghost target="_blank"}
+[Paper](https://doi.org/10.1038/s41467-025-57787-6){.btn-ghost target="_blank"}
 :::
 
 ::: {.u-card .reveal .d2}
 ### nanotail2 <span class="status-badge status-active">author</span>
-R tooling for **poly(A) tail length analysis**: summarising distributions,
-comparing conditions with appropriate statistics, and producing publication
-figures from direct RNA sequencing output. Pairs with ninetails so that length
-and composition can be reported from one pipeline.
+Poly(A) tail length analysis: distributions, comparisons between conditions, and
+publication figures.
 
 ::: {.tag-row}
-[R]{.pill} [tidyverse]{.pill} [Statistics]{.pill} [Visualisation]{.pill}
+[R]{.pill} [poly(A)]{.pill} [Statistics]{.pill} [Visualisation]{.pill}
 :::
 
-[Organisation](https://github.com/LRB-IIMCB){.btn-ghost}
+[Organisation](https://github.com/LRB-IIMCB){.btn-ghost target="_blank"}
 :::
 
 ::: {.u-card .reveal .d3}
-### NanoQuRe <span class="status-badge status-maintained">contributor</span>
-Quality control for nanopore sequencing runs. Turns raw run metrics into a
-readable report, so problems with a flow cell are visible before the analysis
-starts.
-
-::: {.tag-row}
-[R]{.pill} [Quality control]{.pill} [Reporting]{.pill}
-:::
-
-[Repository](https://github.com/LRB-IIMCB/NanoQuRe){.btn-ghost}
-:::
-
-::: {.u-card .reveal .d1}
 ### rDNAmine <span class="status-badge status-active">co-author</span>
-Analysis of **long repetitive rDNA sequences** in Oxford Nanopore reads, which
-short-read assemblers tend to collapse. Co-authored with A. Czarnocka-Cieciura
-and described in *Yeast* (2026).
+Analysis of long repetitive rDNA sequences in Oxford Nanopore reads.
 
 ::: {.tag-row}
 [Shell]{.pill} [Long reads]{.pill} [rDNA]{.pill}
 :::
 
-[Repository](https://github.com/LRB-IIMCB/rDNA_mine){.btn-ghost}
-[Paper](https://doi.org/10.1002/yea.70023){.btn-ghost}
+[Repository](https://github.com/LRB-IIMCB/rDNA_mine){.btn-ghost target="_blank"}
+[Paper](https://doi.org/10.1002/yea.70023){.btn-ghost target="_blank"}
+:::
+
+::: {.u-card .reveal .d1}
+### NanoQuRe <span class="status-badge status-maintained">contributor</span>
+Quality control reports for nanopore sequencing runs.
+
+::: {.tag-row}
+[R]{.pill} [Quality control]{.pill} [Reporting]{.pill}
+:::
+
+[Repository](https://github.com/LRB-IIMCB/NanoQuRe){.btn-ghost target="_blank"}
 :::
 
 ::: {.u-card .reveal .d2}
 ### lachesis <span class="status-badge status-maintained">contributor</span>
-Part of the laboratory's ecosystem of tools supporting nanopore RNA analysis
-workflows. Contributor.
+Part of the laboratory's toolset for nanopore RNA analysis workflows.
 
 ::: {.tag-row}
 [R]{.pill} [Workflow]{.pill}
 :::
 
-[Organisation](https://github.com/LRB-IIMCB){.btn-ghost}
+[Organisation](https://github.com/LRB-IIMCB){.btn-ghost target="_blank"}
 :::
 
 ::: {.u-card .reveal .d3}
 ### Laboratory databases <span class="status-badge status-maintained">maintained</span>
-Relational **SQL databases** designed for the laboratory: samples, libraries,
-sequencing runs and their metadata, with role-based access and an audit trail.
-Records export to YAML, so an analysis pipeline can record exactly which sample
-it used.
+Relational schemas for samples, libraries, sequencing runs and their metadata,
+with role-based access and an audit trail.
 
 ::: {.tag-row}
-[MySQL]{.pill} [PHP]{.pill} [Schema design]{.pill} [Lab data]{.pill}
+[MySQL]{.pill} [PHP]{.pill} [Schema design]{.pill} [Audit logging]{.pill}
 :::
 :::
-:::
-
-## Technical case studies
-
-Two problems from the projects above, in more detail.
-
-::: {.u-card .reveal}
-### Turning a one-dimensional signal into a classification problem
-
-Poly(A) tails are read as a long, nearly featureless run of ionic current. A
-single non-adenosine residue perturbs it slightly, and the perturbation is
-smaller than the run-to-run variation between flow cells. Threshold rules on the
-raw trace either miss most events or drown in false positives.
-
-**Approach.** Segment the tail region, normalise per read, project the segment
-into a two-dimensional representation, and train a convolutional classifier on
-synthetic tails with known composition. Treating it as an image classification
-problem rather than a signal-processing one is what brought the accuracy up.
-
-**Trade-off.** A neural network is harder to justify to reviewers than a
-threshold. The package therefore ships the training data, the model, and a
-vignette that reproduces the reported numbers, so the results can be checked.
-
-::: {.tag-row}
-[ninetails]{.pill} [R]{.pill} [Keras]{.pill}
-:::
-:::
-
-::: {.u-card .reveal}
-### Making a sequencing laboratory's metadata queryable
-
-Sample provenance lived in spreadsheets, one per person, with no shared
-vocabulary for something as basic as a kit version. Answering a question like
-which runs used RNA004 meant asking several people.
-
-**Approach.** A normalised MySQL schema covering samples, libraries, runs and
-instruments, administered through phpMyAdmin so the lab did not need a new tool
-to learn, with a thin PHP/PDO front end for entry and an audit table recording
-every change.
-
-**Trade-off.** Normalisation costs data-entry convenience. Controlled
-vocabularies for kits and instruments were worth the friction. Free-text notes
-fields were kept on purpose, because otherwise notes end up encoded in sample
-names.
-
-::: {.tag-row}
-[MySQL]{.pill} [PHP]{.pill} [Audit logging]{.pill}
-:::
-:::
-
-## How I build
-
-::: {.highlight-box .reveal}
-Documented, tested, version controlled. Packages ship with vignettes and worked
-examples, so a colleague can run an analysis on their own data without asking me
-first. Interfaces change on a deprecation cycle.
 :::
 
 ::: {.btn-row}
-<a class="btn-cta" href="stack.qmd"><i class="bi bi-stack"></i> Full stack</a>
-<a class="btn-ghost" href="side-quests.qmd"><i class="bi bi-compass"></i> Side quests</a>
-<a class="btn-ghost" href="https://github.com/nemitheasura"><i class="bi bi-github"></i> GitHub</a>
+<a class="btn-cta" href="publications/index.qmd"><i class="bi bi-journal-text"></i> Publications</a>
+<a class="btn-ghost" href="stack.qmd"><i class="bi bi-braces"></i> Stack</a>
+<a class="btn-ghost" href="https://github.com/nemitheasura" target="_blank"><i class="bi bi-github"></i> GitHub</a>
 :::

@@ -40,8 +40,8 @@ docs exactly.
 ├── _variables.yml                 name, email, social URLs; use {{< var key >}}
 ├── index.qmd                      Home
 ├── about.qmd                      Biography, education, grants, awards
-├── software.qmd                   Projects and technical case studies
-├── stack.qmd                      Technology stack with proficiency levels
+├── software.qmd                   Projects and packages
+├── stack.qmd                      Technology stack, grouped tag lists
 ├── side-quests.qmd                Hobby projects and experiments
 ├── contact.qmd                    Contact links
 ├── 404.qmd
@@ -77,15 +77,9 @@ The site builds and looks finished, but the following are placeholders.
 - [ ] **Export `assets/img/og-image.png` at 1200×630.** `assets/head.html`
       points at the PNG; only the SVG exists, and social platforms will not
       render an SVG preview card.
-- [ ] **Check the proficiency levels on `stack.qmd`.** They are my best guess
-      from your publications and project history, not your self-assessment. Each row has a
-      `--level: N` between 1 and 5.
 - [ ] **Replace the gallery images** in `assets/img/illustrations/`. The
       DEGRONOPEDIA section on that page describes the identity work but shows
       nothing; add screenshots or the mark once the lab agrees.
-- [ ] **Verify the three case studies in `software.qmd`.** They are written from
-      what the codebase implies. If any detail is wrong, it is wrong in the most
-      visible place on the site.
 
 ## Editing
 

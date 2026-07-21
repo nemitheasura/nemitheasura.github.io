@@ -15,17 +15,14 @@ how to measure both reliably with Oxford Nanopore direct RNA sequencing.
 
 ## Biography
 
-My background is split between two fields. I hold a PhD in molecular biology
-from the Faculty of Biology at the University of Warsaw and, in parallel,
-degrees in Polish philology (literary studies and linguistics) from the Faculty
-of Polish Studies. Both involve reading closely and noticing what does not fit,
-which is probably why I have kept doing both.
+I hold a PhD in molecular biology from the Faculty of Biology at the University
+of Warsaw and, in parallel, degrees in Polish philology (literary studies and
+linguistics) from the Faculty of Polish Studies.
 
-My early research was on euglenids: the order in which conventional and
-nonconventional introns are removed, circular RNAs derived from those introns,
-circular extrachromosomal DNA, and DNA barcoding for environmental samples.
-Since 2020 I have worked on RNA tailing, developing methods and software for
-nanopore direct RNA sequencing.
+My early research was on euglenids: intron removal order, circular RNAs,
+extrachromosomal DNA, and DNA barcoding for environmental samples. Since 2020 I
+have worked on RNA tailing, developing methods and software for nanopore direct
+RNA sequencing.
 
 ## Employment
 
@@ -77,31 +74,6 @@ sequencing metadata infrastructure.</p>
 <div class="timeline-date">2009–2012</div>
 <div class="timeline-title">B.Sc. in Polish Philology</div>
 <div class="timeline-org">Faculty of Polish Studies, University of Warsaw</div>
-:::
-:::
-
-## Technical expertise
-
-A short version; the [Stack](stack.qmd) page has the full breakdown with
-proficiency levels.
-
-::: {.card-grid}
-::: {.u-card .reveal .d1}
-#### Method development
-Signal-level analysis of nanopore reads, poly(A) tail length estimation, tail
-composition classification, benchmarking against orthogonal methods.
-:::
-
-::: {.u-card .reveal .d2}
-#### Research software
-R package development end to end: API design, roxygen2 documentation, testthat
-suites, pkgdown sites, CI on GitHub Actions.
-:::
-
-::: {.u-card .reveal .d3}
-#### Data infrastructure
-Relational schema design for laboratory metadata, access control, audit
-logging, and reproducible export to analysis-ready formats.
 :::
 :::
 
@@ -165,12 +137,8 @@ logging, and reproducible export to analysis-ready formats.
 ## Outside work
 
 Digital art, tabletop and computer RPGs, fantasy, and music: rock, metal and
-classical. The drawing is not entirely separate from work, since it turns into
-figures, graphical abstracts and, in one case, the logo for the
-[DEGRONOPEDIA](https://degronopedia.com/) web server. One of the other hobbies
-produced actual software. All of it lives on the
-[Side quests](side-quests.qmd) and [Illustrations](illustrations/index.qmd)
-pages.
+classical. More on the [Side quests](side-quests.qmd) and
+[Illustrations](illustrations/index.qmd) pages.
 
 ::: {.btn-row .mt-3}
 <a class="btn-cta" href="publications/index.qmd"><i class="bi bi-journal-text"></i> Publications</a>

@@ -8,9 +8,7 @@ toc: true
 ---
 
 ::: {.lead .reveal}
-Projects that are not the main work. Some of them turned out to be useful
-anyway: the timer taught me a lot about state management, and the drawing is
-where the figures in my papers come from.
+Projects that are not the main work.
 :::
 
 ## Shipped
@@ -18,9 +16,7 @@ where the figures in my papers come from.
 ::: {.card-grid}
 ::: {.u-card .reveal .d1}
 ### gw2timer <span class="status-badge status-maintained">maintained</span>
-A lightweight timer for tracking dynamic world events in *Guild Wars 2*. I
-started it because I kept missing meta-events and carried on because other
-people began using it.
+A lightweight timer for tracking dynamic world events in *Guild Wars 2*.
 
 ::: {.tag-row}
 [JavaScript]{.pill} [Web]{.pill} [Personal]{.pill}
@@ -31,8 +27,7 @@ people began using it.
 
 ::: {.u-card .reveal .d2}
 ### This website <span class="status-badge status-active">active</span>
-Built with Quarto, deployed from GitHub Actions, with no CDN and no tracker.
-The source is public and you are welcome to reuse it.
+Built with Quarto, deployed from GitHub Actions. The source is public.
 
 ::: {.tag-row}
 [Quarto]{.pill} [SCSS]{.pill} [GitHub Actions]{.pill}
@@ -47,8 +42,7 @@ The source is public and you are welcome to reuse it.
 ::: {.card-grid}
 ::: {.u-card .reveal .d1}
 #### Generative pattern studies
-Small sketches in code, using a plotting grammar for things that are not data.
-Some of them have ended up as conference poster backgrounds.
+Sketches in code, using a plotting grammar for things that are not data.
 
 ::: {.tag-row}
 [R]{.tag} [Generative]{.tag}
@@ -57,9 +51,8 @@ Some of them have ended up as conference poster backgrounds.
 
 ::: {.u-card .reveal .d2}
 #### Reading nanopore signal by eye
-An ongoing attempt to build the intuition a model has, by looking at enough raw
-traces to predict what the classifier will say before running it. Results so far
-are mixed.
+Looking at enough raw traces to predict what the classifier will say before
+running it.
 
 ::: {.tag-row}
 [Signal]{.tag} [Intuition]{.tag}
@@ -68,8 +61,7 @@ are mixed.
 
 ::: {.u-card .reveal .d3}
 #### Python, in public
-Postgraduate coursework, done in the open. Rewriting in Python things I already
-know how to do in R is a good way to find the gaps.
+Postgraduate coursework, done in the open.
 
 ::: {.tag-row}
 [Python]{.tag} [Learning]{.tag}
@@ -84,36 +76,30 @@ know how to do in R is a good way to find the gaps.
 <span class="card-icon"><i class="bi bi-brush"></i></span>
 
 #### Digital art
-Character and creature work, mostly fantasy. It is the same skill that produces
-the figures and the [DEGRONOPEDIA](https://degronopedia.com/) logo, pointed in a
-different direction, so the gallery lives on the
-[Illustrations](illustrations/index.qmd) page alongside the scientific work.
+Character and creature work, mostly fantasy. Gallery on the
+[Illustrations](illustrations/index.qmd) page.
 :::
 
 ::: {.u-card .reveal .d2}
 <span class="card-icon"><i class="bi bi-dice-5"></i></span>
 
 #### Games and fantasy
-Tabletop RPGs, computer RPGs, and secondary-world fiction, preferably the kind
-with an appendix on invented languages.
+Tabletop RPGs, computer RPGs, and secondary-world fiction.
 :::
 
 ::: {.u-card .reveal .d3}
 <span class="card-icon"><i class="bi bi-music-note-beamed"></i></span>
 
 #### Music
-Rock, metal and classical, often in the same afternoon and usually while
-something is basecalling.
+Rock, metal and classical.
 :::
 :::
 
 ## Things I would work on given a spare month
 
 ::: {.highlight-box .reveal}
-An interactive squiggle explorer that lets a reader scrub through a raw read and
-see the tail call update live; a proper open dataset of hand-annotated tails for
-benchmarking; and a Polish-language introduction to long-read sequencing, since
-almost all of the good material is only available in English.
+An interactive squiggle explorer; an open dataset of hand-annotated tails for
+benchmarking; a Polish-language introduction to long-read sequencing.
 :::
 
 ::: {.btn-row}

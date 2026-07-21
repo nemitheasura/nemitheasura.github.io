@@ -8,7 +8,7 @@ toc: false
 
 ::: {.lead .reveal}
 Happy to talk about RNA tailing, nanopore sequencing, research software, figure
-work, or possible collaborations. Email is the most reliable way to reach me.
+work, or collaborations. Email is the most reliable way to reach me.
 :::
 
 ```{=html}
@@ -63,8 +63,6 @@ Poland.
 ### What to expect
 
 Email gets a reply within a few working days. For software questions, an issue
-on the relevant repository is better than email, because it is searchable and
-helps the next person with the same problem. For anything involving data, please
-say which kit and basecaller version produced it, since that is the first thing
-I will ask.
+on the relevant repository is better than email. For anything involving data,
+please say which kit and basecaller version produced it.
 :::
