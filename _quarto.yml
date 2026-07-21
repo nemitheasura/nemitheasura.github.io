@@ -129,17 +129,20 @@ website:
 format:
   html:
     theme:
-      # Order matters. Bootswatch base, then palette tokens (scss:defaults),
-      # then @font-face declarations, then component rules (scss:rules).
+      # Order matters: Bootswatch base, then palette tokens (scss:defaults),
+      # then component rules (scss:rules).
+      #
+      # The @font-face declarations are deliberately NOT here. They live in
+      # assets/head.html, because Quarto copies every url(...) in the CSS it
+      # compiles as a build dependency, and a missing .woff2 then aborts the
+      # render instead of falling back to the system font stack.
       light:
         - cosmo
         - styles/theme-light.scss
-        - styles/fonts.scss
         - styles/custom.scss
       dark:
         - darkly
         - styles/theme-dark.scss
-        - styles/fonts.scss
         - styles/custom.scss
     toc: true
     toc-depth: 2

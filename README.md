@@ -28,16 +28,9 @@ If Quarto is not on `PATH` but RStudio is installed, it ships a copy:
 & "C:\Program Files\RStudio\resources\app\bin\quarto\bin\quarto.exe" preview
 ```
 
-**Run the font step first.** It is not optional: Quarto scans the compiled CSS
-for `url(...)` references and copies each one as a build dependency, so a
-missing `.woff2` aborts the render with
-
-```
-ERROR: NotFound: ... lstat 'assets\fonts\open-sans-latin.woff2'
-```
-
-To build without the web font instead, comment `styles/fonts.scss` out of both
-theme bundles in `_quarto.yml`; text then falls back to the system stack.
+The font step is optional. Without it the build still succeeds and text falls
+back to the system stack; run it when you want the site to match the ninetails
+docs exactly.
 
 ## Project structure
 
@@ -59,11 +52,10 @@ theme bundles in `_quarto.yml`; text then falls back to the system stack.
 ├── illustrations/index.qmd        Gallery with lightbox
 ├── styles/
 │   ├── theme-light.scss           light palette tokens
-│   ├── fonts.scss                 self-hosted Open Sans @font-face
 │   ├── theme-dark.scss            dark palette tokens
 │   └── custom.scss                all component rules, theme-agnostic
 ├── assets/
-│   ├── head.html                  SEO meta + JSON-LD Person record
+│   ├── head.html                  SEO meta, JSON-LD, @font-face rules
 │   ├── scripts.html               reveal observer, lightbox, year stamp
 │   └── img/                       favicon, logo, portrait, OG, gallery
 ├── scripts/
@@ -196,8 +188,8 @@ silent, local preview will look right while the live site does not.
 Headings sit at weight 640, which the variable font covers. A monospace utility
 face still carries labels, years, tags and status badges; that is a deliberate
 counterpoint to Open Sans, not an oversight. If you would rather match ninetails
-exactly and skip the setup step, `styles/fonts.scss` documents the one-line
-Google Fonts swap.
+exactly and skip self-hosting, `assets/head.html` documents the one-line Google
+Fonts swap.
 
 Font files are declared with root-absolute paths (`/assets/fonts/…`), which is
 correct for a **user site**. On a project site they need a `/<repo>` prefix or

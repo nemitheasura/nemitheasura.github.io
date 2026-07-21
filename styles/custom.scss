@@ -13,7 +13,8 @@
 //
 // Open Sans, matching the ninetails documentation site (pkgdown on Bootswatch
 // Yeti, which loads Open Sans). Self-hosted rather than pulled from Google
-// Fonts; see styles/fonts.scss for the @font-face declarations and the reason.
+// Fonts; the @font-face declarations are in assets/head.html, and the reason
+// they live there rather than here is explained in that file.
 //
 // The system stack stays behind it as a real fallback, not a formality: if the
 // font files are missing the site degrades to system-ui and nothing breaks.

@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # ===========================================================================
-# Download the Open Sans woff2 subsets that styles/fonts.scss expects.
+# Download the Open Sans woff2 subsets that assets/head.html expects.
 #
 #   Rscript scripts/fetch-fonts.R              # download into assets/fonts/
 #   Rscript scripts/fetch-fonts.R --dry-run    # show what it would fetch
@@ -42,7 +42,7 @@ font_dir <- file.path(root, "assets", "fonts")
 # latin and latin-ext; latin-ext is required for Polish diacritics. Filenames
 # here are stable and chosen by us, because Google's own filenames carry a
 # content hash that changes whenever they reissue the font, which would break
-# the hard-coded src paths in styles/fonts.scss.
+# the hard-coded src paths in assets/head.html.
 wanted <- data.frame(
   style  = c("normal", "normal", "italic", "italic"),
   subset = c("latin", "latin-ext", "latin", "latin-ext"),
@@ -54,7 +54,7 @@ wanted <- data.frame(
 )
 
 # The variable-font request: weights 300-800, roman and italic. This must stay
-# in step with the `font-weight: 300 800` ranges declared in styles/fonts.scss.
+# in step with the `font-weight: 300 800` ranges declared in assets/head.html.
 css_url <- paste0(
   "https://fonts.googleapis.com/css2",
   "?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -96,9 +96,9 @@ css <- tryCatch(
       "Could not reach fonts.googleapis.com: ", conditionMessage(e), "\n",
       "  If you are offline or behind a proxy, download the four files by\n",
       "  hand from https://fonts.google.com/specimen/Open+Sans and save them\n",
-      "  into assets/fonts/ under the names listed in styles/fonts.scss.\n",
-      "  Or comment styles/fonts.scss out of both theme bundles in\n",
-      "  _quarto.yml to build without the web font.",
+      "  into assets/fonts/ under the names listed in assets/head.html.\n",
+      "  The site builds and renders fine without them; only the typeface\n",
+      "  differs.",
       call. = FALSE
     )
   }
