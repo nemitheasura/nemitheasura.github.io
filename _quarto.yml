@@ -2,7 +2,7 @@
 # Quarto project configuration.
 #
 # Content lives in modular .qmd files at the repository root and in the
-# publications/, illustrations/ and cv/ subdirectories. Nothing here needs R or
+# publications/ and illustrations/ subdirectories. Nothing here needs R or
 # Python: the site has no executable code cells, so `quarto render` is enough.
 # ---------------------------------------------------------------------------
 project:
@@ -15,7 +15,6 @@ project:
     - "*.qmd"
     - "publications/"
     - "illustrations/"
-    - "cv/"
     - "!README.md"
     - "!CONTRIBUTING.md"
   resources:
@@ -24,7 +23,6 @@ project:
     # Open Sans files in assets/fonts/ are referenced only from compiled CSS,
     # so Quarto cannot discover them by scanning the .qmd sources.
     - "assets/"
-    - "cv/*.pdf"
 
 # ---------------------------------------------------------------------------
 # Site metadata and navigation.
@@ -74,11 +72,21 @@ website:
         href: illustrations/index.qmd
       - text: "Side quests"
         href: side-quests.qmd
-      - text: "CV"
-        href: cv/index.qmd
+    # Scholarly identifiers live here rather than in a block at the foot of the
+    # home page, so they are reachable from every page instead of one.
+    # Bootstrap Icons has no ORCID or Google Scholar glyph, so these borrow the
+    # nearest sensible ones; the aria-label carries the actual meaning.
     right:
       - text: "Contact"
         href: contact.qmd
+      - icon: person-badge
+        href: https://orcid.org/0000-0002-4599-2897
+        aria-label: "ORCID"
+        target: _blank
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en
+        aria-label: "Google Scholar"
+        target: _blank
       - icon: github
         href: https://github.com/nemitheasura
         aria-label: "GitHub"
@@ -100,8 +108,6 @@ website:
         href: about.qmd
       - text: "Publications"
         href: publications/index.qmd
-      - text: "CV"
-        href: cv/index.qmd
       - text: "Contact"
         href: contact.qmd
     right:

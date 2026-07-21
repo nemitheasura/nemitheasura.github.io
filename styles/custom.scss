@@ -57,9 +57,8 @@ h2 { font-size: var(--step-3); margin-top: var(--section); margin-bottom: 1.1rem
 h3 { font-size: var(--step-2); margin-top: 1.6rem; margin-bottom: 0.5rem; }
 h4 { font-size: var(--step-1); margin-top: 1.2rem; }
 
-// A hairline that runs from the end of every h2 to the right edge: the
-// baseline of a current trace. This is the one decorative device on the site
-// and it is used nowhere else.
+// A hairline that runs from the end of every h2 to the right edge. This is the
+// one decorative device on the site and it is used nowhere else.
 main h2 {
   display: flex;
   align-items: center;
@@ -117,10 +116,9 @@ a {
 // ---------------------------------------------------------------------------
 // 3. Hero
 //
-// The signature element. The squiggle is an SVG nanopore current trace: a long
-// flat plateau (the poly(A) tail) interrupted by one amber excursion (a
-// non-adenosine residue). It draws itself once on load, then holds. That is
-// the single sentence this person's research makes, rendered as a line.
+// Two columns: the introduction and a portrait. Collapses to one column below
+// the lg breakpoint, portrait first-in-source but styled to sit second so the
+// text is what a screen reader meets first.
 // ---------------------------------------------------------------------------
 .hero {
   display: grid;
@@ -184,49 +182,6 @@ a {
   background: var(--surface);
 }
 
-// The trace itself.
-.trace {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0.5rem 0 0;
-
-  .trace-line {
-    fill: none;
-    stroke: var(--accent);
-    stroke-width: 1.6;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-dasharray: 1400;
-    stroke-dashoffset: 1400;
-    animation: trace-draw 2.4s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-  }
-
-  .trace-blip {
-    fill: none;
-    stroke: var(--signal);
-    stroke-width: 2;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    opacity: 0;
-    animation: trace-blip 0.5s ease-out 1.9s forwards;
-  }
-
-  .trace-grid { stroke: var(--trace-grid); stroke-width: 1; }
-
-  .trace-label {
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.08em;
-    fill: var(--ink-3);
-    text-transform: uppercase;
-  }
-
-  .trace-label--signal { fill: var(--signal); }
-}
-
-@keyframes trace-draw { to { stroke-dashoffset: 0; } }
-@keyframes trace-blip { to { opacity: 1; } }
 
 // ---------------------------------------------------------------------------
 // 4. Cards
@@ -737,12 +692,10 @@ table {
 
   .reveal { opacity: 1; transform: none; }
 
-  .trace .trace-line { stroke-dashoffset: 0; }
-  .trace .trace-blip { opacity: 1; }
 }
 
 @media print {
-  .navbar, .nav-footer, #quarto-margin-sidebar, .btn-row, .trace,
+  .navbar, .nav-footer, #quarto-margin-sidebar, .btn-row,
   .lightbox { display: none !important; }
 
   body { background: #fff; color: #000; font-size: 10.5pt; }

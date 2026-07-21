@@ -42,40 +42,48 @@ Selected talks and posters. Awarded presentations are marked.
 
 ::: {.timeline .reveal}
 ::: {.timeline-item}
+<div class="timeline-date">2025 · Poznań</div>
+<div class="timeline-title">Tracking poly(A) tail diversity with Ninetails: mixed tails from cells to mRNA therapies</div>
+<div class="timeline-org">2nd Polish RNA Meeting</div>
+:::
+::: {.timeline-item}
 <div class="timeline-date">2024 · Edinburgh</div>
-<div class="timeline-title">Detecting non-adenosine residues in poly(A) tails <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-title">The polyadenylation landscape after in vivo long-term potentiation in the rat brain <span class="status-badge status-signal">best poster</span></div>
 <div class="timeline-org">29th Annual Meeting of the RNA Society</div>
 :::
 ::: {.timeline-item}
 <div class="timeline-date">2023 · Warsaw</div>
-<div class="timeline-title">Poly(A) tail composition from nanopore signal <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-title">Detection of non-adenosine residues within poly(A) tails using Oxford Nanopore direct RNA sequencing and deep learning <span class="status-badge status-signal">best poster</span></div>
 <div class="timeline-org">1st Polish RNA Meeting</div>
 :::
 ::: {.timeline-item}
+<div class="timeline-date">2023 · London</div>
+<div class="timeline-title">Ninetails: a comprehensive tool for investigation of non-adenosine residues within poly(A) tails from direct RNA sequencing data</div>
+<div class="timeline-org">London Calling (online)</div>
+:::
+::: {.timeline-item}
+<div class="timeline-date">2022 · online</div>
+<div class="timeline-title">Investigating the repertoire of nuclear-derived circular extrachromosomal DNAs in <em>Euglena gracilis</em> <span class="status-badge status-active">invited speaker</span></div>
+<div class="timeline-org">2nd Annual International Congress on Euglenoids</div>
+:::
+::: {.timeline-item}
 <div class="timeline-date">2022 · Boulder</div>
-<div class="timeline-title">Signal-level analysis of RNA tailing <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-title">Direct detection of non-adenosine nucleotides within poly(A) tails — a new tool for the analysis of post-transcriptional mRNA tailing <span class="status-badge status-signal">best poster</span></div>
 <div class="timeline-org">27th Annual Meeting of the RNA Society</div>
 :::
 ::: {.timeline-item}
 <div class="timeline-date">2019 · Rome</div>
-<div class="timeline-title">Circular extrachromosomal DNA in euglenids <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-title">Assessment of V2 18S rDNA as a DNA barcode for phototrophic euglenids <span class="status-badge status-signal">best poster</span></div>
 <div class="timeline-org">8th European Congress of Protistology</div>
 :::
 ::: {.timeline-item}
 <div class="timeline-date">2017 · Prague</div>
-<div class="timeline-title">Intron removal order in <em>Euglena gracilis</em></div>
-<div class="timeline-org">ISOP Annual Meeting — Holz-Conner Travel Award</div>
+<div class="timeline-title">The order of intron removal during splicing of α-tubulin (<em>tubA</em>) pre-mRNA in <em>Euglena gracilis</em></div>
+<div class="timeline-org">15th International Congress of Protistology — Holz-Conner Travel Award</div>
 :::
-:::
-
-::: {.highlight-box}
-**Presentation titles above are placeholders reconstructed from the award list in
-the CV.** Replace them with the titles as submitted, or remove the ones you do
-not want listed.
 :::
 
 ::: {.btn-row}
-<a class="btn-ghost" href="https://orcid.org/0000-0002-4599-2897"><i class="bi bi-person-badge"></i> ORCID</a>
-<a class="btn-ghost" href="https://scholar.google.com/citations?user=Xx8ApXAAAAAJ&hl=en"><i class="bi bi-mortarboard"></i> Google Scholar</a>
-<a class="btn-ghost" href="../cv/index.qmd"><i class="bi bi-file-earmark-person"></i> CV</a>
+<a class="btn-ghost" href="../about.qmd"><i class="bi bi-person"></i> About</a>
+<a class="btn-ghost" href="../software.qmd"><i class="bi bi-code-square"></i> Software</a>
 :::

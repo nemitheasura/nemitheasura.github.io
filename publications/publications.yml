@@ -1,72 +1,207 @@
 # ---------------------------------------------------------------------------
-# Publication data. This is the single source of truth for the Publications
-# page; index.qmd reads it through Quarto's listing engine.
+# The publication list. This file is the single source of truth: the listing on
+# publications/index.qmd is generated from it, and so is the RSS feed.
 #
-# To add a paper, append an entry. Field reference:
+# Every entry was transcribed from NG_CV_2026.docx. Titles, author strings and
+# DOIs come from that document rather than from memory. 17 items, 9 of them
+# first-author.
 #
-#   title       required. Sentence case, as published.
-#   author      required. Display string, not a list, so that "et al." and
-#               "(incl. Gumińska N.)" render exactly as written.
-#   date        required. YYYY-MM-DD. Only the year is displayed, but the full
-#               date controls sort order within a year.
-#   journal     shown under the author line.
-#   doi         shown as a linked DOI. Omit if there is none.
-#   path        where the card links to. Use the DOI URL.
-#   categories  drive the filter chips. Keep the vocabulary small and reuse it:
-#               First author | Co-author | Journal article | Preprint |
-#               Method | Nanopore | poly(A) | Euglenids | mRNA therapeutics
-#   description optional one-line plain-language summary.
+# Fields:
+#   title       required
+#   author      required, a display string rather than a list
+#   date        required, YYYY-MM-DD. Only the year is shown; month and day
+#               control sort order within a year, so approximate is fine.
+#   journal     shown under the title
+#   doi         shown as a monospace line
+#   path        where the card links. Always the doi.org resolver.
+#   categories  drives the filter chips. Keep the vocabulary small and reuse
+#               existing terms: every new term adds a chip.
+#   description one plain sentence. Optional, but worth writing.
 #
-# VERIFY BEFORE PUBLISHING: entries below the marked line were reconstructed
-# from the CV text and are missing DOIs. Fill them in, or regenerate the whole
-# file from references.bib with scripts/generate-publications.R.
+# "poly(A)" is quoted because a bare value containing parentheses is ambiguous
+# to some YAML parsers, and quoting costs nothing.
 # ---------------------------------------------------------------------------
 
 - title: >-
-    Direct profiling of non-adenosines in poly(A) tails of endogenous and
-    therapeutic mRNAs with Ninetails
-  author: "Gumińska N., Krawczyk P.S., et al."
-  date: "2025-03-14"
-  journal: "Nature Communications"
-  doi: "10.1038/s41467-025-57787-6"
-  path: "https://doi.org/10.1038/s41467-025-57787-6"
-  categories: [First author, Journal article, Method, Nanopore, "poly(A)"]
+    Poly(A) profiling for euglenozoans using Oxford Nanopore direct RNA
+    sequencing, illustrated by the example of Euglena gracilis
+  author: "Gumińska N., Czarnocka-Cieciura A., Zakryś B., Milanowski R."
+  date: "2026-01-03"
+  journal: "Methods in Molecular Biology, volume 3013"
+  doi: "10.1007/978-1-0716-5142-1_6"
+  path: "https://doi.org/10.1007/978-1-0716-5142-1_6"
+  categories: [First author, Book chapter, Nanopore, "poly(A)", Euglenids]
   description: >-
-    A neural-network method that reads non-adenosine residues directly from
-    nanopore signal, in both cellular and therapeutic mRNA.
+    A protocol chapter taking the poly(A) tail workflow to organisms it was
+    not designed for.
 
-- title: >-
-    Re-adenylation by TENT5A enhances efficacy of SARS-CoV-2 mRNA vaccines
-  author: "Krawczyk P.S., et al. (incl. Gumińska N.)"
-  date: "2025-01-01"
-  journal: "Nature"
-  categories: [Co-author, Journal article, "poly(A)", mRNA therapeutics]
+- title: "Protocol for efficient ribodepletion of Euglena gracilis RNA"
+  author: "Gumińska N., Hałakuc P., Zakryś B., Milanowski R."
+  date: "2026-01-02"
+  journal: "Methods in Molecular Biology, volume 3014"
+  doi: "10.1007/978-1-0716-5146-9_2"
+  path: "https://doi.org/10.1007/978-1-0716-5146-9_2"
+  categories: [First author, Book chapter, Method, Euglenids]
   description: >-
-    Cellular re-adenylation of vaccine mRNA extends its lifetime and improves
-    the immune response.
+    Removing ribosomal RNA from an organism with no off-the-shelf kit.
 
-- title: >-
-    Polyadenylation landscape after in vivo long-term potentiation in the rat
-    brain
-  author: "Gumińska N., et al."
-  date: "2025-01-01"
-  journal: "RNA"
-  categories: [First author, Journal article, "poly(A)", Nanopore]
-  description: >-
-    Tail-length remodelling in the hippocampus following long-term
-    potentiation.
-
-- title: >-
-    rDNAmine: a new tool for the analysis of long repetitive sequences
+- title: "rDNAmine: a new tool for the analysis of long repetitive sequences"
   author: "Czarnocka-Cieciura A., Gumińska N."
   date: "2026-01-01"
   journal: "Yeast"
   doi: "10.1002/yea.70023"
   path: "https://doi.org/10.1002/yea.70023"
-  categories: [Co-author, Journal article, Method]
+  categories: [Journal article, Software, Long reads]
   description: >-
-    Resolving rDNA repeat arrays from long reads, where short-read assemblies
-    collapse.
+    Long reads span repeat arrays that short reads collapse, which makes rDNA
+    tractable again.
+
+- title: >-
+    Polyadenylation landscape after in vivo long-term potentiation in the rat
+    brain
+  author: >-
+    Gumińska N., Pauzin F.P., Kuźniewska B., Miłek J., Wardaszka P.,
+    Krawczyk P.S., Mroczek S., Jeleń S., Pagenhart P.U., Bramham C.R.,
+    Dziembowski A., Dziembowska M.
+  date: "2025-01-05"
+  journal: "RNA"
+  doi: "10.1261/rna.080485.125"
+  path: "https://doi.org/10.1261/rna.080485.125"
+  categories: [First author, Journal article, Nanopore, "poly(A)", Neuroscience]
+  description: >-
+    What happens to poly(A) tails in the hours after a memory is laid down.
+
+- title: "Re-adenylation by TENT5A enhances efficacy of SARS-CoV-2 mRNA vaccines"
+  author: >-
+    Krawczyk P.S., Mazur M., Orzeł W., Gewartowska O., Jeleń S., Antczak W.,
+    Kasztelan K., Brouze A., Matylla-Kulińska K., Gumińska N., et al.,
+    Dziembowski A., Mroczek S.
+  date: "2025-01-04"
+  journal: "Nature"
+  doi: "10.1038/s41586-025-08842-1"
+  path: "https://doi.org/10.1038/s41586-025-08842-1"
+  categories: [Journal article, "poly(A)", mRNA therapeutics]
+  description: >-
+    A cellular enzyme extends the tails of vaccine mRNA, and that extension
+    tracks with how well the vaccine works.
+
+- title: >-
+    Direct profiling of non-adenosines in poly(A) tails of endogenous and
+    therapeutic mRNAs with Ninetails
+  author: >-
+    Gumińska N., Matylla-Kulińska K., Krawczyk P.S., Maj M., Orzeł W.,
+    Mackiewicz Z., Brouze A., Mroczek S., Dziembowski A.
+  date: "2025-01-03"
+  journal: "Nature Communications"
+  doi: "10.1038/s41467-025-57787-6"
+  path: "https://doi.org/10.1038/s41467-025-57787-6"
+  categories: [First author, Journal article, Nanopore, "poly(A)", Software, Deep learning]
+  description: >-
+    The ninetails paper. A convolutional network reads raw nanopore current and
+    finds the residues in a poly(A) tail that are not adenosine.
+
+- title: >-
+    Terminal nucleotidyltransferase Tent2 microRNA A-tailing enzyme regulates
+    excitatory/inhibitory balance in the hippocampus
+  author: >-
+    Wardaszka-Pianka P., Kuźniewska B., Gumińska N., Hojka-Osińska A.,
+    Puchalska M., Miłek J., Stawikowska A., Krawczyk P.S., Pauzin F.P.,
+    Wojtowicz T., Radwańska K., Bramham C.R., Dziembowski A., Dziembowska M.
+  date: "2025-01-02"
+  journal: "RNA"
+  doi: "10.1261/rna.080240.124"
+  path: "https://doi.org/10.1261/rna.080240.124"
+  categories: [Journal article, "poly(A)", Neuroscience]
+  description: >-
+    Tailing of microRNAs, and what it does to the balance of signalling in the
+    hippocampus.
+
+- title: >-
+    Comprehensive analysis of poly(A) tails in mouse testes and ovaries using
+    Nanopore direct RNA sequencing
+  author: >-
+    Czarnocka-Cieciura A., Brouze M., Gumińska N., Mroczek S.,
+    Gewartowska O., Krawczyk P.S., Dziembowski A.
+  date: "2025-01-01"
+  journal: "Scientific Data"
+  doi: "10.1038/s41597-024-04226-8"
+  path: "https://doi.org/10.1038/s41597-024-04226-8"
+  categories: [Journal article, Nanopore, "poly(A)", Dataset]
+  description: >-
+    A reference dataset of tail lengths across mouse germline tissue.
+
+- title: >-
+    Circular extrachromosomal DNA in Euglena gracilis under normal and stress
+    conditions
+  author: "Gumińska N., Hałakuc P., Zakryś B., Milanowski R."
+  date: "2024-01-02"
+  journal: "Protist"
+  doi: "10.1016/j.protis.2024.126033"
+  path: "https://doi.org/10.1016/j.protis.2024.126033"
+  categories: [First author, Journal article, Euglenids, Circular DNA]
+  description: >-
+    Which parts of the genome escape as circles, and whether stress changes the
+    answer.
+
+- title: >-
+    Efficient globin production during terminal erythropoiesis depends on the
+    synergistic action of TENT5C poly(A) polymerase and LARP4/5
+  author: >-
+    Mazur M., Gumińska N., Brouze A., Cysewski D., Mleczko-Sanecka K.,
+    Niklewicz M., Kusio-Kobiałka M., Dziembowski A.
+  date: "2024-01-01"
+  journal: "bioRxiv (preprint, in review)"
+  doi: "10.1101/2024.11.14.623596"
+  path: "https://doi.org/10.1101/2024.11.14.623596"
+  categories: [Preprint, "poly(A)"]
+  description: >-
+    Preprint. Tail extension as a throttle on how much haemoglobin a maturing
+    red blood cell can make.
+
+- title: >-
+    TENT5 cytoplasmic noncanonical poly(A) polymerases regulate the innate
+    immune response in animals
+  author: >-
+    Liudkovska V., Krawczyk P.S., Brouze A., Gumińska N., Wegierski T.,
+    Cysewski D., Mackiewicz Z., Ewbank J.J., Drabikowski K., Mroczek S.,
+    Dziembowski A.
+  date: "2022-01-02"
+  journal: "Science Advances"
+  doi: "10.1126/sciadv.add9468"
+  path: "https://doi.org/10.1126/sciadv.add9468"
+  categories: [Journal article, "poly(A)", Immunology]
+  description: >-
+    A family of tailing enzymes turns out to sit inside the innate immune
+    response.
+
+- title: >-
+    A long noncoding RNA promotes parasite differentiation in African
+    trypanosomes
+  author: >-
+    Guegan F., Rajan K.S., Bento F., Pinto-Neves D., Sequeira M.,
+    Gumińska N., Mroczek S., Dziembowski A., Cohen-Chalamish S.,
+    Doniger T., et al.
+  date: "2022-01-01"
+  journal: "Science Advances"
+  doi: "10.1126/sciadv.abn2706"
+  path: "https://doi.org/10.1126/sciadv.abn2706"
+  categories: [Journal article, RNA biology, Parasitology]
+  description: >-
+    A noncoding transcript acting as a switch in the trypanosome life cycle.
+
+- title: >-
+    Evaluation of V2 18S rDNA barcode marker and assessment of sample
+    collection and DNA extraction methods for metabarcoding of autotrophic
+    euglenids
+  author: "Gumińska N., Łukomska-Kowalczyk M., Chaber K., Zakryś B., Milanowski R."
+  date: "2021-01-02"
+  journal: "Environmental Microbiology"
+  doi: "10.1111/1462-2920.15495"
+  path: "https://doi.org/10.1111/1462-2920.15495"
+  categories: [First author, Journal article, Euglenids, Method]
+  description: >-
+    Which barcode region, and which extraction method, survive contact with
+    pond water.
 
 - title: >-
     A new type of circular RNA derived from nonconventional introns in nuclear
@@ -74,32 +209,45 @@
   author: "Gumińska N., Zakryś B., Milanowski R."
   date: "2021-01-01"
   journal: "Journal of Molecular Biology"
-  categories: [First author, Journal article, Euglenids]
+  doi: "10.1016/j.jmb.2020.166758"
+  path: "https://doi.org/10.1016/j.jmb.2020.166758"
+  categories: [First author, Journal article, Euglenids, RNA biology]
   description: >-
-    Nonconventional introns are excised as circles, a class of circular RNA not
-    previously described.
+    Introns removed unconventionally leave behind circles nobody had
+    catalogued.
 
 - title: >-
     Order of removal of conventional and nonconventional introns from nuclear
     transcripts of Euglena gracilis
   author: "Gumińska N., Płecha M., Zakryś B., Milanowski R."
-  date: "2018-01-01"
+  date: "2018-01-02"
   journal: "PLOS Genetics"
-  categories: [First author, Journal article, Euglenids]
+  doi: "10.1371/journal.pgen.1007761"
+  path: "https://doi.org/10.1371/journal.pgen.1007761"
+  categories: [First author, Journal article, Euglenids, RNA biology]
   description: >-
-    Splicing order in a genome that carries two structurally distinct intron
-    types.
+    Splicing order is not arbitrary, and the two intron types are not removed
+    in the same pass.
 
-# --------------------------------------------------------------------------
-# PLACEHOLDERS — replace with the remaining entries from your ORCID record.
-# The CV states 17 publications, 9 as first author; 6 are listed above.
-# Delete any placeholder you do not fill in: an empty listing card is worse
-# than a shorter list.
-# --------------------------------------------------------------------------
+- title: >-
+    Culture purification and DNA extraction procedures suitable for
+    next-generation sequencing of euglenids
+  author: "Gumińska N., Płecha M., Walkiewicz H., Hałakuc P., Zakryś B., Milanowski R."
+  date: "2018-01-01"
+  journal: "Journal of Applied Phycology"
+  doi: "10.1007/s10811-018-1496-0"
+  path: "https://doi.org/10.1007/s10811-018-1496-0"
+  categories: [First author, Journal article, Euglenids, Method]
+  description: >-
+    Getting material clean enough out of a culture that a sequencer will accept
+    it.
 
-- title: "Placeholder: remaining publication title"
-  author: "Gumińska N., et al."
-  date: "2020-01-01"
-  journal: "Journal name"
-  categories: [First author, Journal article]
-  description: "Replace this entry, or delete it."
+- title: "Intermediate introns in nuclear genes of euglenids — are they a distinct type?"
+  author: "Milanowski R., Gumińska N., Karnkowska A., Ishikawa T., Zakryś B."
+  date: "2016-01-01"
+  journal: "BMC Evolutionary Biology"
+  doi: "10.1186/s12862-016-0620-5"
+  path: "https://doi.org/10.1186/s12862-016-0620-5"
+  categories: [Journal article, Euglenids, RNA biology]
+  description: >-
+    A third category of intron, or a continuum between the two already known.

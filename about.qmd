@@ -167,12 +167,15 @@ logging, and reproducible export to analysis-ready formats.
 ## Outside work
 
 Digital art, tabletop and computer RPGs, fantasy, and music — rock, metal and
-classical. One of those hobbies produced actual software. That, and everything
-else that does not fit a CV heading, lives on the
-[Side quests](side-quests.qmd) page.
+classical. The drawing is not entirely off the clock: it turns into figures,
+graphical abstracts and, in the case of the
+[DEGRONOPEDIA](https://degronopedia.com/) web server, a whole graphical
+identity. One of the other hobbies produced actual software. All of it lives on
+the [Side quests](side-quests.qmd) and [Illustrations](illustrations/index.qmd)
+pages.
 
 ::: {.btn-row .mt-3}
-<a class="btn-cta" href="cv/index.qmd"><i class="bi bi-file-earmark-person"></i> Full CV</a>
-<a class="btn-ghost" href="publications/index.qmd"><i class="bi bi-journal-text"></i> Publications</a>
+<a class="btn-cta" href="publications/index.qmd"><i class="bi bi-journal-text"></i> Publications</a>
+<a class="btn-ghost" href="software.qmd"><i class="bi bi-code-square"></i> Software</a>
 <a class="btn-ghost" href="contact.qmd"><i class="bi bi-envelope"></i> Contact</a>
 :::

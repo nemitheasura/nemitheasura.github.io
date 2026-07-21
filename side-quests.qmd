@@ -86,9 +86,10 @@ is the fastest way to find out what I understood and what I had memorised.
 <span class="card-icon"><i class="bi bi-brush"></i></span>
 
 #### Digital art
-Character and creature work, mostly fantasy. The gallery lives on the
-[Illustrations](illustrations/index.qmd) page alongside the scientific figures,
-because they are the same skill pointed in different directions.
+Character and creature work, mostly fantasy. It is the same skill that produces
+the figures and the [DEGRONOPEDIA](https://degronopedia.com/) identity, pointed
+in a different direction, so the gallery lives on the
+[Illustrations](illustrations/index.qmd) page alongside the scientific work.
 :::
 
 ::: {.u-card .reveal .d2}

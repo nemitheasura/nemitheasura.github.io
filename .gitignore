@@ -6,7 +6,6 @@
 *.quarto_ipynb
 
 # Rendered artifacts (regenerated from source)
-cv/*.pdf.md
 publications/*.bak
 publications/publications.yml.*.bak
 

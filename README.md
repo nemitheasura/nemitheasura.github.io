@@ -49,9 +49,6 @@ everything else works. See [Typography](#typography) before deploying, though.
 │   ├── publications.yml           THE PUBLICATION DATA — edit this
 │   └── references.bib             optional BibTeX source
 ├── illustrations/index.qmd        Gallery with lightbox
-├── cv/
-│   ├── index.qmd                  Web CV
-│   └── cv.qmd                     Print CV → Natalia-Guminska-CV.pdf (Typst)
 ├── styles/
 │   ├── theme-light.scss           light palette tokens
 │   ├── fonts.scss                 self-hosted Open Sans @font-face
@@ -80,16 +77,12 @@ The site builds and looks finished, but the following are placeholders.
 - [ ] **Export `assets/img/og-image.png` at 1200×630.** `assets/head.html`
       points at the PNG; only the SVG exists, and social platforms will not
       render an SVG preview card.
-- [ ] **Fill in `publications/publications.yml`.** Six real entries are there;
-      the CV claims 17. There is one clearly marked placeholder entry to
-      replace or delete. Several entries are missing DOIs.
-- [ ] **Fix the conference talk titles** in `publications/index.qmd`. They were
-      reconstructed from the award list and are almost certainly not the
-      submitted titles.
 - [ ] **Check the proficiency levels on `stack.qmd`.** They are my best guess
-      from your CV and project history, not your self-assessment. Each row has a
+      from your publications and project history, not your self-assessment. Each row has a
       `--level: N` between 1 and 5.
-- [ ] **Replace the gallery images** in `assets/img/illustrations/`.
+- [ ] **Replace the gallery images** in `assets/img/illustrations/`. The
+      DEGRONOPEDIA section on that page describes the identity work but shows
+      nothing; add screenshots or the mark once the lab agrees.
 - [ ] **Verify the three case studies in `software.qmd`.** They are written from
       what the codebase implies. If any detail is wrong, it is wrong in the most
       visible place on the site.
@@ -144,11 +137,10 @@ reader users get the old number.
 **Adding a page.** Create `newpage.qmd` with a `title` in the front matter, then
 add it to `website.navbar.left` in `_quarto.yml`.
 
-**CV PDF.** `cv/cv.qmd` renders to `cv/Natalia-Guminska-CV.pdf` via Quarto's
-bundled Typst engine — no LaTeX. To publish a hand-made PDF instead, put it in
-`cv/` under that filename and delete `cv/cv.qmd`. The web CV (`cv/index.qmd`)
-and the print CV duplicate content deliberately: they need different pacing.
-**They will drift.** Update both.
+**No CV page.** It duplicated About almost line for line, so it was removed.
+About carries employment, education, grants, awards, teaching and service;
+Publications carries the list. If you later want a downloadable PDF, add it as a
+resource and link it from About rather than rebuilding the page.
 
 ## Deploying
 

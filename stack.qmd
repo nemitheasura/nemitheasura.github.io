@@ -363,5 +363,5 @@ touching.
 
 ::: {.btn-row}
 <a class="btn-cta" href="software.qmd"><i class="bi bi-code-square"></i> See it applied</a>
-<a class="btn-ghost" href="cv/index.qmd"><i class="bi bi-file-earmark-person"></i> CV</a>
+<a class="btn-ghost" href="publications/index.qmd"><i class="bi bi-journal-text"></i> Publications</a>
 :::
