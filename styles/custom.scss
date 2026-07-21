@@ -251,6 +251,36 @@ code, kbd, samp, pre {
 }
 
 // ---------------------------------------------------------------------------
+// A wide wordmark does not fit the square logo slot the packages use, so it
+// sits above its description at full width instead of beside it. The mark is
+// drawn as black line art on a light backing, and the backing is also the fill
+// inside the protein, so it cannot be made transparent: it carries its own
+// white plate and keeps that plate in dark mode.
+// ---------------------------------------------------------------------------
+.identity {
+  margin: 1.5rem 0 0;
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.identity-logo {
+  display: block;
+  width: 100%;
+  max-width: 34rem;
+  height: auto;
+  margin: 0 0 1.4rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+.identity-body {
+  max-width: 42rem;
+
+  > :last-child { margin-bottom: 0; }
+}
+
+// ---------------------------------------------------------------------------
 // 3. Hero
 //
 // Two columns: the introduction and a portrait. Collapses to one column below
@@ -289,9 +319,19 @@ code, kbd, samp, pre {
 .hero-role {
   font-size: 1.12rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.4;
   color: var(--accent-ink);
-  margin-bottom: 1.1rem;
+  margin: 0 0 0.2rem;
+}
+
+// The affiliation sits on its own lines beneath the job title. Run together on
+// one line it wrapped mid-phrase, splitting "(ERA Chairs Group)" across two
+// lines, which reads as an accident rather than a hierarchy.
+.hero-affil {
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 0 0 1.1rem;
 }
 
 .hero-summary {
@@ -314,12 +354,21 @@ code, kbd, samp, pre {
 }
 
 .hero-portrait {
+  display: block;
   width: 100%;
   max-width: 300px;
+  height: auto;
   justify-self: end;
   border-radius: 6px;
   border: 1px solid var(--rule);
-  background: var(--surface);
+
+  // object-fit and a declared ratio together mean the frame stays 4:5 whatever
+  // is dropped in: a photograph of another shape is cropped to fill rather
+  // than letterboxed against the card, which is what produced the white bands
+  // above and below the first photograph.
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 30%;
 }
 
 
@@ -524,15 +573,23 @@ code, kbd, samp, pre {
 // Custom, not an extension: no `quarto add` step, no network dependency at
 // build time, and the markup stays inspectable.
 // ---------------------------------------------------------------------------
+// A masonry column layout rather than a grid of equal boxes. The work runs
+// from a 2.5:1 graphical abstract to a 0.67 portrait illustration, and forcing
+// that range into one aspect ratio means either cropping the figures, which
+// cuts off panels, or letterboxing them, which leaves each figure small and
+// floating in white. Columns let every piece keep its own proportions.
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: var(--gap);
+  columns: 3;
+  column-gap: var(--gap);
   margin: 1.5rem 0;
 }
 
 .gallery-item {
-  display: block;
+  display: inline-block;   // with break-inside, keeps an item whole in a column
+  width: 100%;
+  margin: 0 0 var(--gap);
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
   background: var(--surface);
   border: 1px solid var(--rule);
   border-radius: 6px;
@@ -550,8 +607,7 @@ code, kbd, samp, pre {
 
   img {
     width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+    height: auto;          // natural proportions: nothing cropped, nothing boxed
     display: block;
     background: var(--surface-2);
   }
@@ -760,6 +816,7 @@ table {
 }
 
 @media (max-width: 560px) {
+  .gallery { columns: 1; }
   .btn-row { gap: 0.45rem; }
   .btn-cta, .btn-ghost { font-size: 0.76rem; padding: 0.4rem 0.75rem; }
   main h2::after { display: none; }

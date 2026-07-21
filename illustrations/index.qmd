@@ -1,129 +1,115 @@
 ---
 title: "Illustrations"
 description: >-
-  Scientific figures, graphical abstracts, schematics and digital artwork by
-  Natalia Gumińska.
+  Scientific figures, graphical abstracts, data visualisation and digital
+  artwork by Natalia Gumińska.
 pagetitle: "Illustrations"
 toc: true
 ---
 
 ::: {.lead .reveal}
-Figures for papers and talks, and the drawing they came out of. Click any image
-for a larger view.
+Figures for papers, press and teaching, and the drawing they came out of. Click
+any image for a larger view.
 :::
 
-## Graphical abstracts
+## Scientific figures
 
 ```{=html}
-<!-- Gallery markup, once, for reference:
-       <a class="gallery-item" data-lightbox href="FULL.png" data-caption="Caption">
-         <img src="THUMB.png" alt="Meaningful alt text" loading="lazy" width="800" height="600">
-         <figcaption>
-           <span class="g-title">Title</span>
-           <span class="g-meta">Context · year</span>
-         </figcaption>
-       </a>
-     `href` is the full-size image, `src` the thumbnail; they may be the same
-     file. `alt` describes the content for screen readers and must not repeat
-     the title. Always set width/height so the layout does not shift while
-     images load. -->
-
 <div class="gallery reveal">
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/abstract-ninetails.svg"
-     data-caption="Ninetails: signal segmentation to classified tail composition.">
-    <img src="../assets/img/illustrations/abstract-ninetails.svg"
-         alt="Schematic of a nanopore read whose poly(A) tail signal is segmented, converted to an image, and classified."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/abstract-ltp-brain.png"
+     data-caption="Dentate gyrus and synaptoneurosome samples taken at defined timepoints after stimulation, sequenced on Oxford Nanopore and analysed for differential expression, poly(A) site usage, tail length dynamics and non-adenosine residues.">
+    <img src="../assets/img/illustrations/abstract-ltp-brain-thumb.png"
+         alt="Graphical abstract: rodent brain and synaptoneurosome samples feeding into nanopore sequencing and four downstream analyses."
+         loading="lazy" width="900" height="354">
     <figcaption>
-      <span class="g-title">Ninetails, graphical abstract</span>
-      <span class="g-meta">Nature Communications · 2025</span>
+      <span class="g-title">Polyadenylation after long-term potentiation</span>
+      <span class="g-meta">Graphical abstract</span>
     </figcaption>
   </a>
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/abstract-tailing.svg"
-     data-caption="Cytoplasmic re-adenylation and its effect on transcript lifetime.">
-    <img src="../assets/img/illustrations/abstract-tailing.svg"
-         alt="Diagram of an mRNA tail being extended in the cytoplasm and the resulting change in transcript stability."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/fig-ninetails-pipeline.png"
+     data-caption="From basecalled signal and tail coordinates through segmentation, conversion to Gramian angular fields, and convolutional classification into (A)n, (A)nG(A)n, (A)nC(A)n and (A)nU(A)n.">
+    <img src="../assets/img/illustrations/fig-ninetails-pipeline-thumb.png"
+         alt="Method figure showing nanopore signal segmented, converted to Gramian angular field images and classified by a convolutional network."
+         loading="lazy" width="671" height="900">
     <figcaption>
-      <span class="g-title">Re-adenylation</span>
-      <span class="g-meta">Graphical abstract · 2025</span>
+      <span class="g-title">ninetails, method overview</span>
+      <span class="g-meta">Nature Communications, 2025</span>
     </figcaption>
   </a>
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/abstract-euglena.svg"
-     data-caption="Conventional and nonconventional intron removal order in Euglena gracilis.">
-    <img src="../assets/img/illustrations/abstract-euglena.svg"
-         alt="Diagram comparing removal order of two structurally different intron types from one transcript."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/fig-arabidopsis.png"
+     data-caption="The cleavage and polyadenylation complex with the factors mutated in the study marked, the genotypes analysed, and the direct RNA sequencing workflow from extraction to downstream analysis.">
+    <img src="../assets/img/illustrations/fig-arabidopsis-thumb.png"
+         alt="Three-panel figure: the polyadenylation complex on a pre-mRNA, a panel of Arabidopsis genotypes, and a sequencing and analysis workflow."
+         loading="lazy" width="900" height="557">
     <figcaption>
-      <span class="g-title">Intron removal order</span>
-      <span class="g-meta">PLOS Genetics · 2018</span>
+      <span class="g-title">Polyadenylation machinery and sequencing workflow</span>
+      <span class="g-meta">Arabidopsis thaliana</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/abstract-rna-metabolism.png"
+     data-caption="An mRNA passing through a nanopore, with TENT5 extending the poly(A) tail and MOV10 and TUT7 driving uridylation at the opposite fate.">
+    <img src="../assets/img/illustrations/abstract-rna-metabolism-thumb.png"
+         alt="Circular diagram: an mRNA threading a nanopore, with TENT5-mediated adenylation on one side and MOV10 and TUT7 uridylation on the other."
+         loading="lazy" width="841" height="900">
+    <figcaption>
+      <span class="g-title">Cytoplasmic control of the poly(A) tail</span>
+      <span class="g-meta">Laboratory of RNA Biology</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/press-viverna.jpg"
+     data-caption="Press illustration for the ViveRNA project, Principles of endogenous and therapeutic mRNA turnover in vivo, led by Andrzej Dziembowski at IIMCB. Published by the European Research Council in its Advanced Grants 2022 announcement.">
+    <img src="../assets/img/illustrations/press-viverna-thumb.jpg"
+         alt="Illustration of an mRNA passing through a nanopore in a lipid bilayer, with a magnifying glass over the raw current trace and a syringe wound with mRNA."
+         loading="lazy" width="900" height="636">
+    <figcaption>
+      <span class="g-title">ViveRNA</span>
+      <span class="g-meta">ERC Advanced Grant, 2023</span>
     </figcaption>
   </a>
 
 </div>
 ```
 
-## Logo design
-
-::: {.card-grid}
-::: {.u-card .reveal .d1}
-### DEGRONOPEDIA <span class="status-badge status-active">live</span>
-I designed the logo for
-**[DEGRONOPEDIA](https://degronopedia.com/){target="_blank"}**, a web server for
-degrons built by the Pokrzywa Lab (Laboratory of Protein Metabolism) at IIMCB.
-
-::: {.tag-row}
-[Logo design]{.pill} [Web server]{.pill} [Proteostasis]{.pill}
-:::
-
-[Visit DEGRONOPEDIA](https://degronopedia.com/){.btn-ghost target="_blank"}
-:::
-:::
-
-::: {.highlight-box .reveal}
-**To show the logo rather than describe it,** add the file to
-`assets/img/illustrations/` and give this section a gallery block like the ones
-above. Check first that the lab is happy for it to appear here.
-:::
-
-## Figures and schematics
+## Data visualisation
 
 ```{=html}
 <div class="gallery reveal">
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/figure-squiggle.svg"
-     data-caption="Annotated nanopore current trace across an adapter, tail and transcript body.">
-    <img src="../assets/img/illustrations/figure-squiggle.svg"
-         alt="Annotated ionic current trace with adapter, poly(A) tail and transcript regions labelled."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/eda-oscars-basic.png"
+     data-caption="Most competitive categories, win to nomination ratio, most awarded films, studios, countries and composers.">
+    <img src="../assets/img/illustrations/eda-oscars-basic-thumb.png"
+         alt="Six-panel figure of horizontal bar charts and a pie chart summarising Academy Award nominations and wins."
+         loading="lazy" width="700" height="900">
     <figcaption>
-      <span class="g-title">Anatomy of a squiggle</span>
-      <span class="g-meta">Teaching figure</span>
+      <span class="g-title">Academy Awards, overview</span>
+      <span class="g-meta">Postgraduate project</span>
     </figcaption>
   </a>
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/figure-pipeline.svg"
-     data-caption="Analysis pipeline from POD5 through basecalling to tail composition.">
-    <img src="../assets/img/illustrations/figure-pipeline.svg"
-         alt="Flow diagram of a nanopore analysis pipeline from raw signal files to tail composition output."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/eda-oscars-timeline.png"
+     data-caption="Annual nominations against awards given since 1929, with era boundaries marked, and activity aggregated by decade.">
+    <img src="../assets/img/illustrations/eda-oscars-timeline-thumb.png"
+         alt="Line chart of annual nominations and awards with era markers, above a stacked bar chart by decade."
+         loading="lazy" width="900" height="696">
     <figcaption>
-      <span class="g-title">Pipeline schematic</span>
-      <span class="g-meta">Workshop material · 2024</span>
+      <span class="g-title">Academy Awards, timeline</span>
+      <span class="g-meta">Postgraduate project</span>
     </figcaption>
   </a>
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/figure-distributions.svg"
-     data-caption="Poly(A) length distributions compared across conditions.">
-    <img src="../assets/img/illustrations/figure-distributions.svg"
-         alt="Overlaid density plots comparing poly(A) tail length distributions between two conditions."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/eda-oscars-eras.png"
+     data-caption="Nominations split across six eras of cinema, with category composition, win ratios and the most awarded performers in each.">
+    <img src="../assets/img/illustrations/eda-oscars-eras-thumb.png"
+         alt="Six-panel figure comparing nominations, categories, win ratios and top performers across six eras of cinema."
+         loading="lazy" width="828" height="900">
     <figcaption>
-      <span class="g-title">Tail length distributions</span>
-      <span class="g-meta">ggplot2</span>
+      <span class="g-title">Academy Awards, by era</span>
+      <span class="g-meta">Postgraduate project</span>
     </figcaption>
   </a>
 
@@ -132,50 +118,92 @@ above. Check first that the lab is happy for it to appear here.
 
 ## Digital art
 
-Personal work: fantasy and character studies.
+More of this, and the science drawing behind it, on my Facebook page
+[Biorysunki](https://www.facebook.com/biorysunki).
 
 ```{=html}
 <div class="gallery reveal">
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-01.svg"
-     data-caption="Personal work.">
-    <img src="../assets/img/illustrations/art-01.svg" alt="Placeholder for a digital painting."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-warrior.jpg"
+     data-caption="Character study, fantasy.">
+    <img src="../assets/img/illustrations/art-warrior-thumb.jpg"
+         alt="Digital painting of an armoured figure standing in snow before a mountain range."
+         loading="lazy" width="636" height="900">
     <figcaption>
-      <span class="g-title">Untitled</span>
-      <span class="g-meta">Digital · personal work</span>
+      <span class="g-title">Winter hunt</span>
+      <span class="g-meta">Digital painting</span>
     </figcaption>
   </a>
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-02.svg"
-     data-caption="Personal work.">
-    <img src="../assets/img/illustrations/art-02.svg" alt="Placeholder for a digital painting."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-forest.jpg"
+     data-caption="Landscape study.">
+    <img src="../assets/img/illustrations/art-forest-thumb.jpg"
+         alt="Digital painting of sunlight breaking through trees over still water."
+         loading="lazy" width="900" height="636">
     <figcaption>
-      <span class="g-title">Untitled</span>
-      <span class="g-meta">Digital · personal work</span>
+      <span class="g-title">Light through the canopy</span>
+      <span class="g-meta">Digital painting</span>
     </figcaption>
   </a>
 
-  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-03.svg"
-     data-caption="Personal work.">
-    <img src="../assets/img/illustrations/art-03.svg" alt="Placeholder for a digital painting."
-         loading="lazy" width="800" height="600">
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-guinea-pigs.jpg"
+     data-caption="Animal study.">
+    <img src="../assets/img/illustrations/art-guinea-pigs-thumb.jpg"
+         alt="Digital painting of two long-haired guinea pigs resting together."
+         loading="lazy" width="900" height="636">
     <figcaption>
-      <span class="g-title">Untitled</span>
-      <span class="g-meta">Digital · personal work</span>
+      <span class="g-title">Two guinea pigs</span>
+      <span class="g-meta">Digital painting</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/art-chinchilla.jpg"
+     data-caption="A chinchilla investigating a phone camera, and the photograph it is producing.">
+    <img src="../assets/img/illustrations/art-chinchilla-thumb.jpg"
+         alt="Monochrome illustration of a chinchilla beside a phone screen showing the same chinchilla."
+         loading="lazy" width="636" height="900">
+    <figcaption>
+      <span class="g-title">Nosy</span>
+      <span class="g-meta">Digital illustration</span>
+    </figcaption>
+  </a>
+
+  <a class="gallery-item" data-lightbox href="../assets/img/illustrations/outreach-girls-rna.jpg"
+     data-caption="Portraits of RNA researchers above two children building a strand from lettered blocks.">
+    <img src="../assets/img/illustrations/outreach-girls-rna-thumb.jpg"
+         alt="Monochrome illustration: portraits of five women scientists above two girls stacking lettered blocks."
+         loading="lazy" width="600" height="900">
+    <figcaption>
+      <span class="g-title">Girls just wanna RNA</span>
+      <span class="g-meta">Digital illustration</span>
     </figcaption>
   </a>
 
 </div>
 ```
 
-::: {.highlight-box .reveal}
-**Every image on this page is a generated placeholder.** Drop your own files into
-`assets/img/illustrations/` and update the `src`, `href`, `alt` and caption in
-this file. Raster work is best exported at roughly 1600 px on the long edge as
-WebP or optimised PNG; keep vector work as SVG.
-:::
+## Visual identity
+
+```{=html}
+<div class="identity reveal">
+  <img class="identity-logo" src="../assets/img/logos/degronopedia.png"
+       alt="DEGRONOPEDIA wordmark, with a crow perched on a protein structure"
+       width="1200" height="306" loading="lazy">
+  <div class="identity-body">
+    <h3 class="sw-name">DEGRONOPEDIA <span class="status-badge status-active">live</span></h3>
+    <p class="sw-desc">I prepared the visual identification of
+    <a href="https://degronopedia.com/" target="_blank">DEGRONOPEDIA</a>, a web
+    server for proteome-wide inspection of degrons, built by the Pokrzywa Lab
+    (Laboratory of Protein Metabolism) at IIMCB.</p>
+    <p class="sw-meta">Acknowledged in Szulc et al., <em>Nucleic Acids
+    Research</em> 52(W1), 2024</p>
+    <p class="sw-links">
+      <a class="btn-ghost" href="https://degronopedia.com/" target="_blank">Visit the server</a>
+      <a class="btn-ghost" href="https://doi.org/10.1093/nar/gkae238" target="_blank">Paper</a>
+    </p>
+  </div>
+</div>
+```
 
 ## Tools
 

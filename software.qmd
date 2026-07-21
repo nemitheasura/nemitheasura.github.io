@@ -7,13 +7,13 @@ toc: true
 ---
 
 ::: {.lead .reveal}
-R packages for nanopore direct RNA sequencing, and the databases that keep
+R packages for nanopore direct RNA sequencing, other software, and the databases that keep
 laboratory data usable. Most of it is open source under
 [LRB-IIMCB](https://github.com/LRB-IIMCB), with personal projects on
 [my GitHub](https://github.com/nemitheasura).
 :::
 
-## Packages
+## Bioinformatic tools
 
 ```{=html}
 <!-- One row per package. To swap in a real logo, replace the file in

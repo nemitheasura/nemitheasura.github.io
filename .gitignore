@@ -27,3 +27,5 @@ desktop.ini
 
 # Node, only if JS tooling is added later
 node_modules/
+
+**/*.quarto_ipynb

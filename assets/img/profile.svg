@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" role="img"
-     aria-label="Portrait placeholder">
-  <rect width="400" height="480" fill="#eef2f5"/>
-  <circle cx="200" cy="185" r="72" fill="#dce3e9"/>
-  <path d="M70 440c0-72 58-130 130-130s130 58 130 130z" fill="#dce3e9"/>
-  <text x="200" y="466" text-anchor="middle" font-family="ui-monospace, monospace"
-        font-size="13" fill="#4c5a66">replace with profile.jpg</text>
-</svg>

@@ -17,7 +17,7 @@ Projects that are not the main work.
 A lightweight timer for tracking dynamic world events in *Guild Wars 2*.
 
 ::: {.tag-row}
-[JavaScript]{.pill} [Web]{.pill} [Personal]{.pill}
+[Python]{.pill} [Personal]{.pill}
 :::
 
 [Repository](https://github.com/nemitheasura/gw2timer){.btn-ghost}

@@ -13,7 +13,7 @@ and a year stamp.
 ## Quick start
 
 ```bash
-Rscript scripts/fetch-fonts.R    # once: downloads Open Sans into assets/fonts/
+powershell -File scripts/fetch-fonts.ps1   # once: Open Sans into assets/fonts/
 quarto preview                   # live-reloading server on http://localhost:4200
 quarto render                    # one-off build into _site/
 ```
@@ -59,7 +59,8 @@ docs exactly.
 │   ├── scripts.html               reveal observer, lightbox, year stamp
 │   └── img/                       favicon, logo, portrait, OG, gallery
 ├── scripts/
-│   ├── fetch-fonts.R              download Open Sans into assets/fonts/
+│   ├── fetch-fonts.ps1            download Open Sans into assets/fonts/
+│   ├── fetch-fonts.R              the same, for an R console
 │   ├── make-placeholders.sh       regenerate placeholder artwork
 │   └── generate-publications.R    references.bib → publications.yml
 └── .github/workflows/publish.yml
@@ -69,17 +70,31 @@ docs exactly.
 
 The site builds and looks finished, but the following are placeholders.
 
-- [ ] **Run `Rscript scripts/fetch-fonts.R` and commit `assets/fonts/`.**
-      Without this the live site falls back to the system font stack, silently.
+- [ ] **Fetch the fonts and commit `assets/fonts/`.** Without this the live
+      site falls back to the system font stack, silently. Either:
 
-- [ ] **Replace `assets/img/profile.svg`** with a real portrait
-      (`profile.jpg` is fine; update the `src` in `index.qmd`).
+      ```powershell
+      powershell -ExecutionPolicy Bypass -File scripts/fetch-fonts.ps1
+      ```
+
+      or, from an R console (Positron, RStudio), `source("scripts/fetch-fonts.R")`.
+      The two do the same thing; the PowerShell version exists because R is
+      often installed without `Rscript.exe` on PATH.
+
+- [x] ~~Replace the placeholder portrait.~~ `assets/img/profile.jpg` is a real
+      photograph, cropped to 4:5 at 800x1000. The frame declares
+      `aspect-ratio: 4 / 5` with `object-fit: cover`, so any replacement is
+      cropped to fill rather than letterboxed; adjust `object-position` in
+      `custom.scss` if a new photo needs a different part kept in view.
 - [ ] **Export `assets/img/og-image.png` at 1200×630.** `assets/head.html`
       points at the PNG; only the SVG exists, and social platforms will not
       render an SVG preview card.
-- [ ] **Replace the gallery images** in `assets/img/illustrations/`. The
-      DEGRONOPEDIA section on that page describes the identity work but shows
-      nothing; add screenshots or the mark once the lab agrees.
+- [x] ~~Add the DEGRONOPEDIA mark.~~ In place at
+      `assets/img/logos/degronopedia.png`, 1200x306, from a screenshot of the
+      original. If a higher-resolution or vector version turns up, drop it in
+      and update the `width` and `height` in `illustrations/index.qmd` to match.
+      Worth confirming with the Pokrzywa Lab that they are happy for it to
+      appear here.
 - [ ] **Replace the package logos** in `assets/img/logos/` with the real hex
       stickers: `ninetails.svg`, `nanotail2.svg`, `NanoQuRe.svg`. Keep the
       `width` and `height` attributes in `software.qmd` truthful to the files.
@@ -116,6 +131,16 @@ If you prefer to maintain BibTeX, keep `references.bib` current and run
 `Rscript scripts/generate-publications.R --dry-run`, then without the flag.
 It needs `RefManageR` and `yaml`, and **it overwrites hand-written
 `description` fields**, because BibTeX has nowhere to store them.
+
+**Icons.** Bootstrap Icons, bundled by Quarto. A name that does not exist
+renders as an empty box with no error anywhere, so `scripts/check-icons.py`
+fails on any name not in its verified list. Run it after adding an icon:
+
+```bash
+python3 scripts/check-icons.py
+```
+
+There is no `bi-dna`. Check https://icons.getbootstrap.com/ before guessing.
 
 **Page descriptions.** Every page has a `description` in its front matter. It
 feeds the meta description, the Open Graph tags and the sitemap, and it is
@@ -227,7 +252,8 @@ Google Fonts sends every visitor's IP to Google, which a German court found
 breaches the GDPR (LG Munich I, 3 O 17493/20), and a same-origin font avoids an
 extra DNS lookup, TLS handshake and chained request before text paints.
 
-`scripts/fetch-fonts.R` downloads four woff2 files: roman and italic, latin and
+`scripts/fetch-fonts.ps1` (or the identical `.R`) downloads four woff2 files:
+roman and italic, latin and
 latin-ext. **latin-ext is not optional.** It carries ń, ł, ą, ę, ś, ź and ż, so
 without it "Gumińska", "Koźminski" and "Poznań" change typeface mid-word.
 
