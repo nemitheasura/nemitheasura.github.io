@@ -1,21 +1,13 @@
 ---
 title: "About"
 description: >-
-  Biography, education, employment, grants, awards, teaching and technical
-  background of Natalia Gumińska, PhD.
+  Education, employment, research grants, awards, teaching and community
+  service of Natalia Gumińska, PhD.
 toc: true
 ---
 
 ::: {.lead .reveal}
-I am a postdoctoral researcher in the **Laboratory of RNA Biology (ERA Chairs
-Group)** at the International Institute of Molecular and Cell Biology in Warsaw.
-I work on poly(A) tails: how long they are, what they are actually made of, and
-how to measure both reliably with Oxford Nanopore direct RNA sequencing.
-:::
-
-## Biography
-
-I hold a PhD in molecular biology from the Faculty of Biology at the University
+I have a PhD in molecular biology from the Faculty of Biology at the University
 of Warsaw and, in parallel, degrees in Polish philology (literary studies and
 linguistics) from the Faculty of Polish Studies.
 
@@ -23,6 +15,7 @@ My early research was on euglenids: intron removal order, circular RNAs,
 extrachromosomal DNA, and DNA barcoding for environmental samples. Since 2020 I
 have worked on RNA tailing, developing methods and software for nanopore direct
 RNA sequencing.
+:::
 
 ## Employment
 

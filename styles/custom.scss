@@ -124,6 +124,38 @@ code, kbd, samp, pre {
 }
 
 // ---------------------------------------------------------------------------
+// The Stack page: a denser grid than .card-grid, because each card is a short
+// list rather than a paragraph. Cards stretch to equal height so the icons in
+// each row line up, which is most of what makes the page look composed.
+// ---------------------------------------------------------------------------
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap);
+  margin: 2rem 0 0;
+  align-items: stretch;
+
+  .u-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.15rem 1.2rem 1.25rem;
+  }
+
+  h4 {
+    margin: 0 0 0.15rem;
+    font-size: 1rem;
+  }
+
+  // The tag row is the body of the card, so it takes the remaining height and
+  // sits flush with the top rather than floating in the middle.
+  .tag-row {
+    margin: 0.55rem 0 0;
+    align-content: flex-start;
+    flex: 1 1 auto;
+  }
+}
+
+// ---------------------------------------------------------------------------
 // 3. Hero
 //
 // Two columns: the introduction and a portrait. Collapses to one column below
@@ -258,6 +290,12 @@ code, kbd, samp, pre {
   background: var(--surface-2);
   border: 1px solid var(--rule);
   color: var(--ink-2);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.stack-grid .tag:hover {
+  border-color: var(--accent);
+  color: var(--accent-ink);
 }
 
 .pill {

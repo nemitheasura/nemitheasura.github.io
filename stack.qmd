@@ -1,19 +1,20 @@
 ---
 title: "Stack"
 description: >-
-  Technology stack: languages, R and Python ecosystems, databases, sequencing
-  and signal analysis, infrastructure, and authoring tools.
-toc: true
+  Technology stack: languages, R and Python ecosystems, sequencing and signal
+  analysis, databases, infrastructure and authoring tools.
+toc: false
 ---
 
 ::: {.lead .reveal}
 The tools I work with day to day.
 :::
 
-## Core
+::: {.stack-grid}
 
-::: {.card-grid}
 ::: {.u-card .reveal .d1}
+<span class="card-icon"><i class="bi bi-braces"></i></span>
+
 #### Languages
 ::: {.tag-row}
 [R]{.tag} [Python]{.tag} [SQL]{.tag} [Bash]{.tag} [JavaScript]{.tag} [PHP]{.tag}
@@ -21,6 +22,8 @@ The tools I work with day to day.
 :::
 
 ::: {.u-card .reveal .d2}
+<span class="card-icon"><i class="bi bi-box-seam"></i></span>
+
 #### R ecosystem
 ::: {.tag-row}
 [tidyverse]{.tag} [ggplot2]{.tag} [Bioconductor]{.tag} [Shiny]{.tag}
@@ -30,27 +33,29 @@ The tools I work with day to day.
 :::
 
 ::: {.u-card .reveal .d3}
+<span class="card-icon"><i class="bi bi-cpu"></i></span>
+
 #### Python and machine learning
 ::: {.tag-row}
 [NumPy]{.tag} [pandas]{.tag} [scikit-learn]{.tag} [Keras]{.tag}
 [TensorFlow]{.tag} [Computer vision]{.tag} [Deep learning on signal data]{.tag}
 :::
 :::
-:::
 
-## Sequencing and data
-
-::: {.card-grid}
 ::: {.u-card .reveal .d1}
+<span class="card-icon"><i class="bi bi-activity"></i></span>
+
 #### Nanopore and signal
 ::: {.tag-row}
 [Direct RNA sequencing]{.tag} [cDNA sequencing]{.tag} [Dorado]{.tag}
-[Guppy (legacy)]{.tag} [Signal-level analysis]{.tag}
-[poly(A) estimation]{.tag} [POD5]{.tag} [fast5]{.tag}
+[Guppy (legacy)]{.tag} [Signal-level analysis]{.tag} [poly(A) estimation]{.tag}
+[POD5]{.tag} [fast5]{.tag}
 :::
 :::
 
 ::: {.u-card .reveal .d2}
+<span class="card-icon"><i class="bi bi-diagram-3"></i></span>
+
 #### Bioinformatics
 ::: {.tag-row}
 [minimap2]{.tag} [samtools]{.tag} [BAM tag handling]{.tag}
@@ -59,27 +64,28 @@ The tools I work with day to day.
 :::
 
 ::: {.u-card .reveal .d3}
+<span class="card-icon"><i class="bi bi-database"></i></span>
+
 #### Databases
 ::: {.tag-row}
 [MySQL / MariaDB]{.tag} [SQLite]{.tag} [PostgreSQL]{.tag} [phpMyAdmin]{.tag}
 [Schema design]{.tag} [Audit logging]{.tag} [HDF5]{.tag}
 :::
 :::
-:::
 
-## Infrastructure and authoring
-
-::: {.card-grid}
 ::: {.u-card .reveal .d1}
+<span class="card-icon"><i class="bi bi-terminal"></i></span>
+
 #### Infrastructure
 ::: {.tag-row}
-[Git]{.tag} [GitHub]{.tag} [GitHub Actions]{.tag} [Docker]{.tag}
-[Linux]{.tag} [WSL]{.tag} [HPC and SLURM]{.tag} [Shiny Server]{.tag}
-[Apache]{.tag}
+[Git]{.tag} [GitHub]{.tag} [GitHub Actions]{.tag} [Docker]{.tag} [Linux]{.tag}
+[WSL]{.tag} [HPC and SLURM]{.tag} [Shiny Server]{.tag} [Apache]{.tag}
 :::
 :::
 
 ::: {.u-card .reveal .d2}
+<span class="card-icon"><i class="bi bi-vector-pen"></i></span>
+
 #### Authoring and figures
 ::: {.tag-row}
 [Quarto]{.tag} [R Markdown]{.tag} [knitr]{.tag} [renv]{.tag} [Typst]{.tag}
@@ -88,6 +94,8 @@ The tools I work with day to day.
 :::
 
 ::: {.u-card .reveal .d3}
+<span class="card-icon"><i class="bi bi-check2-square"></i></span>
+
 #### Practice
 ::: {.tag-row}
 [Code review]{.tag} [Semantic versioning]{.tag} [Deprecation cycles]{.tag}
@@ -95,11 +103,8 @@ The tools I work with day to day.
 [LLM-assisted development]{.tag}
 :::
 :::
+
 :::
-
-## Languages
-
-Polish (native), English.
 
 ::: {.btn-row}
 <a class="btn-cta" href="software.qmd"><i class="bi bi-code-square"></i> See it applied</a>

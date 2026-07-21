@@ -1,8 +1,8 @@
 ---
 title: "Side quests"
 description: >-
-  Hobby projects, experiments and interests that do not fit a CV heading:
-  gw2timer, digital art, tabletop games, and things learned in public.
+  Hobby projects and interests outside research: gw2timer, this website,
+  digital art, tabletop games and music.
 pagetitle: "Side quests"
 toc: true
 ---
@@ -37,38 +37,6 @@ Built with Quarto, deployed from GitHub Actions. The source is public.
 :::
 :::
 
-## Experiments
-
-::: {.card-grid}
-::: {.u-card .reveal .d1}
-#### Generative pattern studies
-Sketches in code, using a plotting grammar for things that are not data.
-
-::: {.tag-row}
-[R]{.tag} [Generative]{.tag}
-:::
-:::
-
-::: {.u-card .reveal .d2}
-#### Reading nanopore signal by eye
-Looking at enough raw traces to predict what the classifier will say before
-running it.
-
-::: {.tag-row}
-[Signal]{.tag} [Intuition]{.tag}
-:::
-:::
-
-::: {.u-card .reveal .d3}
-#### Python, in public
-Postgraduate coursework, done in the open.
-
-::: {.tag-row}
-[Python]{.tag} [Learning]{.tag}
-:::
-:::
-:::
-
 ## Interests
 
 ::: {.card-grid}
@@ -93,17 +61,4 @@ Tabletop RPGs, computer RPGs, and secondary-world fiction.
 #### Music
 Rock, metal and classical.
 :::
-:::
-
-## Things I would work on given a spare month
-
-::: {.highlight-box .reveal}
-An interactive squiggle explorer; an open dataset of hand-annotated tails for
-benchmarking; a Polish-language introduction to long-read sequencing.
-:::
-
-::: {.btn-row}
-<a class="btn-ghost" href="illustrations/index.qmd"><i class="bi bi-images"></i> Illustrations</a>
-<a class="btn-ghost" href="software.qmd"><i class="bi bi-code-square"></i> Software</a>
-<a class="btn-ghost" href="contact.qmd"><i class="bi bi-envelope"></i> Contact</a>
 :::

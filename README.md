@@ -42,7 +42,7 @@ docs exactly.
 ├── about.qmd                      Biography, education, grants, awards
 ├── software.qmd                   Projects and packages
 ├── stack.qmd                      Technology stack, grouped tag lists
-├── side-quests.qmd                Hobby projects and experiments
+├── side-quests.qmd                Hobby projects and interests
 ├── contact.qmd                    Contact links
 ├── 404.qmd
 ├── publications/
