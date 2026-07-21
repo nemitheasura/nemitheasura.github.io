@@ -28,8 +28,16 @@ If Quarto is not on `PATH` but RStudio is installed, it ships a copy:
 & "C:\Program Files\RStudio\resources\app\bin\quarto\bin\quarto.exe" preview
 ```
 
-Skipping the font step is not fatal: text falls back to the system stack and
-everything else works. See [Typography](#typography) before deploying, though.
+**Run the font step first.** It is not optional: Quarto scans the compiled CSS
+for `url(...)` references and copies each one as a build dependency, so a
+missing `.woff2` aborts the render with
+
+```
+ERROR: NotFound: ... lstat 'assets\fonts\open-sans-latin.woff2'
+```
+
+To build without the web font instead, comment `styles/fonts.scss` out of both
+theme bundles in `_quarto.yml`; text then falls back to the system stack.
 
 ## Project structure
 

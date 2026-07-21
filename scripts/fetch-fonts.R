@@ -69,15 +69,24 @@ ua <- paste(
   "Chrome/120.0.0.0 Safari/537.36"
 )
 
+# `headers` is only honoured by some download methods. On Windows the default
+# can resolve to "wininet", which silently ignores it — Google then sees an
+# unknown client, serves TTF, and the woff2-only @font-face rules reject the
+# result with no error anywhere. Force libcurl, which is bundled with R on
+# every platform since 4.0 and does respect headers.
+dl <- function(url, dest) {
+  utils::download.file(
+    url, dest, quiet = TRUE, mode = "wb", method = "libcurl",
+    headers = c("User-Agent" = ua)
+  )
+}
+
 message("Fetching the Open Sans stylesheet from Google Fonts ...")
 
 css <- tryCatch(
   {
     tmp <- base::tempfile(fileext = ".css")
-    utils::download.file(
-      css_url, tmp, quiet = TRUE, mode = "wb",
-      headers = c("User-Agent" = ua)
-    )
+    dl(css_url, tmp)
     out <- base::readLines(tmp, warn = FALSE)
     base::unlink(tmp)
     base::paste(out, collapse = "\n")
@@ -87,7 +96,9 @@ css <- tryCatch(
       "Could not reach fonts.googleapis.com: ", conditionMessage(e), "\n",
       "  If you are offline or behind a proxy, download the four files by\n",
       "  hand from https://fonts.google.com/specimen/Open+Sans and save them\n",
-      "  into assets/fonts/ under the names listed in styles/fonts.scss.",
+      "  into assets/fonts/ under the names listed in styles/fonts.scss.\n",
+      "  Or comment styles/fonts.scss out of both theme bundles in\n",
+      "  _quarto.yml to build without the web font.",
       call. = FALSE
     )
   }
@@ -165,8 +176,21 @@ for (i in seq_len(nrow(wanted))) {
     next
   }
 
-  utils::download.file(hit$url[1], dest, quiet = TRUE, mode = "wb",
-                       headers = c("User-Agent" = ua))
+  dl(hit$url[1], dest)
+
+  # A woff2 file starts with the ASCII signature "wOF2". If content
+  # negotiation went wrong we would get a TTF (signature 0x00010000) or an
+  # HTML error page, either of which the @font-face format("woff2") rule
+  # rejects at render time with nothing logged. Catch it here instead.
+  sig <- base::readBin(dest, what = "raw", n = 4L)
+  if (!identical(sig, base::as.raw(c(0x77, 0x4F, 0x46, 0x32)))) {
+    base::unlink(dest)
+    stop("Downloaded ", target$file, " is not a woff2 file (signature ",
+         base::paste(sig, collapse = " "), "). The User-Agent header was ",
+         "probably not sent; check that method = \"libcurl\" is available ",
+         "via capabilities(\"libcurl\").", call. = FALSE)
+  }
+
   size_kb <- base::round(base::file.size(dest) / 1024, 1)
   message("  saved    ", target$file, "  (", size_kb, " kB)")
   n_ok <- n_ok + 1L

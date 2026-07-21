@@ -32,8 +32,11 @@
 // preview will look correct while the live site quietly falls back to the
 // system stack, which is a difficult mistake to notice.
 //
-// Until the files exist the browser falls back to `--font-body` and the site
-// still looks fine, just not identical to the ninetails docs.
+// THE BUILD FAILS WITHOUT THEM. Quarto scans the compiled CSS for url(...)
+// references and copies each one as a build dependency, so a missing .woff2
+// stops `quarto render` with an lstat NotFound error rather than falling back
+// to the system stack. To build without the web font, comment this file out of
+// both theme bundles in _quarto.yml.
 //
 // If you would rather have the CDN and no setup step, delete this file, remove
 // it from both theme bundles in _quarto.yml, and add this line at the top of
