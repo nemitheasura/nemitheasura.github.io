@@ -66,41 +66,6 @@ docs exactly.
 └── .github/workflows/publish.yml
 ```
 
-## Before this goes live
-
-The site builds and looks finished, but the following are placeholders.
-
-- [ ] **Fetch the fonts and commit `assets/fonts/`.** Without this the live
-      site falls back to the system font stack, silently. Either:
-
-      ```powershell
-      powershell -ExecutionPolicy Bypass -File scripts/fetch-fonts.ps1
-      ```
-
-      or, from an R console (Positron, RStudio), `source("scripts/fetch-fonts.R")`.
-      The two do the same thing; the PowerShell version exists because R is
-      often installed without `Rscript.exe` on PATH.
-
-- [x] ~~Replace the placeholder portrait.~~ `assets/img/profile.jpg` is a real
-      photograph, cropped to 4:5 at 800x1000. The frame declares
-      `aspect-ratio: 4 / 5` with `object-fit: cover`, so any replacement is
-      cropped to fill rather than letterboxed; adjust `object-position` in
-      `custom.scss` if a new photo needs a different part kept in view.
-- [ ] **Export `assets/img/og-image.png` at 1200×630.** `assets/head.html`
-      points at the PNG; only the SVG exists, and social platforms will not
-      render an SVG preview card.
-- [x] ~~Add the DEGRONOPEDIA mark.~~ In place at
-      `assets/img/logos/degronopedia.png`, 1200x306, from a screenshot of the
-      original. If a higher-resolution or vector version turns up, drop it in
-      and update the `width` and `height` in `illustrations/index.qmd` to match.
-      Worth confirming with the Pokrzywa Lab that they are happy for it to
-      appear here.
-- [ ] **Replace the package logos** in `assets/img/logos/` with the real hex
-      stickers: `ninetails.svg`, `nanotail2.svg`, `NanoQuRe.svg`. Keep the
-      `width` and `height` attributes in `software.qmd` truthful to the files.
-
-None of these block a deploy. The site renders and publishes with every
-placeholder in place; they simply look like placeholders.
 
 ## Editing
 
