@@ -22,9 +22,9 @@ organisation, with personal projects on
 ### ninetails <span class="status-badge status-active">author</span>
 Detection of **non-adenosine residues in poly(A) tails** from Oxford Nanopore
 direct RNA reads. Raw current is segmented, converted to a two-dimensional
-representation, and classified by a convolutional network — computer vision
-applied to a signal problem. Author and maintainer. Published in *Nature
-Communications* (2025), with a full pkgdown site and worked vignettes.
+representation, and classified by a convolutional network. Author and
+maintainer. Published in *Nature Communications* (2025), with a full pkgdown
+site and worked vignettes.
 
 ::: {.tag-row}
 [R]{.pill} [Keras]{.pill} [Nanopore]{.pill} [Signal analysis]{.pill}
@@ -53,8 +53,8 @@ and composition can be reported from one pipeline.
 ::: {.u-card .reveal .d3}
 ### NanoQuRe <span class="status-badge status-maintained">contributor</span>
 Quality control for nanopore sequencing runs. Turns raw run metrics into a
-readable report, so a bad flow cell surfaces before three days of analysis, not
-after.
+readable report, so problems with a flow cell are visible before the analysis
+starts.
 
 ::: {.tag-row}
 [R]{.pill} [Quality control]{.pill} [Reporting]{.pill}
@@ -65,8 +65,8 @@ after.
 
 ::: {.u-card .reveal .d1}
 ### rDNAmine <span class="status-badge status-active">co-author</span>
-Analysis of **long repetitive rDNA sequences** in Oxford Nanopore reads — the
-regions short-read assemblers collapse. Co-authored with A. Czarnocka-Cieciura
+Analysis of **long repetitive rDNA sequences** in Oxford Nanopore reads, which
+short-read assemblers tend to collapse. Co-authored with A. Czarnocka-Cieciura
 and described in *Yeast* (2026).
 
 ::: {.tag-row}
@@ -93,8 +93,8 @@ workflows. Contributor.
 ### Laboratory databases <span class="status-badge status-maintained">maintained</span>
 Relational **SQL databases** designed for the laboratory: samples, libraries,
 sequencing runs and their metadata, with role-based access and an audit trail.
-Records export to analysis-ready YAML, so a pipeline run can state exactly which
-sample it consumed.
+Records export to YAML, so an analysis pipeline can record exactly which sample
+it used.
 
 ::: {.tag-row}
 [MySQL]{.pill} [PHP]{.pill} [Schema design]{.pill} [Lab data]{.pill}
@@ -104,8 +104,7 @@ sample it consumed.
 
 ## Technical case studies
 
-Three problems worth writing down, because the interesting part was not the
-code.
+Three problems from the projects above, in more detail.
 
 ::: {.u-card .reveal}
 ### Turning a one-dimensional signal into a classification problem
@@ -117,13 +116,12 @@ raw trace either miss most events or drown in false positives.
 
 **Approach.** Segment the tail region, normalise per read, project the segment
 into a two-dimensional representation, and train a convolutional classifier on
-synthetic tails with known composition. The framing change — signal problem to
-image problem — is what made the accuracy acceptable.
+synthetic tails with known composition. Treating it as an image classification
+problem rather than a signal-processing one is what brought the accuracy up.
 
 **Trade-off.** A neural network is harder to justify to reviewers than a
-threshold. The answer was to ship the training data, the model, and a vignette
-that reproduces the reported numbers, so the claim is checkable rather than
-trusted.
+threshold. The package therefore ships the training data, the model, and a
+vignette that reproduces the reported numbers, so the results can be checked.
 
 ::: {.tag-row}
 [ninetails]{.pill} [R]{.pill} [Keras]{.pill}
@@ -134,8 +132,8 @@ trusted.
 ### Making a sequencing laboratory's metadata queryable
 
 Sample provenance lived in spreadsheets, one per person, with no shared
-vocabulary for something as basic as a kit version. Answering "which runs used
-RNA004?" meant asking five people.
+vocabulary for something as basic as a kit version. Answering a question like
+which runs used RNA004 meant asking several people.
 
 **Approach.** A normalised MySQL schema covering samples, libraries, runs and
 instruments, administered through phpMyAdmin so the lab did not need a new tool
@@ -143,9 +141,9 @@ to learn, with a thin PHP/PDO front end for entry and an audit table recording
 every change.
 
 **Trade-off.** Normalisation costs data-entry convenience. Controlled
-vocabularies for kits and instruments were worth the friction; free-text notes
-fields were kept deliberately, because the alternative is people encoding notes
-into sample names.
+vocabularies for kits and instruments were worth the friction. Free-text notes
+fields were kept on purpose, because otherwise notes end up encoded in sample
+names.
 
 ::: {.tag-row}
 [MySQL]{.pill} [PHP]{.pill} [Audit logging]{.pill}
@@ -157,16 +155,16 @@ into sample names.
 
 Direct RNA reads arrive 3′→5′ with the tail anchored to a known adapter. cDNA
 reads arrive in either orientation and need the tail found relative to a primer.
-The biology question is the same; the signal handling is not.
+The biological question is the same, but the signal handling differs.
 
 **Approach.** A shared core with chemistry-specific front ends: orientation
 detection and anchoring differ, tail extraction and classification do not.
 Regression tests pin both paths to fixed expected output, so a change to the
 shared core cannot silently improve one and break the other.
 
-**Trade-off.** Two entry points is more surface area to document than one
-auto-detecting function. It is also honest about the fact that the two cases
-genuinely behave differently, which an auto-detector would hide.
+**Trade-off.** Two entry points are more to document than a single
+auto-detecting function, but the two chemistries do behave differently and I
+would rather that stayed visible to the user.
 
 ::: {.tag-row}
 [R]{.pill} [Dorado]{.pill} [testthat]{.pill}
@@ -177,9 +175,8 @@ genuinely behave differently, which an auto-detector would hide.
 
 ::: {.highlight-box .reveal}
 Documented, tested, version controlled. Packages ship with vignettes and worked
-examples, so a colleague can run an analysis on their own data without booking a
-meeting with me first. Function interfaces are treated as promises: they change
-on a deprecation cycle, not on a whim.
+examples, so a colleague can run an analysis on their own data without asking me
+first. Interfaces change on a deprecation cycle.
 :::
 
 ::: {.btn-row}

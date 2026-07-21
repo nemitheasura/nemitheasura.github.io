@@ -70,7 +70,7 @@ ua <- paste(
 )
 
 # `headers` is only honoured by some download methods. On Windows the default
-# can resolve to "wininet", which silently ignores it — Google then sees an
+# can resolve to "wininet", which silently ignores it. Google then sees an
 # unknown client, serves TTF, and the woff2-only @font-face rules reject the
 # result with no error anywhere. Force libcurl, which is bundled with R on
 # every platform since 4.0 and does respect headers.

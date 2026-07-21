@@ -7,11 +7,10 @@ toc: true
 ---
 
 ::: {.lead .reveal}
-What I actually reach for, and how far I would go with each before asking for
-help. The bars are self-assessed on a five-point scale: **1** means I can read
-it, **3** means I use it in production work without supervision, **5** means
-people ask me questions about it. There is no 5 in a category just to fill the
-row.
+The tools I use, and roughly how far I can take each one. The bars are
+self-assessed on a five-point scale: **1** means I can read it, **3** means I
+use it in production work without supervision, and **5** means people ask me
+questions about it.
 :::
 
 ::: {.highlight-box .reveal}
@@ -60,7 +59,7 @@ touching.
   <div class="stack-row">
     <div class="stack-name">JavaScript
       <small>Enough for browser-side interactivity, small tools, and reading
-      other people's front ends. Not a specialism.</small>
+      other people's front ends.</small>
     </div>
     <div class="stack-meter" style="--level: 2" role="img" aria-label="Proficiency 2 of 5"></div>
   </div>
@@ -210,8 +209,8 @@ touching.
 
   <div class="stack-row">
     <div class="stack-name">minimap2, samtools
-      <small>Long-read alignment and BAM manipulation, including the tag
-      handling that most tutorials skip.</small>
+      <small>Long-read alignment and BAM manipulation, including custom tag
+      handling.</small>
     </div>
     <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
   </div>
@@ -219,8 +218,8 @@ touching.
   <div class="stack-row">
     <div class="stack-name">Signal-level analysis
       <small>Segmentation, normalisation, samples-per-base estimation, and
-      converting between signal space and nucleotide space without lying about
-      the uncertainty.</small>
+      converting between signal space and nucleotide space while keeping track
+      of the uncertainty.</small>
     </div>
     <div class="stack-meter" style="--level: 5" role="img" aria-label="Proficiency 5 of 5"></div>
   </div>
@@ -228,7 +227,7 @@ touching.
   <div class="stack-row">
     <div class="stack-name">HPC and SLURM
       <small>Batch submission, resource requests, and parallelising R across
-      nodes without deadlocking on shared storage.</small>
+      nodes with shared storage.</small>
     </div>
     <div class="stack-meter" style="--level: 3" role="img" aria-label="Proficiency 3 of 5"></div>
   </div>
@@ -301,16 +300,16 @@ touching.
   <div class="stack-row">
     <div class="stack-name">Deep learning for signal data
       <small>Convolutional architectures on signal-derived images, class
-      imbalance handling, and honest evaluation on held-out chemistries rather
-      than a random split.</small>
+      imbalance handling, and evaluation on held-out chemistries rather than a
+      random split.</small>
     </div>
     <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
   </div>
 
   <div class="stack-row">
     <div class="stack-name">Computer vision
-      <small>The framing behind ninetails: treat a hard 1D discrimination
-      problem as an easy 2D one.</small>
+      <small>The approach behind ninetails: recasting a difficult 1D
+      discrimination problem as a 2D image classification task.</small>
     </div>
     <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
   </div>
@@ -318,7 +317,7 @@ touching.
   <div class="stack-row">
     <div class="stack-name">LLM-assisted development
       <small>Code review, refactoring and documentation drafting, with the
-      output treated as a proposal to be checked, never as a commit.</small>
+      output always reviewed before it is committed.</small>
     </div>
     <div class="stack-meter" style="--level: 4" role="img" aria-label="Proficiency 4 of 5"></div>
   </div>

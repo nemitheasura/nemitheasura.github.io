@@ -1,5 +1,5 @@
 # Allow everything. If you move to a project site, update the sitemap URL to
-# https://<user>.github.io/<repo>/sitemap.xml — Quarto generates the file from
+# https://<user>.github.io/<repo>/sitemap.xml. Quarto generates the file from
 # `site-url` in _quarto.yml, and the two must agree.
 User-agent: *
 Allow: /

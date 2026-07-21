@@ -16,10 +16,9 @@ anchor-sections: false
 <p class="hero-role">Postdoctoral researcher · Laboratory of RNA Biology (ERA Chairs Group) · IIMCB Warsaw</p>
 
 <p class="hero-summary">
-I study RNA tails: how long they are, what they are actually made of, and how to
-measure both reliably. The work runs from the bench to the basecaller, and it
-ends in software other people can install and results other people can
-reproduce. I wrote <a href="https://github.com/LRB-IIMCB/ninetails">ninetails</a>,
+I study RNA tails: how long they are, what they are made of, and how to measure
+both reliably. The work covers the bench and the analysis, and I release the
+software so the results can be reproduced. I wrote <a href="https://github.com/LRB-IIMCB/ninetails">ninetails</a>,
 which finds the residues in a poly(A) tail that are not adenosine.
 </p>
 
@@ -66,8 +65,8 @@ euglenids.
 
 ### Research software
 R packages for long-read analysis, a deep-learning classifier for tail
-composition, and the relational databases that keep a sequencing lab's metadata
-from turning back into spreadsheets.
+composition, and the relational databases that hold the laboratory's sequencing
+metadata.
 :::
 
 ::: {.u-card .reveal .d3}
@@ -76,7 +75,7 @@ from turning back into spreadsheets.
 ### Scientific illustration
 Figures, schematics and graphical abstracts for papers and talks, and the
 graphical identity for the [DEGRONOPEDIA](https://degronopedia.com/) web server.
-The same drawing habit, off the clock, is where the digital art comes from.
+I draw outside work too, which is where the digital art comes from.
 :::
 :::
 
@@ -119,8 +118,8 @@ Published in *Nature Communications* (2025).
 ::: {.u-card .reveal .d2}
 ### nanotail2 <span class="status-badge status-active">author</span>
 R tooling for poly(A) tail *length*: summarising distributions, comparing
-conditions, and producing figures that survive review. The length half of the
-pair; ninetails is the composition half.
+conditions, and producing figures for publication. It covers tail length,
+ninetails covers composition.
 
 ::: {.tag-row}
 [R]{.pill} [Statistics]{.pill} [ggplot2]{.pill}
@@ -132,8 +131,7 @@ pair; ninetails is the composition half.
 ::: {.u-card .reveal .d3}
 ### Laboratory databases <span class="status-badge status-maintained">maintained</span>
 Relational schemas tracking samples, libraries, sequencing runs and their
-metadata, with an audit trail. Structured records instead of a shared drive full
-of `final_v3_REAL.xlsx`.
+metadata, with role-based access and an audit trail.
 
 ::: {.tag-row}
 [SQL]{.pill} [Schema design]{.pill}

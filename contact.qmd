@@ -63,8 +63,8 @@ Poland.
 ### What to expect
 
 Email gets a reply within a few working days. For software questions, an issue
-on the relevant repository is better than email: it is searchable, and the next
-person with the same problem finds the answer without asking. For anything
-involving data, say up front which kit and basecaller version produced it —
-it is the first thing I will ask.
+on the relevant repository is better than email, because it is searchable and
+helps the next person with the same problem. For anything involving data, please
+say which kit and basecaller version produced it, since that is the first thing
+I will ask.
 :::

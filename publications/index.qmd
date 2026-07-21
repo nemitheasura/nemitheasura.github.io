@@ -22,7 +22,7 @@ listing:
   date-format: "YYYY"
   page-size: 25
   feed:
-    title: "Natalia Gumińska — publications"
+    title: "Natalia Gumińska: publications"
     type: partial
 ---
 
@@ -68,7 +68,7 @@ Selected talks and posters. Awarded presentations are marked.
 :::
 ::: {.timeline-item}
 <div class="timeline-date">2022 · Boulder</div>
-<div class="timeline-title">Direct detection of non-adenosine nucleotides within poly(A) tails — a new tool for the analysis of post-transcriptional mRNA tailing <span class="status-badge status-signal">best poster</span></div>
+<div class="timeline-title">Direct detection of non-adenosine nucleotides within poly(A) tails – a new tool for the analysis of post-transcriptional mRNA tailing <span class="status-badge status-signal">best poster</span></div>
 <div class="timeline-org">27th Annual Meeting of the RNA Society</div>
 :::
 ::: {.timeline-item}
@@ -79,7 +79,7 @@ Selected talks and posters. Awarded presentations are marked.
 ::: {.timeline-item}
 <div class="timeline-date">2017 · Prague</div>
 <div class="timeline-title">The order of intron removal during splicing of α-tubulin (<em>tubA</em>) pre-mRNA in <em>Euglena gracilis</em></div>
-<div class="timeline-org">15th International Congress of Protistology — Holz-Conner Travel Award</div>
+<div class="timeline-org">15th International Congress of Protistology (Holz-Conner Travel Award)</div>
 :::
 :::
 

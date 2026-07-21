@@ -87,7 +87,7 @@ make_tile () {
   <text x="400" y="420" text-anchor="middle" font-family="system-ui, sans-serif"
         font-size="26" font-weight="600" fill="${ink}">${label}</text>
   <text x="400" y="452" text-anchor="middle" font-family="ui-monospace, monospace"
-        font-size="16" fill="${ink}">placeholder — replace this file</text>
+        font-size="16" fill="${ink}">placeholder, replace this file</text>
 </svg>
 SVG
 }

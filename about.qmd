@@ -15,25 +15,24 @@ how to measure both reliably with Oxford Nanopore direct RNA sequencing.
 
 ## Biography
 
-My background is genuinely two-sided. I hold a PhD in molecular biology from the
-Faculty of Biology at the University of Warsaw and, in parallel, degrees in
-Polish philology — literary studies and linguistics — from the Faculty of Polish
-Studies. Reading texts closely and reading sequencing data closely turn out to
-require the same kind of attention: notice the thing that does not fit, then
-work out whether it is a signal or an artefact.
+My background is split between two fields. I hold a PhD in molecular biology
+from the Faculty of Biology at the University of Warsaw and, in parallel,
+degrees in Polish philology (literary studies and linguistics) from the Faculty
+of Polish Studies. Both involve reading closely and noticing what does not fit,
+which is probably why I have kept doing both.
 
 My early research was on euglenids: the order in which conventional and
 nonconventional introns are removed, circular RNAs derived from those introns,
 circular extrachromosomal DNA, and DNA barcoding for environmental samples.
 Since 2020 I have worked on RNA tailing, developing methods and software for
 nanopore direct RNA sequencing. To do that properly I went back to school for
-data science — first R, now Python.
+data science, first in R and now in Python.
 
 ## Employment
 
 ::: {.timeline .reveal}
 ::: {.timeline-item}
-<div class="timeline-date">2020 — present</div>
+<div class="timeline-date">2020–present</div>
 <div class="timeline-title">Postdoctoral Researcher</div>
 <div class="timeline-org">Laboratory of RNA Biology (ERA Chairs Group), International Institute of Molecular and Cell Biology in Warsaw</div>
 <p>Poly(A) tail biology and nanopore direct RNA sequencing. Method development
@@ -46,37 +45,37 @@ sequencing metadata infrastructure.</p>
 
 ::: {.timeline .reveal}
 ::: {.timeline-item}
-<div class="timeline-date">2025 — present</div>
+<div class="timeline-date">2025–present</div>
 <div class="timeline-title">Postgraduate studies, Python Data Science Engineer</div>
 <div class="timeline-org">Koźminski University, Warsaw</div>
 :::
 ::: {.timeline-item}
-<div class="timeline-date">2021 — 2022</div>
+<div class="timeline-date">2021–2022</div>
 <div class="timeline-title">Postgraduate studies, Data Science with R (with honours)</div>
 <div class="timeline-org">Faculty of Economic Sciences, University of Warsaw</div>
 :::
 ::: {.timeline-item}
-<div class="timeline-date">2015 — 2020</div>
+<div class="timeline-date">2015–2020</div>
 <div class="timeline-title">PhD in Biology, molecular biology (with honours)</div>
 <div class="timeline-org">Faculty of Biology, University of Warsaw</div>
 :::
 ::: {.timeline-item}
-<div class="timeline-date">2012 — 2015</div>
+<div class="timeline-date">2012–2015</div>
 <div class="timeline-title">M.Sc. in Biotechnology</div>
 <div class="timeline-org">Faculty of Biology, University of Warsaw</div>
 :::
 ::: {.timeline-item}
-<div class="timeline-date">2012 — 2014</div>
+<div class="timeline-date">2012–2014</div>
 <div class="timeline-title">M.Sc. in Polish Philology, literary studies and linguistics (with honours)</div>
 <div class="timeline-org">Faculty of Polish Studies, University of Warsaw</div>
 :::
 ::: {.timeline-item}
-<div class="timeline-date">2010 — 2013</div>
+<div class="timeline-date">2010–2013</div>
 <div class="timeline-title">B.Sc. in Biotechnology</div>
 <div class="timeline-org">Faculty of Biology, University of Warsaw</div>
 :::
 ::: {.timeline-item}
-<div class="timeline-date">2009 — 2012</div>
+<div class="timeline-date">2009–2012</div>
 <div class="timeline-title">B.Sc. in Polish Philology</div>
 <div class="timeline-org">Faculty of Polish Studies, University of Warsaw</div>
 :::
@@ -109,10 +108,10 @@ logging, and reproducible export to analysis-ready formats.
 
 ## Research grants
 
-- **2018 — 2021** Characteristics of circular extrachromosomal DNA in euglenids
+- **2018–2021** Characteristics of circular extrachromosomal DNA in euglenids
   (Euglenida). Polish National Science Centre, Preludium 14
   (2017/27/N/NZ2/01321). *Principal investigator.*
-- **2017 — 2019** Evaluation of diversity, species composition and population
+- **2017–2019** Evaluation of diversity, species composition and population
   dynamics of phototrophic euglenids in environmental samples from a selected
   hypereutrophic habitat, based on the V2 18S rDNA region. University of Warsaw,
   Faculty of Biology research grant for young scientists.
@@ -131,8 +130,8 @@ logging, and reproducible export to analysis-ready formats.
 - **2019** Best poster presentation, 8th European Congress of Protistology, Rome.
 - **2017** Holz-Conner Travel Award, ISOP annual meeting, Prague.
 - **2016** Rector's award for scientific achievement (team member).
-- **2015 — 2020** Rector's scholarship for PhD students.
-- **2009 — 2014** Rector's scholarship for academic performance, and Indeks
+- **2015–2020** Rector's scholarship for PhD students.
+- **2009–2014** Rector's scholarship for academic performance, and Indeks
   Start2Star Scholarship.
 
 ## Teaching
@@ -145,9 +144,9 @@ logging, and reproducible export to analysis-ready formats.
 
 ## Community service
 
-- **2020 — 2023** Postdoc Representative, International Institute of Molecular
+- **2020–2023** Postdoc Representative, International Institute of Molecular
   and Cell Biology.
-- **2016 — 2018** Secretary of the Electoral Committee, Faculty of Biology,
+- **2016–2018** Secretary of the Electoral Committee, Faculty of Biology,
   University of Warsaw.
 
 ## Courses and certificates
@@ -166,9 +165,9 @@ logging, and reproducible export to analysis-ready formats.
 
 ## Outside work
 
-Digital art, tabletop and computer RPGs, fantasy, and music — rock, metal and
-classical. The drawing is not entirely off the clock: it turns into figures,
-graphical abstracts and, in the case of the
+Digital art, tabletop and computer RPGs, fantasy, and music: rock, metal and
+classical. The drawing is not entirely separate from work, since it turns into
+figures, graphical abstracts and, in the case of the
 [DEGRONOPEDIA](https://degronopedia.com/) web server, a whole graphical
 identity. One of the other hobbies produced actual software. All of it lives on
 the [Side quests](side-quests.qmd) and [Illustrations](illustrations/index.qmd)

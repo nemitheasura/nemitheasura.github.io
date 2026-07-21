@@ -8,10 +8,9 @@ toc: true
 ---
 
 ::: {.lead .reveal}
-Things that are not the main quest. Some of them turned out to be useful anyway,
-which is generally how it goes: the timer taught me more about state management
-than any tutorial, and the drawing habit is why the figures in my papers look
-the way they do.
+Projects that are not the main work. Some of them turned out to be useful
+anyway: the timer taught me a lot about state management, and the drawing is
+where the figures in my papers come from.
 :::
 
 ## Shipped
@@ -19,9 +18,9 @@ the way they do.
 ::: {.card-grid}
 ::: {.u-card .reveal .d1}
 ### gw2timer <span class="status-badge status-maintained">maintained</span>
-A lightweight timer for tracking dynamic world events in *Guild Wars 2*. Started
-because I kept missing meta-events; kept going because other people started
-using it. The one hobby that turned into working software.
+A lightweight timer for tracking dynamic world events in *Guild Wars 2*. I
+started it because I kept missing meta-events and carried on because other
+people began using it.
 
 ::: {.tag-row}
 [JavaScript]{.pill} [Web]{.pill} [Personal]{.pill}
@@ -32,8 +31,8 @@ using it. The one hobby that turned into working software.
 
 ::: {.u-card .reveal .d2}
 ### This website <span class="status-badge status-active">active</span>
-Built with Quarto, deployed from GitHub Actions, no CDN and no tracker. The
-source is public, so if something here is useful, take it.
+Built with Quarto, deployed from GitHub Actions, with no CDN and no tracker.
+The source is public and you are welcome to reuse it.
 
 ::: {.tag-row}
 [Quarto]{.pill} [SCSS]{.pill} [GitHub Actions]{.pill}
@@ -48,9 +47,8 @@ source is public, so if something here is useful, take it.
 ::: {.card-grid}
 ::: {.u-card .reveal .d1}
 #### Generative pattern studies
-Small sketches in code: what happens when a plotting grammar is used for
-something that is not data. Occasionally they turn into a conference poster
-background.
+Small sketches in code, using a plotting grammar for things that are not data.
+Some of them have ended up as conference poster backgrounds.
 
 ::: {.tag-row}
 [R]{.tag} [Generative]{.tag}
@@ -59,9 +57,9 @@ background.
 
 ::: {.u-card .reveal .d2}
 #### Reading nanopore signal by eye
-An ongoing attempt to build the intuition a model has, by staring at enough raw
-traces to predict what the classifier will say before running it. Mixed results,
-which is itself informative.
+An ongoing attempt to build the intuition a model has, by looking at enough raw
+traces to predict what the classifier will say before running it. Results so far
+are mixed.
 
 ::: {.tag-row}
 [Signal]{.tag} [Intuition]{.tag}
@@ -70,8 +68,8 @@ which is itself informative.
 
 ::: {.u-card .reveal .d3}
 #### Python, in public
-Postgraduate coursework, done in the open. Rewriting things I already know in R
-is the fastest way to find out what I understood and what I had memorised.
+Postgraduate coursework, done in the open. Rewriting in Python things I already
+know how to do in R is a good way to find the gaps.
 
 ::: {.tag-row}
 [Python]{.tag} [Learning]{.tag}
@@ -96,16 +94,16 @@ in a different direction, so the gallery lives on the
 <span class="card-icon"><i class="bi bi-dice-5"></i></span>
 
 #### Games and fantasy
-Tabletop RPGs, computer RPGs, and the kind of secondary-world fiction that comes
-with an appendix on linguistics. The philology degree was not an accident.
+Tabletop RPGs, computer RPGs, and secondary-world fiction, preferably the kind
+with an appendix on invented languages.
 :::
 
 ::: {.u-card .reveal .d3}
 <span class="card-icon"><i class="bi bi-music-note-beamed"></i></span>
 
 #### Music
-Rock, metal and classical, frequently in the same afternoon. Reliable
-accompaniment to long basecalling runs.
+Rock, metal and classical, often in the same afternoon and usually while
+something is basecalling.
 :::
 :::
 
@@ -114,9 +112,8 @@ accompaniment to long basecalling runs.
 ::: {.highlight-box .reveal}
 An interactive squiggle explorer that lets a reader scrub through a raw read and
 see the tail call update live; a proper open dataset of hand-annotated tails for
-benchmarking; and a Polish-language introduction to long-read sequencing,
-because the good material is all in English and that is a barrier for no good
-reason.
+benchmarking; and a Polish-language introduction to long-read sequencing, since
+almost all of the good material is only available in English.
 :::
 
 ::: {.btn-row}

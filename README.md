@@ -1,6 +1,6 @@
 # nemitheasura.github.io
 
-Personal and academic website for **Natalia Gumińska, PhD** — RNA biology,
+Personal and academic website for **Natalia Gumińska, PhD**: RNA biology,
 nanopore direct RNA sequencing, and research software. Built with
 [Quarto](https://quarto.org), deployed to GitHub Pages by GitHub Actions.
 
@@ -19,7 +19,7 @@ quarto render                    # one-off build into _site/
 ```
 
 Quarto 1.5 or newer is the only hard requirement. There are no executable code
-cells, so R and Python are **not** needed to build the site — R is used only by
+cells, so R and Python are **not** needed to build the site. R is used only by
 the two optional helper scripts.
 
 If Quarto is not on `PATH` but RStudio is installed, it ships a copy:
@@ -47,7 +47,7 @@ docs exactly.
 ├── 404.qmd
 ├── publications/
 │   ├── index.qmd                  Filterable listing + conference talks
-│   ├── publications.yml           THE PUBLICATION DATA — edit this
+│   ├── publications.yml           THE PUBLICATION DATA, edit this
 │   └── references.bib             optional BibTeX source
 ├── illustrations/index.qmd        Gallery with lightbox
 ├── styles/
@@ -73,7 +73,7 @@ The site builds and looks finished, but the following are placeholders.
       Without this the live site falls back to the system font stack, silently.
 
 - [ ] **Replace `assets/img/profile.svg`** with a real portrait
-      (`profile.jpg` is fine — update the `src` in `index.qmd`).
+      (`profile.jpg` is fine; update the `src` in `index.qmd`).
 - [ ] **Export `assets/img/og-image.png` at 1200×630.** `assets/head.html`
       points at the PNG; only the SVG exists, and social platforms will not
       render an SVG preview card.
@@ -92,8 +92,8 @@ The site builds and looks finished, but the following are placeholders.
 **Personal details.** `_variables.yml` holds name, email and social URLs;
 reference them anywhere as `{{< var email >}}`. Navigation and site URL live in
 `_quarto.yml`. The JSON-LD block in `assets/head.html` duplicates some of this
-and must be updated by hand — Quarto variables do not expand inside included
-HTML partials.
+and must be updated by hand, because Quarto variables do not expand inside
+included HTML partials.
 
 **Publications.** Append to `publications/publications.yml`:
 
@@ -114,7 +114,7 @@ terms; every new term adds a chip. Note that `poly(A)` must be quoted in YAML.
 If you prefer to maintain BibTeX, keep `references.bib` current and run
 `Rscript scripts/generate-publications.R --dry-run`, then without the flag.
 It needs `RefManageR` and `yaml`, and **it overwrites hand-written
-`description` fields** — BibTeX has nowhere to store them.
+`description` fields**, because BibTeX has nowhere to store them.
 
 **Colours.** Every colour is a token in `styles/theme-light.scss` and
 `styles/theme-dark.scss`. `custom.scss` contains no hex values at all, only
@@ -131,7 +131,7 @@ while images load, and write `alt` text that describes the image rather than
 repeating the title.
 
 **Stack page.** Each row carries `style="--level: N"` where N is 1–5. The bar
-and the `aria-label` are independent — **change both together**, or screen
+and the `aria-label` are independent, so **change both together** or screen
 reader users get the old number.
 
 **Adding a page.** Create `newpage.qmd` with a `title` in the front matter, then
@@ -163,9 +163,9 @@ documentation site (`#2C7BB6`), pushed cooler and deeper. Amber (`--signal`) is
 reserved: it marks the one thing on a page that differs from everything around
 it, which is what a non-adenosine residue is in a poly(A) tail.
 
-The hero carries the site's one piece of ornament — an SVG nanopore current
-trace with a flat poly(A) plateau and a single amber excursion. It draws itself
-once on load and then holds. Everything else is deliberately quiet.
+The hero is a two-column layout: introduction and portrait. There is no
+decorative graphic; the only ornament on the site is the hairline that runs from
+the end of each `h2` to the right margin.
 
 ### Typography
 
@@ -176,14 +176,14 @@ Google Fonts sends every visitor's IP to Google, which a German court found
 breaches the GDPR (LG Munich I, 3 O 17493/20), and a same-origin font avoids an
 extra DNS lookup, TLS handshake and chained request before text paints.
 
-`scripts/fetch-fonts.R` downloads four woff2 files — roman and italic, latin and
-latin-ext. **latin-ext is not optional**: it carries ń, ł, ą, ę, ś, ź and ż, so
+`scripts/fetch-fonts.R` downloads four woff2 files: roman and italic, latin and
+latin-ext. **latin-ext is not optional.** It carries ń, ł, ą, ę, ś, ź and ż, so
 without it "Gumińska", "Koźminski" and "Poznań" change typeface mid-word.
 
 **Commit `assets/fonts/` once you have generated it.** The GitHub Actions
 workflow builds from a clean checkout with no R installed, so uncommitted fonts
-are simply absent from the deployed site — and because the fallback stack is
-silent, local preview will look right while the live site does not.
+are simply absent from the deployed site. Because the fallback stack is silent,
+local preview will look right while the live site does not.
 
 Headings sit at weight 640, which the variable font covers. A monospace utility
 face still carries labels, years, tags and status badges; that is a deliberate

@@ -8,9 +8,9 @@ toc: true
 ---
 
 ::: {.lead .reveal}
-Figures for papers and talks, and the drawing habit they came out of. A good
-scientific figure does one thing: it makes the reader see the result before they
-read the caption. Click any image for a larger view.
+Figures for papers and talks, and the drawing they came out of. I try to make
+figures that show the result clearly before the caption has to explain it. Click
+any image for a larger view.
 :::
 
 ## Graphical abstracts
@@ -73,15 +73,14 @@ read the caption. Click any image for a larger view.
 ::: {.u-card .reveal .d1}
 ### DEGRONOPEDIA <span class="status-badge status-active">live</span>
 Graphical identity for **[DEGRONOPEDIA](https://degronopedia.com/){target="_blank"}**,
-a web server for degrons — the short sequence motifs that mark a protein for
+a web server for degrons, the short sequence motifs that mark a protein for
 destruction by the ubiquitin–proteasome system. Built by the Pokrzywa Lab
 (Laboratory of Protein Metabolism) at IIMCB, it searches degrons across eleven
 model proteomes and predicts terminal stability.
 
-The brief was a scientific tool that had to stay legible to people who arrive
-knowing nothing about degrons, and hold together across a database, a
-documentation site and a tutorial. A research tool that looks like a research
-tool gets cited; one that looks unfinished gets closed.
+The work had to stay readable for people arriving without any background in
+degrons, and hold together across the database, the documentation and the
+tutorial.
 
 ::: {.tag-row}
 [Visual identity]{.pill} [Web server]{.pill} [Proteostasis]{.pill}
@@ -140,8 +139,8 @@ ones above. Check first whether the lab is happy for the assets to appear here.
 
 ## Digital art
 
-Work made for no reason other than wanting to make it. Fantasy, character work,
-and the occasional creature that is anatomically indefensible.
+Personal work: fantasy, character studies, and the occasional creature with
+questionable anatomy.
 
 ```{=html}
 <div class="gallery reveal">
@@ -189,7 +188,6 @@ WebP or optimised PNG; keep vector work as SVG.
 ## Commissions and collaboration
 
 ::: {.highlight-box .reveal}
-I make figures for the laboratory's papers and occasionally for collaborators.
-If you need a schematic or graphical abstract and want someone who will read the
-manuscript first, [get in touch](../contact.qmd).
+I make figures for the laboratory's papers and sometimes for collaborators. If
+you need a schematic or a graphical abstract, [get in touch](../contact.qmd).
 :::
